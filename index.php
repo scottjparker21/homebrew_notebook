@@ -9,7 +9,7 @@
 			<div class="jumbotron">
 				<div class="container-fluid">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="">
-              			<img class="" src="" alt="">
+              			<!-- <img class="" src="" alt=""> -->
           			</div>
           		</div>
 			</div>	

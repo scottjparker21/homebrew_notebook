@@ -1,13 +1,4 @@
  
-	<?php
-			$pdo = Database::connect();
-	        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	        $sql = "SELECT id,name FROM category ORDER BY name";
-	        $q = $pdo->prepare($sql);
-	        $q->execute();
-	        $categories = $q->fetchAll();
-	        Database::disconnect(); 
-  ?>
 	<nav class="navbar navbar-inverse">
   		<div class="container-fluid">
       		<div class="navbar-header">
@@ -21,10 +12,7 @@
       		<div class="collapse navbar-collapse" id="myNavbar">
         			<ul class="nav navbar-nav">
              			<li><a href="index.php">Home</a></li>
-              		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
-                			<ul class="dropdown-menu">	
-                					<?php foreach ($categories as $row){?><li id="<?php echo $row['id'];?>"><a href="category.php?catid=<?php echo $row['id'];?>"><?php echo $row['name'];?></a></li><?php }?>		
-                			</ul> 
+              		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Recipes<span class="caret"></span></a>
                   <li><a href=""></a></li>                
         			</ul>
         			<ul class="nav navbar-nav navbar-right">
