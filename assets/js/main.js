@@ -39,6 +39,13 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         $scope.message = 'mint statistics page.';
     });
 
+    //navbar controller function
+    function HeaderController($scope, $location) 
+    { 
+        $scope.isActive = function (viewLocation) { 
+            return viewLocation === $location.path();
+        };
+    }
 
 
 //End Controllers ----------------------------------------->
