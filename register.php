@@ -102,43 +102,45 @@
                                         <h3>Create an Account</h3>
                                     </div>
 
-                                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
-                                        <label class="control-label">Username</label>
-                                        <div class="controls">
-                                            <input name="username" type="text"  placeholder="username" value="<?php echo !empty($username)?$username:'';?>">
-                                            <?php if (!empty($usernameError)): ?>
-                                                <span class="help-inline"><?php echo $usernameError;?></span>
-                                            <?php endif; ?>
-                                        </div>
+                                      <div class=" form-row control-group <?php echo !empty($usernameError)?'error':'';?>">
+                                        <label>
+                                            <span>Username</span>
+                                            <div class="controls">
+                                                <input name="username" type="text"  placeholder="" value="<?php echo !empty($username)?$username:'';?>">
+                                                <?php if (!empty($usernameError)): ?>
+                                                    <span class="help-inline"><?php echo $usernameError;?></span>
+                                                <?php endif; ?>
+                                            </div>
+                                        </label>
                                       </div>
-                                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
+                                      <div class=" form-row control-group <?php echo !empty($passwordError)?'error':'';?>">
                                         <label class="control-label">Password</label>
                                         <div class="controls">
-                                            <input name="password" type="text" placeholder="password" value="<?php echo !empty($password)?$password:'';?>">
+                                            <input name="password" type="text" placeholder="" value="<?php echo !empty($password)?$password:'';?>">
                                             <?php if (!empty($passwordError)): ?>
                                                 <span class="help-inline"><?php echo $passwordError;?></span>
                                             <?php endif;?>
                                         </div>
                                       </div>
-                                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                                      <div class=" form-row control-group <?php echo !empty($nameError)?'error':'';?>">
                                         <label class="control-label">Full Name</label>
                                         <div class="controls">
-                                            <input name="name" type="text" placeholder="name" value="<?php echo !empty($name)?$name:'';?>">
+                                            <input name="name" type="text" placeholder="" value="<?php echo !empty($name)?$name:'';?>">
                                             <?php if (!empty($nameError)): ?>
                                                 <span class="help-inline"><?php echo $nameError;?></span>
                                             <?php endif;?>
                                         </div>
                                       </div>
-                                      <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
+                                      <div class=" form-row control-group <?php echo !empty($emailError)?'error':'';?>">
                                         <label class="control-label">Email</label>
                                         <div class="controls">
-                                            <input name="email" type="text" placeholder="email" value="<?php echo !empty($email)?$email:'';?>">
+                                            <input name="email" type="text" placeholder="" value="<?php echo !empty($email)?$email:'';?>">
                                             <?php if (!empty($emailError)): ?>
                                                 <span class="help-inline"><?php echo $emailError;?></span>
                                             <?php endif;?>
                                         </div>
                                       </div>
-                                      <div class="form-actions">
+                                      <div class=" form-row form-actions">
                                           <button type="submit" class="btn btn-success">Create</button>
                                           <a class="btn" href="index.php">Back</a>
                                        </div>
