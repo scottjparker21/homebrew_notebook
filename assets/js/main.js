@@ -2,15 +2,15 @@
 
     // create the module and named it kodeKiwiApp
     // also include ngRoute for all our routing needs
-var kodeKiwiApp = angular.module('kodeKiwiApp', ['ngRoute']);
+var brewApp = angular.module('brewApp', ['ngRoute']);
     // create the module and name it scotchApp
     // configure our routes
-    kodeKiwiApp.config(function($routeProvider) {
+    brewApp.config(function($routeProvider) {
         $routeProvider
               // route for the home page
             .when('/', {
-                templateUrl : 'pages/login.html',
-                controller  : 'mainController'
+                templateUrl : 'views/home.php',
+                controller  : 'homeController'
             })
             // route for the editor and chat page
 
@@ -28,20 +28,16 @@ var kodeKiwiApp = angular.module('kodeKiwiApp', ['ngRoute']);
 
     // Using these controllers for testing purposed atm.
     // create the controller and inject Angular's $scope
-    kodeKiwiApp.controller('mainController', function($scope) {
+    brewApp.controller('homeController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'awesome login page...someday';
+        $scope.message = 'awesome home...someday';
     });
 
-    kodeKiwiApp.controller('pagesController', function($scope, $route, $routeParams) {
-        $scope.message = 'chat/code editor page.';
-        $scope.file = $route.current.params.file;
-        $scope.userRepo = $route.current.params.repo;
-        $scope.gitUsername = $route.current.params.username;
-        console.log("in controller " + file);
+    brewApp.controller('pagesController', function($scope) {
+      
     });
 
-    kodeKiwiApp.controller('statController', function($scope) {
+    brewApp.controller('statController', function($scope) {
         $scope.message = 'mint statistics page.';
     });
 
