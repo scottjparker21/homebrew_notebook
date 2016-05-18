@@ -25,8 +25,6 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
             });
     });
 
-
-    // Using these controllers for testing purposed atm.
     // create the controller and inject Angular's $scope
     brewApp.controller('homeController', function($scope) {
         // create a message to display in our view
