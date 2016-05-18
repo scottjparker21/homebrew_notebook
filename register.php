@@ -23,12 +23,12 @@
         $valid = true;
 
         if (empty($username)) {
-            $firstError = 'Please enter Username';
+            $usernameError = 'Please enter Username';
             $valid = false;
         }
          
         if (empty($password)) {
-            $lastError = 'Please enter valid Password';
+            $passwordError = 'Please enter valid Password';
             $valid = false;
         } 
 
@@ -42,47 +42,47 @@
             $valid = false;
         }
          
-        // if ($valid) {
-        //     try {
-        //         $pdo = Database::connect();
-        //         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //         $sql = "INSERT INTO user (username,password,name,email) values(?, ?, ?, ?)";
-        //         $q = $pdo->prepare($sql);
-        //         $q->execute(array($username,$password,$name,$email));
+        if ($valid) {
+            try {
+                $pdo = Database::connect();
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $sql = "INSERT INTO user (username,password,name,email) values(?, ?, ?, ?)";
+                $q = $pdo->prepare($sql);
+                $q->execute(array($username,$password,$name,$email));
 
-        //         $_SESSION["userid"] = $pdo->lastInsertId();
-        //         $_SESSION["permission"] = 0; 
+                $_SESSION["userid"] = $pdo->lastInsertId();
+                $_SESSION["permission"] = 0; 
 
-        //         Database::disconnect();
-        //         header("Location: index.php");
-        //     } catch (PDOException $e){
-        //         echo $e->getMessage();
-        //         die();
-        //     }
+                Database::disconnect();
+                header("Location: index.php");
+            } catch (PDOException $e){
+                echo $e->getMessage();
+                die();
+            }
             
-        //     $pdo = Database::connect();
-        //     $user = ($_POST["username"]);
-        //     $pass = ($_POST["password"]);
-        //     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //     $sql = "SELECT * FROM user WHERE username = ?";
-        //     $q = $pdo->prepare($sql);
-        //     $q->execute(array($_SESSION["userid"]));
-        //     $data = $q->fetch(PDO::FETCH_ASSOC);
+            $pdo = Database::connect();
+            $user = ($_POST["username"]);
+            $pass = ($_POST["password"]);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "SELECT * FROM user WHERE username = ?";
+            $q = $pdo->prepare($sql);
+            $q->execute(array($_SESSION["userid"]));
+            $data = $q->fetch(PDO::FETCH_ASSOC);
 
-        //     $userid = $data['id'];
-        //     $username = $data['username'];
-        //     $name = $data['name'];
-        //     $permission = $data['permission'];
-        //     $email = $data['email'];
+            $userid = $data['id'];
+            $username = $data['username'];
+            $name = $data['name'];
+            $permission = $data['permission'];
+            $email = $data['email'];
 
-        //     $_SESSION["userid"] = $id;
-        //     $_SESSION["username"] = $first;
-        //     $_SESSION["name"] = $name;
-        //     $_SESSION["permission"] = $permission;
-        //     $_SESSION["email"] = $email;
+            $_SESSION["userid"] = $id;
+            $_SESSION["username"] = $first;
+            $_SESSION["name"] = $name;
+            $_SESSION["permission"] = $permission;
+            $_SESSION["email"] = $email;
 
-        //     Database::disconnect();
-        // }
+            Database::disconnect();
+        }
     }
 ?>
 
