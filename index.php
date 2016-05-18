@@ -30,6 +30,9 @@
 					<div class="row">
 						<div class="col-lg-12">
 						<!-- content -->
+							<div id="main">
+						        <div ng-view></div>
+						    </div>
 						</div>
 					</div>
 				</div>
