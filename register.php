@@ -4,7 +4,7 @@
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
     require_once 'includes/session.php';
-    require_once 'includes/crud.php';
+    // require_once 'includes/crud.php';
     
 
     if ( !empty($_POST)) {
