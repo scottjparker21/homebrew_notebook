@@ -29,6 +29,10 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     brewApp.controller('homeController', function($scope) {
         // create a message to display in our view
         $scope.message = 'awesome home...someday';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
     });
 
     brewApp.controller('recipesController', function($scope) {
