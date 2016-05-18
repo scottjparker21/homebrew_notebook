@@ -22,12 +22,12 @@
 						      			<input type="password" name="password" id="inputPass" placeholder="Password">
 						    		</div>
 						  		</div>
-						  		<div class="control-group">
+						  		<div class="form-row form-actions control-group">
 						    		<div class="controls">
 						      			<label class="checkbox">
 						        			<input type="checkbox"> Remember me
 						      			</label>
-						      			<button id="send" type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+						      			<button id="send" type="submit" class="btn btn-success">Sign in</button>
 						    		</div>
 						  		</div>
 						  	</div>	

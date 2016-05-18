@@ -69,17 +69,17 @@
             $q->execute(array($_SESSION["userid"]));
             $data = $q->fetch(PDO::FETCH_ASSOC);
 
-            // $userid = $data['id'];
-            // $username = $data['username'];
-            // $name = $data['name'];
-            // $permission = $data['permission'];
-            // $email = $data['email'];
+            $userid = $data['id'];
+            $username = $data['username'];
+            $name = $data['name'];
+            $permission = $data['permission'];
+            $email = $data['email'];
 
-            // $_SESSION["userid"] = $id;
-            // $_SESSION["username"] = $username;
-            // $_SESSION["name"] = $name;
-            // $_SESSION["permission"] = $permission;
-            // $_SESSION["email"] = $email;
+            $_SESSION["userid"] = $id;
+            $_SESSION["username"] = $username;
+            $_SESSION["name"] = $name;
+            $_SESSION["permission"] = $permission;
+            $_SESSION["email"] = $email;
 
             Database::disconnect();
         }
@@ -91,8 +91,9 @@
 		<?php require_once 'includes/header.php'; ?>
 		<body>
 		<?php require_once 'includes/navbar.php'; ?>
-
+            <br><br><br><br><br>
 			<div class="container">
+                
 			  	<div class="span10 offset1">
                     <div class="form-white-background">           
                         <form class="form-register" action="register.php" method="post" enctype="multipart/form-data">
