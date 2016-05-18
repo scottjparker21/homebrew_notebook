@@ -33,6 +33,10 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
 
     brewApp.controller('recipesController', function($scope) {
         $scope.message = 'this will be the recipes view';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
     });
 
     brewApp.controller('statController', function($scope) {
@@ -40,10 +44,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     //navbar controller function
-    $scope.isActive = function (viewLocation) {
-         var active = (viewLocation === $location.path());
-         return active;
-    };
+
 
 
 //End Controllers ----------------------------------------->
