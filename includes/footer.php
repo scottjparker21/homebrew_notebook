@@ -2,7 +2,7 @@
 		    <footer class="footer">
 	      		<div class="container">
 	        		<center>
-	        			<p class="text-muted">Copy Right 2016</p>
+	        			<p class="text-muted">HomeBrewBud</p>
 	        			<a href="sitemap.php"> Site Map </a>
 	        		</center>
 	     		 </div>

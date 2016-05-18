@@ -7,8 +7,7 @@
 				<br><br><br><br><br>
 				<center>
 				<div class="container">
-
-					<!-- form method="post" action="auth.php" enctype="multipart/form-data">
+					<form method="post" action="auth.php" enctype="multipart/form-data">
 				  		<div class="control-group">
 				    		<label class="control-label" for="inputUsername">Username</label>
 				    		<div class="controls">
@@ -29,7 +28,7 @@
 				      			<button id="send" type="submit" class="btn">Sign in</button>
 				    		</div>
 				  		</div>
-				  	</form> -->	
+				  	</form>	
 				</div>
 			</center>
 			</body>
