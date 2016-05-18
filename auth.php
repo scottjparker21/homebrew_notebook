@@ -23,14 +23,13 @@
 	        session_start();
 	        
 	        $_SESSION["userid"] = $id;
-	        $_SESSION["first"] = $first;
-	        $_SESSION["last"] = $last;
+	        $_SESSION["name"] = $name;
 	        $_SESSION["username"] = $username;
 	        $_SESSION["permission"] = $permission;
 	        $_SESSION["useremail"] = $email;
 	        
 		   	if ($user == $username && $pass == $password) {
-		   		echo "Welcome " . $_SESSION["first"] . " you have been successfully logged in.";
+		   		echo "Welcome " . $_SESSION["name"] . " you have been successfully logged in.";
 		   		echo  " in auth" . $_SESSION["userid"];
 
 		   	}

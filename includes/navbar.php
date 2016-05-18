@@ -39,9 +39,6 @@
                       <li><a class="" href="customer.php"><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['first']; ?></a></li>
                   <?php } ?>
                   <?php if( isset( $_SESSION['userid'] ) ){ ?>
-                      <li><a class="" href="cart.php"><i class="fa fa-cart-arrow-down fa-fw"></i> &nbsp; Cart</a></li>
-                  <?php } ?>
-                  <?php if( isset( $_SESSION['userid'] ) ){ ?>
                         <li><i class="icon-user"></i><a class="btn" href="logout.php">Logout</a></li>
                   <?php } 
                       else{ ?>

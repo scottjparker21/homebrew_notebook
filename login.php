@@ -7,7 +7,7 @@
 				<br><br><br><br><br>
 				<center>
 				<div class="container">
-					<form method="post" action="auth.php" enctype="multipart/form-data">
+					<form class="form-signin" method="post" action="auth.php" enctype="multipart/form-data">
 				  		<div class="control-group">
 				    		<label class="control-label" for="inputUsername">Username</label>
 				    		<div class="controls">
@@ -25,7 +25,7 @@
 				      			<label class="checkbox">
 				        			<input type="checkbox"> Remember me
 				      			</label>
-				      			<button id="send" type="submit" class="btn">Sign in</button>
+				      			<button id="send" type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
 				    		</div>
 				  		</div>
 				  	</form>	
