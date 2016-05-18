@@ -77,7 +77,7 @@
             $email = $data['email'];
 
             $_SESSION["userid"] = $id;
-            $_SESSION["username"] = $first;
+            $_SESSION["username"] = $username;
             $_SESSION["name"] = $name;
             $_SESSION["permission"] = $permission;
             $_SESSION["email"] = $email;
