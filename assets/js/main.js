@@ -8,7 +8,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     brewApp.config(function($routeProvider) {
         $routeProvider
               // route for the home page
-            .when('/homebrew_notebook/index.php', {
+            .when('/', {
                 templateUrl : 'views/home.php',
                 controller  : 'homeController'
             })
