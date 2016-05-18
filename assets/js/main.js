@@ -14,9 +14,9 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
             })
             // route for the editor and chat page
 
-            .when('/editor/:username/:repo/:file', {
-                templateUrl : 'pages/editor.html',
-                controller  : 'pagesController'
+            .when('/recipes', {
+                templateUrl : 'views/recipes.php',
+                controller  : 'recipesController'
             })
             // route for the stats page
             .when('/stats', {
@@ -31,8 +31,8 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         $scope.message = 'awesome home...someday';
     });
 
-    brewApp.controller('pagesController', function($scope) {
-      
+    brewApp.controller('recipesController', function($scope) {
+        $scope.message = 'this will be the recipes view';
     });
 
     brewApp.controller('statController', function($scope) {
