@@ -102,7 +102,7 @@
                                         <h3>Create an Account</h3>
                                     </div>
 
-                                      <div class=" form-row form-input-name-row control-group <?php echo !empty($usernameError)?'error':'';?>">
+                                      <div class=" form-row control-group <?php echo !empty($usernameError)?'error':'';?>">
                                         <label>Username</label>
                                         <div class="controls">
                                             <input name="username" type="text"  placeholder="" value="<?php echo !empty($username)?$username:'';?>">
@@ -110,7 +110,7 @@
                                                 <span class="help-inline"><?php echo $usernameError;?></span>
                                             <?php endif; ?>
                                         </div>
-                                        
+
                                         <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
                                         <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
                                         <span class="form-invalid-data-info"></span>
