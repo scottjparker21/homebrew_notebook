@@ -17,6 +17,7 @@
          
         // validate input
         $valid = true;
+
         if (empty($username)) {
             $firstError = 'Please enter Username';
             $valid = false;
@@ -28,12 +29,12 @@
         } 
 
         if (empty($name)) {
-            $firstError = 'Please enter Name';
+            $nameError = 'Please enter Name';
             $valid = false;
         }
 
         if (empty($email)) {
-            $emailError = 'Please enter Username';
+            $emailError = 'Please enter Email';
             $valid = false;
         }
          
@@ -140,4 +141,3 @@
 		</body>
 	</html>
 	
-	//testing yo
