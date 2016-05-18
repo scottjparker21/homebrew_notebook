@@ -46,12 +46,12 @@
             try {
                 $pdo = Database::connect();
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $sql = "INSERT INTO user (username,password,name,email) values(?, ?, ?, ?)";
+                $sql = "INSERT INTO user (username,password,name,email,permission) values(?, ?, ?, ?,?)";
                 $q = $pdo->prepare($sql);
-                $q->execute(array($username,$password,$name,$email));
+                $q->execute(array($username,$password,$name,$email,2));
 
                 $_SESSION["userid"] = $pdo->lastInsertId();
-                $_SESSION["permission"] = 0; 
+                $_SESSION["permission"] = 1; 
 
                 Database::disconnect();
                 header("Location: index.php");
