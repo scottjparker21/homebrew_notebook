@@ -116,6 +116,15 @@
                             <?php endif;?>
                         </div>
                       </div>
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="control-label">Full Name</label>
+                        <div class="controls">
+                            <input name="name" type="text" placeholder="name" value="<?php echo !empty($name)?$name:'';?>">
+                            <?php if (!empty($nameError)): ?>
+                                <span class="help-inline"><?php echo $nameError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
                       
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
