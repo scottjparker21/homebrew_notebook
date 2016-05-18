@@ -16,12 +16,8 @@
                   <li><a href=""></a></li>                
         			</ul>
         			<ul class="nav navbar-nav navbar-right">
-                  <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search" id="search">
-                      </div>
-                  </form>
-                      <li><a class="" href="customer.php"><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['first']; ?></a></li>
+                
+                      <li><a class="" href="customer.php"><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['name']; ?></a></li>
                       <li><i class="icon-user"></i><a class="btn" href="logout.php">Logout</a></li>
                       <li><i class="icon-user"></i><a class="btn" href="login.php">Login</a></li>
                       <li><i class=""></i><a class="btn" href="register.php">Register</a></li>
