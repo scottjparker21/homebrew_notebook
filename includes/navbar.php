@@ -12,7 +12,7 @@
       		<div class="collapse navbar-collapse" ng-controller="HeaderController" id="myNavbar">
         			<ul class="nav navbar-nav">
              			<li><a href="index.php">Home</a></li>
-              		<li ng-class="{ active: isActive('/recipes')}"><a href="/recipes">Recipes</a></li>
+              		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Recipes</a></li>
                   <li><a href=""></a></li>                
         			</ul>
         			<ul class="nav navbar-nav navbar-right">

@@ -40,12 +40,10 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     //navbar controller function
-    function HeaderController($scope, $location) 
-    { 
-        $scope.isActive = function (viewLocation) { 
-            return viewLocation === $location.path();
-        };
-    }
+    $scope.isActive = function (viewLocation) {
+         var active = (viewLocation === $location.path());
+         return active;
+    };
 
 
 //End Controllers ----------------------------------------->
