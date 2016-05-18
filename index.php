@@ -1,6 +1,6 @@
 <?php  require_once 'includes/session.php'; ?>
 <!DOCTYPE html>
-	<html lang="en">
+	<html ng-app="brewApp" lang="en">
 		<?php require_once 'includes/header.php';?>
 		<body>
 			<?php require_once 'includes/navbar.php';?>
