@@ -21,7 +21,7 @@
                             <input type="text" class="form-control" placeholder="Search" id="search">
                       </div>
                   </form>
-                  <?php if( isset( $_SESSION['permission'] ) && $_SESSION['permission'] == 1 ){ ?>
+                  <?php if( isset( $_SESSION['permission'] ) && $_SESSION['permission'] == 3 ){ ?>
                       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Admin <span class="caret"></span></a>
                         <ul class="dropdown-menu"> 
                             <li><a href="crud/address/index.php"> Address </a></li>
