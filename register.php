@@ -110,10 +110,6 @@
                                                 <span class="help-inline"><?php echo $usernameError;?></span>
                                             <?php endif; ?>
                                         </div>
-
-                                        <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
-                                        <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
-                                        <span class="form-invalid-data-info"></span>
                                       </div>
                                       <div class=" form-row control-group <?php echo !empty($passwordError)?'error':'';?>">
                                         <label class="control-label">Password</label>
