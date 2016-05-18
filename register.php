@@ -47,7 +47,7 @@
             try {
                 $pdo = Database::connect();
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $sql = "INSERT INTO user (username,password,name,email,permission) values(?, ?, ?, ?,?)";
+                $sql = "INSERT INTO user (username,password,name,email,permission) values(?, ?, ?, ?, ?)";
                 $q = $pdo->prepare($sql);
                 $q->execute(array($username,$password,$name,$email,2));
 
@@ -70,17 +70,17 @@
             $q->execute(array($_SESSION["userid"]));
             $data = $q->fetch(PDO::FETCH_ASSOC);
 
-            $userid = $data['id'];
-            $username = $data['username'];
-            $name = $data['name'];
-            $permission = $data['permission'];
-            $email = $data['email'];
+            // $userid = $data['id'];
+            // $username = $data['username'];
+            // $name = $data['name'];
+            // $permission = $data['permission'];
+            // $email = $data['email'];
 
-            $_SESSION["userid"] = $id;
-            $_SESSION["username"] = $username;
-            $_SESSION["name"] = $name;
-            $_SESSION["permission"] = $permission;
-            $_SESSION["email"] = $email;
+            // $_SESSION["userid"] = $id;
+            // $_SESSION["username"] = $username;
+            // $_SESSION["name"] = $name;
+            // $_SESSION["permission"] = $permission;
+            // $_SESSION["email"] = $email;
 
             Database::disconnect();
         }
@@ -100,7 +100,7 @@
                     </div>           
                     <form class="" action="register.php" method="post" enctype="multipart/form-data">
                       <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
-                        <label class="control-label">Username:</label>
+                        <label class="control-label">Username</label>
                         <div class="controls">
                             <input name="username" type="text"  placeholder="username" value="<?php echo !empty($username)?$username:'';?>">
                             <?php if (!empty($usernameError)): ?>
@@ -109,7 +109,7 @@
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
-                        <label class="control-label">Password:</label>
+                        <label class="control-label">Password</label>
                         <div class="controls">
                             <input name="password" type="text" placeholder="password" value="<?php echo !empty($password)?$password:'';?>">
                             <?php if (!empty($passwordError)): ?>
@@ -118,7 +118,7 @@
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
-                        <label class="control-label">Full Name:</label>
+                        <label class="control-label">Full Name</label>
                         <div class="controls">
                             <input name="name" type="text" placeholder="name" value="<?php echo !empty($name)?$name:'';?>">
                             <?php if (!empty($nameError)): ?>
@@ -127,7 +127,7 @@
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
-                        <label class="control-label">Email:</label>
+                        <label class="control-label">Email</label>
                         <div class="controls">
                             <input name="email" type="text"  placeholder="email" value="<?php echo !empty($email)?$email:'';?>">
                             <?php if (!empty($emailError)); ?>
