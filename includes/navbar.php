@@ -9,7 +9,7 @@
           		</button>
         			<!-- <a class="navbar-brand" href="#"><h5> Milwaukee Glassware </h5><img src="MKE Glass" alt="" id="navlogo"></a> -->
       		</div>
-      		<div class="collapse navbar-collapse" ng-controller="HeaderController" id="myNavbar">
+      		<div class="collapse navbar-collapse" id="myNavbar">
         			<ul class="nav navbar-nav">
              			<li><a href="index.php">Home</a></li>
               		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Recipes</a></li>
