@@ -16,11 +16,17 @@
                   <li><a href=""></a></li>                
         			</ul>
         			<ul class="nav navbar-nav navbar-right">
-                
-                      <li><a class="" href="customer.php"><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['name']; ?></a></li>
+                      
+                    <?php if( isset( $_SESSION['permission'] )){ ?>
+                      <li><a class="" href=""><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['name']; ?></a></li>
+                    <?php } ?>
+                    <?php if( isset( $_SESSION['permission'] )){ ?>
                       <li><i class="icon-user"></i><a class="btn" href="logout.php">Logout</a></li>
+                    <?php } ?>
+                    else{ ?>
                       <li><i class="icon-user"></i><a class="btn" href="login.php">Login</a></li>
                       <li><i class=""></i><a class="btn" href="register.php">Register</a></li>
+                    <?php } ?>
         		  </ul>
       		</div>
   		</div>
