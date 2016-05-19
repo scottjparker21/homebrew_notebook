@@ -13,7 +13,7 @@
         			<ul class="nav navbar-nav">
              			<li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
               		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Recipes<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">My Recipes</a></li>
                         <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">New Recipe</a></li>
