@@ -8,8 +8,8 @@ $data = array();        // array to pass back data
 if (empty($_POST['name']))
   $errors['name'] = 'Name is required.';
 
-if (empty($_POST['superheroAlias']))
-  $errors['superheroAlias'] = 'Superhero alias is required.';
+if (empty($_POST['style']))
+  $errors['style'] = 'Style is required.';
 
 // return a response ==============
 
