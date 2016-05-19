@@ -19,9 +19,9 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
                 controller  : 'recipesController'
             })
             // route for the stats page
-            .when('/stats', {
-                templateUrl : 'pages/stats.html',
-                controller  : 'statController'
+            .when('/newRecipe', {
+                templateUrl : 'pages/newRecipe.php',
+                controller  : 'newRecipeController'
             });
     });
 
@@ -43,8 +43,12 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
     });
 
-    brewApp.controller('statController', function($scope) {
-        $scope.message = 'mint statistics page.';
+    brewApp.controller('newRecipeController', function($scope) {
+        $scope.message = 'new recipes go here';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
     });
 
     //navbar controller function
