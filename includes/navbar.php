@@ -12,13 +12,12 @@
       		<div class="collapse navbar-collapse" id="myNavbar">
         			<ul class="nav navbar-nav">
              			<li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-              		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Recipes</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+              		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Recipes</a></li>
-                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something 1</a></li>
-                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something 2</a></li>
-                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something 3</a></li>
+                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">My Recipes</a></li>
+                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">New Recipe</a></li>
+                        <li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">User Recipes</a></li>
                       </ul> 
                   <li><a href=""></a></li>                
         			</ul>
