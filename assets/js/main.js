@@ -20,7 +20,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
             })
             // route for the stats page
             .when('/newRecipe', {
-                templateUrl : 'pages/newRecipe.php',
+                templateUrl : 'views/newRecipe.php',
                 controller  : 'newRecipeController'
             });
     });
