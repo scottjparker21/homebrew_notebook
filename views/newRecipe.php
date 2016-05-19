@@ -3,19 +3,19 @@
 			</div>
 			<center>
 				<div class="container">
-					<form class="form-register form-signin" name="" enctype="multipart/form-data">
+					<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 						<div class="form-register-with-email">
 							<div class="form-white-background">
 						  		<div class="form-title-row control-group">
-						    		<label class="control-label" for="inputUsername">Name</label>
+						    		<label class="control-label">Name</label>
 						    		<div class="controls">
 						      			<input type="text" id="inputUser" name="name" ng-model="formData.name">
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group">
-						    		<label class="control-label" for="inputPassword">Style</label>
+						    		<label class="control-label">Style</label>
 						    		<div class="controls">
-						      			<input type="password" name="password" id="style" ng-model="formData.style">
+						      			<input type="text" name="style" id="style" ng-model="formData.style">
 						    		</div>
 						  		</div>
 						  		<!-- <div class="form-title-row control-group">

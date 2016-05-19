@@ -51,6 +51,32 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
 
         $scope.formData = {};
+        $scope.processForm = function() {
+
+
+        };
+        // process the form
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : 'process.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            console.log(data);
+
+            if (!data.success) {
+              // if not successful, bind errors to error variables
+              $scope.errorName = data.errors.name;
+              $scope.errorSuperhero = data.errors.style;
+            } else {
+              // if successful, bind success message to message
+              $scope.message = data.message;
+            }
+          });
+        };
+
     });
 
     //navbar controller function
