@@ -3,37 +3,37 @@
 			</div>
 			<center>
 				<div class="container">
-					<form class="form-register form-signin" method="post" action="auth.php" enctype="multipart/form-data">
+					<form class="form-register form-signin" name="" enctype="multipart/form-data">
 						<div class="form-register-with-email">
 							<div class="form-white-background">
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label" for="inputUsername">Name</label>
 						    		<div class="controls">
-						      			<input type="text" id="inputUser" name="name" placeholder="Username">
+						      			<input type="text" id="inputUser" name="name" ng-model="formData.name">
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label" for="inputPassword">Style</label>
 						    		<div class="controls">
-						      			<input type="password" name="password" id="style" placeholder="Password">
+						      			<input type="password" name="password" id="style" ng-model="formData.style">
 						    		</div>
 						  		</div>
-						  		<div class="form-title-row control-group">
+						  		<!-- <div class="form-title-row control-group">
 						    		<label class="control-label" for="inputPassword">Malt Type</label>
 						    		<div class="controls">
-						      			<input type="password" name="password" id="malt" placeholder="Password">
+						      			<input name="password" id="malt" placeholder="">
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label" for="inputPassword">Description</label>
 						    		<div class="controls">
-						      			<input type="password" name="password" id="description" placeholder="Password">
+						      			<input name="password" id="description" placeholder="">
 						    		</div>
-						  		</div>
+						  		</div> -->
 						  		<div class="form-row form-actions control-group">
 						    		<div class="controls">
 					
-						      			<button id="send" type="submit" class="btn btn-success">Sign in</button>
+						      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 						    		</div>
 						  		</div>
 						  	</div>	
@@ -41,4 +41,7 @@
 				  	</form>	
 				</div>
 			</center>
+			<pre>
+				{{ formData }}
+			</pre>
 

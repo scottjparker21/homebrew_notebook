@@ -43,13 +43,14 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
     });
 
-    brewApp.controller('newRecipeController', function($scope) {
+    brewApp.controller('newRecipeController', function($scope,$http) {
         $scope.message = 'new recipes go here';
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
              return active;
         };
-        $scope.newRecipe = {};
+
+        $scope.formData = {};
     });
 
     //navbar controller function
