@@ -1,7 +1,7 @@
 			<div class="col-lg-12">
 				<center><h1 id="quicksand"> New Brew </h1></center>
 			</div>
-			<center>
+		
 				<div class="container">
 
 					<div id="messages" ng-show="message">{{ message }}</div>
@@ -40,11 +40,13 @@
 						      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 						    		</div>
 						  		</div>
-
+						  		<pre>
+									{{ formData }}
+								</pre>
 						  	</div>	
 						</div>
 				  	</form>	
 				</div>
-			</center>
+		
 			
 
