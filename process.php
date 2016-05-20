@@ -14,8 +14,12 @@ if (empty($_POST['style']))
 if (empty($_POST['maltType']))
   $errors['style'] = 'Malt type is required.';
 
+$name = $_POST['name'];
+$style = $_POST['style'];
+$maltType = $_POST['maltType'];
+$description = $_POST['description'];
 
-
+echo $name . " " . $style . " " . $maltType;
 
 
 
@@ -32,6 +36,7 @@ if ( ! empty($errors)) {
   // if there are no errors, return a message
   $data['success'] = true;
   $data['message'] = 'Success!';
+  $data['content'] = $data;
 }
 
 // return all our data to an AJAX call

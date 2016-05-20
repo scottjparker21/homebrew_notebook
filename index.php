@@ -22,9 +22,7 @@
 							<div id="main">
 						        <div ng-view></div>
 						    </div>
-						    <pre>
-								{{ formData }}
-							</pre>
+						    
 						</div>
 					</div>
 				</div>
