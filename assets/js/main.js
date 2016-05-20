@@ -44,7 +44,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     brewApp.controller('newRecipeController', function($scope,$http) {
-        $scope.message = 'new recipes go here';
+        
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
              return active;
@@ -70,6 +70,8 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
               // if not successful, bind errors to error variables
               $scope.errorName = data.errors.name;
               $scope.errorStyle = data.errors.style;
+              $scope.errorMaltType = data.errors.maltType;
+              $scope.errorDescription = data.errors.description;
             } else {
               // if successful, bind success message to message
               $scope.message = data.message;

@@ -11,6 +11,14 @@ if (empty($_POST['name']))
 if (empty($_POST['style']))
   $errors['style'] = 'Style is required.';
 
+if (empty($_POST['maltType']))
+  $errors['style'] = 'Malt type is required.';
+
+
+
+
+
+
 // return a response ==============
 
 // response if there are errors
