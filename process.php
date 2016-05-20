@@ -36,7 +36,7 @@ if ( ! empty($errors)) {
   // if there are no errors, return a message
   $data['success'] = true;
   $data['message'] = 'Success!';
-  $data['content'] = $data;
+  $data['style'] = $style;
 }
 
 // return all our data to an AJAX call
