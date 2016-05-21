@@ -21,8 +21,6 @@ if (empty($_POST['maltType']))
 // if (empty($_POST["userid"]))
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
 
-
-
 // response if there are errors
 if ( ! empty($errors)) {
 
@@ -31,6 +29,7 @@ if ( ! empty($errors)) {
   $data['errors']  = $errors;
 
 }   else {
+		$data['errors']= NULL;
 
 		$name = $_POST['name'];
 		$style = $_POST['style'];
