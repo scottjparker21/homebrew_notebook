@@ -22,13 +22,8 @@ $style = $_POST['style'];
 $maltType = $_POST['maltType'];
 $description = $_POST['description'];
 
-
-
-
 // if (empty($_POST["userid"]))
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
-
-
 
 // response if there are errors
 if ( ! empty($errors)) {
@@ -43,10 +38,6 @@ if ( ! empty($errors)) {
 		  $data['success'] = true;
 		  $data['message'] = 'Success!';
 
-		  echo "user id " . $_SESSION["userid"];
-
-		// return all our data to an AJAX call
-		echo json_encode($data);
 
 			if (empty($_POST['name'])) {
 				$_POST['name'] = NULL;
@@ -67,7 +58,6 @@ if ( ! empty($errors)) {
 		            $q = $pdo->prepare($sql);
 		            $q->execute(array($_SESSION["userid"],$name,$style,$maltType,$description));
 		            Database::disconnect();
-		            header("Location: index.php");
 
     }
 
