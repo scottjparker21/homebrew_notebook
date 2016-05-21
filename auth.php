@@ -1,6 +1,6 @@
 <?php
 
-			require_once 'includes/database.php';
+
 			require_once 'includes/session.php';
 			
 			$pdo = Database::connect();
@@ -21,13 +21,13 @@
 
 	        Database::disconnect(); 
 
-	        session_start();
 	        
 	        $_SESSION["userid"] = $id;
 	        $_SESSION["name"] = $name;
 	        $_SESSION["username"] = $username;
 	        $_SESSION["permission"] = $permission;
 	        $_SESSION["useremail"] = $email;
+
 	        
 		   	if ($user == $username && $pass == $password) {
 		   		echo "Welcome " . $_SESSION["name"] . " you have been successfully logged in.";
