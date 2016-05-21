@@ -27,7 +27,7 @@ $description = $_POST['description'];
 echo $_SESSION["userid"];
 
 if (empty($_POST["userid"]))
-	$errors['uid'] = "Cannot create recipe if not logged in."
+	$errors['uid'] = "Cannot create recipe if not logged in.";
 
 
 // return a response ==============
