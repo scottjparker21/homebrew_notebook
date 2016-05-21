@@ -15,7 +15,7 @@ if (empty($_POST['style']))
   $errors['style'] = 'Style is required.';
 
 if (empty($_POST['maltType']))
-  $errors['style'] = 'Malt type is required.';
+  $errors['maltType'] = 'Malt type is required.';
 
 
 // if (empty($_POST["userid"]))
