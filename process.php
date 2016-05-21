@@ -23,7 +23,7 @@ $maltType = $_POST['maltType'];
 $description = $_POST['description'];
 
 
-echo $_SESSION["userid"];
+
 
 // if (empty($_POST["userid"]))
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
@@ -43,7 +43,8 @@ if ( ! empty($errors)) {
 		  // if there are no errors, return a message
 		  $data['success'] = true;
 		  $data['message'] = 'Success!';
-
+		  
+		  echo "user id " . $_SESSION["userid"];
 
 		// return all our data to an AJAX call
 		echo json_encode($data);
