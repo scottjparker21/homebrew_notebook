@@ -1,4 +1,8 @@
+<?php require_once 'includes/database.php'; ?>
+<?php  require_once 'includes/session.php'; ?>
+
 <?php
+session_start();
 // process.php
 
 $errors = array();  // array to hold validation errors
@@ -19,8 +23,11 @@ $style = $_POST['style'];
 $maltType = $_POST['maltType'];
 $description = $_POST['description'];
 
-echo $name . " " . $style . " " . $maltType;
 
+echo $_SESSION["userid"];
+
+if (empty($_POST["userid"]))
+	$errors['uid'] = "Cannot create recipe if not logged in."
 
 
 // return a response ==============
@@ -31,13 +38,62 @@ if ( ! empty($errors)) {
   // if there are items in our errors array, return those errors
   $data['success'] = false;
   $data['errors']  = $errors;
-} else {
 
-  // if there are no errors, return a message
-  $data['success'] = true;
-  $data['message'] = 'Success!';
-  $data['style'] = $style;
-}
+}   else {
 
-// return all our data to an AJAX call
-echo json_encode($data);
+		  // if there are no errors, return a message
+		  $data['success'] = true;
+		  $data['message'] = 'Success!';
+
+
+		// return all our data to an AJAX call
+		echo json_encode($data);
+
+			if (empty($_POST['name'])) {
+				$_POST['name'] = NULL;
+			}
+			if (empty($_POST['style'])) {
+				$_POST['style'] = NULL;
+			}
+			if (empty($_POST['malt_type'])) {
+				$_POST['malt_type'] = NULL;
+			}
+			if (empty($_POST['description'])) {
+				$_POST['description'] = NULL;
+			}
+
+		$pdo = Database::connect();
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO recipe (uid,name,style,malt_type,description) values(?, ?, ?, ?, ?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($_SESSION["userid"],$name,$style,$maltType,$description));
+		            Database::disconnect();
+		            header("Location: index.php");
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

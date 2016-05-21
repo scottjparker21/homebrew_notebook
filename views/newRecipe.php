@@ -25,7 +25,7 @@
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label">Malt Type</label>
 						    		<div class="controls">
-						      			<input type="text" name="maltType" ng-model="formData.maltType"
+						      			<input type="text" name="maltType" ng-model="formData.maltType">
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group">

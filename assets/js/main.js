@@ -52,8 +52,6 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
 
         $scope.formData = {};
         $scope.processForm = function() {
-
-
         };
         // process the form
         $scope.processForm = function() {
