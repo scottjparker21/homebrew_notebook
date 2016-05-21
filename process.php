@@ -56,12 +56,29 @@ if ( ! empty($errors)) {
 			}
 
 		$pdo = Database::connect();
+
 		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            $sql = "INSERT INTO recipe (uid,name,style,malt_type,description) values(?, ?, ?, ?, ?)";
 		            $q = $pdo->prepare($sql);
 		            $q->execute(array($_SESSION["userid"],$name,$style,$maltType,$description));
-		            Database::disconnect();
+		            
 
+		            $recipe_id = $pdo->lastInsertId();
+
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO recipe_step (recipe_id) values(?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($recipe_id));
+
+		            $rsi = $pdo->lastInsertId();
+
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO boil (rsi,duration,hops_type,hops_amt,time_added,notes) values(?, ?, ?, ?, ?, ?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($rsi,NULL,NULL,NULL,NULL,NULL));
+
+
+		            Database::disconnect();
     }
 
     // return a response ==============
