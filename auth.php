@@ -32,7 +32,6 @@
 		   	if ($user == $username && $pass == $password) {
 		   		echo "Welcome " . $_SESSION["name"] . " you have been successfully logged in.";
 		   		echo  " in auth" . $_SESSION["userid"];
-		   		die();
 
 		   	}
 		   	else {
