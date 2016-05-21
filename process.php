@@ -1,8 +1,7 @@
-<?php require_once 'includes/database.php'; ?>
+
 <?php  require_once 'includes/session.php'; ?>
 
 <?php
-session_start();
 // process.php
 
 $errors = array();  // array to hold validation errors
@@ -31,7 +30,7 @@ echo $_SESSION["userid"];
 
 
 // return a response ==============
-
+	echo json_encode($data);
 // response if there are errors
 if ( ! empty($errors)) {
 
