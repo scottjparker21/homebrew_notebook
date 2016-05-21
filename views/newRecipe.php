@@ -2,10 +2,10 @@
 			<div class="col-lg-12">
 				<center><h1 id="quicksand"> New Brew </h1></center>
 			</div>
-		
+				<div id="messages" ng-show="message">{{ message }}</div>
 				<div class="container">
 
-					<div id="messages" ng-show="message">{{ message }}</div>
+					
 
 					<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 						<div class="form-register-with-email">

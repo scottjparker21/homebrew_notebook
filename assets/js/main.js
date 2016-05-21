@@ -62,15 +62,15 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           .success(function(data) {
-            // console.log(data);1
+            // console.log(data);
 
             if (!data.success) {
-              // if not successful, bind errors to error variables
-              // $scope.errorName = data.errors.name;
-              // $scope.errorStyle = data.errors.style;
-              // $scope.errorMaltType = data.errors.maltType;
-              // $scope.errorDescription = data.errors.description;
-              console.log('unsuccessful');
+
+              $scope.errorName = data.errors.name;
+              $scope.errorStyle = data.errors.style;
+              $scope.errorMaltType = data.errors.maltType;
+              $scope.errorDescription = data.errors.description;
+          
             } else {
               // if successful, bind success message to message
               $scope.message = data.message;

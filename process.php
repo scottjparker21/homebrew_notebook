@@ -11,11 +11,11 @@ $data = array();        // array to pass back data
 if (empty($_POST['name']))
   $errors['name'] = 'Name is required.';
 
-// if (empty($_POST['style']))
-//   $errors['style'] = 'Style is required.';
+if (empty($_POST['style']))
+  $errors['style'] = 'Style is required.';
 
-// if (empty($_POST['maltType']))
-//   $errors['style'] = 'Malt type is required.';
+if (empty($_POST['maltType']))
+  $errors['style'] = 'Malt type is required.';
 
 $name = $_POST['name'];
 $style = $_POST['style'];
@@ -29,8 +29,7 @@ $description = $_POST['description'];
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
 
 
-// return a response ==============
-	echo json_encode($data);
+
 // response if there are errors
 if ( ! empty($errors)) {
 
@@ -43,7 +42,7 @@ if ( ! empty($errors)) {
 		  // if there are no errors, return a message
 		  $data['success'] = true;
 		  $data['message'] = 'Success!';
-		  
+
 		  echo "user id " . $_SESSION["userid"];
 
 		// return all our data to an AJAX call
@@ -70,8 +69,10 @@ if ( ! empty($errors)) {
 		            Database::disconnect();
 		            header("Location: index.php");
 
-
     }
+
+    // return a response ==============
+	echo json_encode($data);
 
 
 
