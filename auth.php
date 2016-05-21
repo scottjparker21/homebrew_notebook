@@ -1,6 +1,7 @@
 <?php
 
 			require_once 'includes/database.php';
+			require_once 'includes/session.php';
 			
 			$pdo = Database::connect();
 			$user = ($_POST["username"]);
