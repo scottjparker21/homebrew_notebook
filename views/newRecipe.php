@@ -1,3 +1,4 @@
+			<?php echo $_SESSION["userid"]; ?>
 			<div class="col-lg-12">
 				<center><h1 id="quicksand"> New Brew </h1></center>
 			</div>

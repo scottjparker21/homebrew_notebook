@@ -9,14 +9,14 @@ $errors = array();  // array to hold validation errors
 $data = array();        // array to pass back data
 
 // validate the variables ========
-if (empty($_POST['name']))
-  $errors['name'] = 'Name is required.';
+// if (empty($_POST['name']))
+//   $errors['name'] = 'Name is required.';
 
-if (empty($_POST['style']))
-  $errors['style'] = 'Style is required.';
+// if (empty($_POST['style']))
+//   $errors['style'] = 'Style is required.';
 
-if (empty($_POST['maltType']))
-  $errors['style'] = 'Malt type is required.';
+// if (empty($_POST['maltType']))
+//   $errors['style'] = 'Malt type is required.';
 
 $name = $_POST['name'];
 $style = $_POST['style'];
@@ -26,8 +26,8 @@ $description = $_POST['description'];
 
 echo $_SESSION["userid"];
 
-if (empty($_POST["userid"]))
-	$errors['uid'] = "Cannot create recipe if not logged in.";
+// if (empty($_POST["userid"]))
+// 	$errors['uid'] = "Cannot create recipe if not logged in.";
 
 
 // return a response ==============
