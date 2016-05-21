@@ -17,28 +17,28 @@
 						    		<label class="control-label">Name</label>
 						    		<div class="controls">
 						      			<input type="text" name="name" ng-model="formData.name">
-						      			<span class="help-block" ng-show="errorName !== NULL">{{ errorName }}</span> 
+						      			<span class="help-block" ng-show="!errorName">{{ errorName }}</span> 
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorStyle}">
 						    		<label class="control-label">Style</label>
 						    		<div class="controls">
 						      			<input type="text" name="style" ng-model="formData.style">
-						      			<span class="help-block" ng-show="errorStyle !== NULL">{{ errorStyle }}</span> 
+						      			<span class="help-block" ng-show="!errorStyle">{{ errorStyle }}</span> 
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorMaltType }">
 						    		<label class="control-label">Malt Type</label>
 						    		<div class="controls">
 						      			<input type="text" name="maltType" ng-model="formData.maltType">
-						      			<span class="help-block" ng-show="errorMaltType !== NULL">{{ errorMaltType }}</span> 
+						      			<span class="help-block" ng-show="!errorMaltType">{{ errorMaltType }}</span> 
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDescription }">
 						    		<label class="control-label">Description</label>
 						    		<div class="controls">
 						      			<input type="text" name="description" ng-model="formData.description">
-						      			<span class="help-block" ng-show="errorDescription !== NULL">{{ errorDescription }}</span> 
+						      			<span class="help-block" ng-show="errorDescription">{{ errorDescription }}</span> 
 						    		</div>
 						  		</div>
 						  		<div class="form-row form-actions control-group">
