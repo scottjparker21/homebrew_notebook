@@ -2,7 +2,7 @@
 			<div class="col-lg-12">
 				<center><h1 id="quicksand"> New Brew </h1></center>
 			</div>
-				<div id="messages" ng-show="message">{{ message }}</div>
+				<div id="feedback" ng-show="feedback">{{ feedback }}</div>
 				<div class="container">
 
 					

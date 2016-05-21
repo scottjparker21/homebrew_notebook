@@ -4,18 +4,18 @@
 <?php
 // process.php
 
-$errors = array();  // array to hold validation errors
+$feedback = array();  // array to hold validation errors
 $data = array();        // array to pass back data
 
 // validate the variables ========
 if (empty($_POST['name']))
-  $errors['name'] = 'Name is required.';
+  $feedback['name'] = 'Name is required.';
 
 if (empty($_POST['style']))
-  $errors['style'] = 'Style is required.';
+  $feedback['style'] = 'Style is required.';
 
 if (empty($_POST['maltType']))
-  $errors['style'] = 'Malt type is required.';
+  $feedback['style'] = 'Malt type is required.';
 
 $name = $_POST['name'];
 $style = $_POST['style'];
@@ -26,11 +26,11 @@ $description = $_POST['description'];
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
 
 // response if there are errors
-if ( ! empty($errors)) {
+if ( !empty($feedback)) {
 
   // if there are items in our errors array, return those errors
   $data['success'] = false;
-  $data['errors']  = $errors;
+  $data['feedback']  = $feedback;
 
 }   else {
 

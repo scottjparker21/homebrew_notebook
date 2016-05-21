@@ -66,14 +66,14 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
 
             if (!data.success) {
 
-              $scope.errorName = data.errors.name;
-              $scope.errorStyle = data.errors.style;
-              $scope.errorMaltType = data.errors.maltType;
-              $scope.errorDescription = data.errors.description;
+              $scope.errorName = data.feedback.name;
+              $scope.errorStyle = data.feedback.style;
+              $scope.errorMaltType = data.feedback.maltType;
+              $scope.errorDescription = data.feedback.description;
           
             } else {
               // if successful, bind success message to message
-              $scope.message = data.message;
+              $scope.feedback = data.feedback;
             }
           });
         };
