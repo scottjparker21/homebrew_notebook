@@ -9,8 +9,8 @@ $errors = array();  // array to hold validation errors
 $data = array();        // array to pass back data
 
 // validate the variables ========
-if (empty($_POST['name']))
-  $errors['name'] = 'Name is required.';
+// if (empty($_POST['name']))
+//   $errors['name'] = 'Name is required.';
 
 if (empty($_POST['style']))
   $errors['style'] = 'Style is required.';
