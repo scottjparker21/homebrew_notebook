@@ -11,25 +11,25 @@
 						<div class="form-register-with-email">
 							<div class="form-white-background">
 
-						  		<div class="form-title-row control-group">
+						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorName }">
 						    		<label class="control-label">Name</label>
 						    		<div class="controls">
 						      			<input type="text" name="name" ng-model="formData.name">
 						    		</div>
 						  		</div>
-						  		<div class="form-title-row control-group">
+						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorStyle}">
 						    		<label class="control-label">Style</label>
 						    		<div class="controls">
 						      			<input type="text" name="style" ng-model="formData.style">
 						    		</div>
 						  		</div>
-						  		<div class="form-title-row control-group">
+						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorMaltType }">
 						    		<label class="control-label">Malt Type</label>
 						    		<div class="controls">
 						      			<input type="text" name="maltType" ng-model="formData.maltType">
 						    		</div>
 						  		</div>
-						  		<div class="form-title-row control-group">
+						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDescription }">
 						    		<label class="control-label">Description</label>
 						    		<div class="controls">
 						      			<input type="text" name="description" ng-model="formData.description"

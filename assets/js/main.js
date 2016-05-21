@@ -62,18 +62,18 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           .success(function(data) {
-            // console.log(data);
+            // console.log(data);1
 
             if (!data.success) {
 
-              $scope.errorName = data.feedback.name;
-              $scope.errorStyle = data.feedback.style;
-              $scope.errorMaltType = data.feedback.maltType;
-              $scope.errorDescription = data.feedback.description;
+              $scope.errorName = data.errors.name;
+              $scope.errorStyle = data.errors.style;
+              $scope.errorMaltType = data.errors.maltType;
+              $scope.errorDescription = data.errors.description;
           
             } else {
               // if successful, bind success message to message
-              $scope.feedback = data.feedback;
+              $scope.message = data.message;
             }
           });
         };
