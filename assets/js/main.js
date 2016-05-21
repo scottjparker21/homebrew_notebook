@@ -73,6 +73,10 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           
             } else {
               // if successful, bind success message to message
+              $scope.errorName = NULL;
+              $scope.errorStyle = NULL;
+              $scope.errorMaltType = NULL;
+              $scope.errorDescription = NULL;
               $scope.message = data.message;
             }
           });
