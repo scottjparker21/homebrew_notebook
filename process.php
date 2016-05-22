@@ -86,12 +86,12 @@ if ( ! empty($errors)) {
 
 		            echo "post bottling";
 
-		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            // $sql = "INSERT INTO fermentation (recipe_step_id,yeast_type,pitching_temp,duration,notes) values(?, ?, ?, ?, ?)";
-		            // $q = $pdo->prepare($sql);
-		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO fermentation (recipe_step_id,yeast_type,pitching_temp,duration,notes) values(?, ?, ?, ?, ?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
-		            // echo "post fermentation";
+		            echo "post fermentation";
 
 		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            // $sql = "INSERT INTO hops (recipe_step_id,name,amt,step_added,step) values(?, ?, ?, ?, ?)";
