@@ -72,40 +72,40 @@ if ( ! empty($errors)) {
 
 		            $rsi = $pdo->lastInsertId();
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO boil (recipe_step_id,duration,hops_type,hops_amt,time_added,notes) values(?, ?, ?, ?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO boil (recipe_step_id,duration,hops_type,hops_amt,time_added,notes) values(?, ?, ?, ?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
-		            echo "post boil";
+		            // echo "post boil";
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL));
 
-		            echo "post bottling";
+		            // echo "post bottling";
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO fermentation (recipe_step_id,yeast_type,pitching_temp,duration,notes) values(?, ?, ?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO fermentation (recipe_step_id,yeast_type,pitching_temp,duration,notes) values(?, ?, ?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
-		            echo "post fermentation";
+		            // echo "post fermentation";
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO hops (recipe_step_id,name,amt,step_added,step) values(?, ?, ?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL,NULL,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO hops (recipe_step_id,name,amt,step_added,step) values(?, ?, ?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL,NULL));
 
-		            echo "post hops";
+		            // echo "post hops";
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO mash (recipe_step_id,malt_amt,malt_type,water_amt,notes) values(?, ?, ?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO mash (recipe_step_id,malt_amt,malt_type,water_amt,notes) values(?, ?, ?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
-		            echo "post mash";
+		            // echo "post mash";
 
 
 		            Database::disconnect();
