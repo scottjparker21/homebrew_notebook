@@ -65,6 +65,9 @@ if ( ! empty($errors)) {
 
 		            $recipe_id = $pdo->lastInsertId();
 
+		        	Database::disconnect();
+		        	$pdo = Database::connect();
+
 		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            $sql = "INSERT INTO recipe_step (recipe_id) values(?)";
 		            $q = $pdo->prepare($sql);
