@@ -77,12 +77,12 @@ if ( ! empty($errors)) {
 		            $q = $pdo->prepare($sql);
 		            $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
-		            echo "post boil";
+		            // echo "post boil";
 
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL));
 
 		            // echo "post bottling";
 
