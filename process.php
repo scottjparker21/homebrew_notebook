@@ -93,12 +93,12 @@ if ( ! empty($errors)) {
 
 		            echo "post fermentation";
 
-		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            // $sql = "INSERT INTO hops (recipe_step_id,name,amt,step_added,step) values(?, ?, ?, ?, ?)";
-		            // $q = $pdo->prepare($sql);
-		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL,NULL));
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO hops (recipe_step_id,name,amt,step_added,step) values(?, ?, ?, ?, ?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($rsi,NULL,NULL,NULL,NULL,NULL));
 
-		            // echo "post hops";
+		            echo "post hops";
 
 		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            // $sql = "INSERT INTO mash (recipe_step_id,malt_amt,malt_type,water_amt,notes) values(?, ?, ?, ?, ?)";
