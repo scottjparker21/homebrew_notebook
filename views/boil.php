@@ -16,9 +16,9 @@
 		// }
 	}
 
-	$boil = read();
-	echo $boil;
-	print_r($boil);
+	// $boil = read();
+	// echo $boil;
+	// print_r($boil);
 
 ?>
 	<div class="col-lg-12">
