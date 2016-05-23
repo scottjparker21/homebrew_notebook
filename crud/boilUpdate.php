@@ -48,7 +48,7 @@ $data = array();        // array to pass back data
 //   $data['errors']  = $errors;
 
 // }   else {
-		$data['errors']= NULL;
+		// $data['errors']= NULL;
 
 		$duration = $_POST['duration'];
 		$hops_type = $_POST['hops_type'];

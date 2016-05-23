@@ -101,16 +101,16 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           .success(function(data) {
             console.log(data);
 
-            if (!data.success) {
+            // if (!data.success) {
 
-              console.log(data);
+            //   console.log(data);
           
-            } else {
+            // } else {
               // if successful, bind success message to message
               console.log(data);
               // $scope.message = data.rsi;
-              $scope.message = data.message;
-            }
+              $scope.message = data.duration;
+            // }
           });
         };    
     });
