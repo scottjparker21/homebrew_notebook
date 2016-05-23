@@ -49,12 +49,18 @@ if ( ! empty($errors)) {
 
 }   else {
 		$data['errors']= NULL;
-		
+
 		$duration = $_POST['duration'];
 		$hops_type = $_POST['hops_type'];
 		$hops_amt = $_POST['hops_amt'];
 		$time_added = $_POST['time_added'];
 		$notes = $_POST['notes'];
+
+		$data['duration']= $duration;
+		$data['hops_type']= $hops_type;
+		$data['duration']= $hops_amt;
+		$data['duration']= $time_added;
+		$data['duration']= $notes;
 			
 	    // if there are no errors, return a message
 	    $data['success'] = true;
@@ -88,7 +94,7 @@ if ( ! empty($errors)) {
         Database::disconnect();
         header("Location: index.php");
         
-         Database::disconnect();
+        Database::disconnect();
     }
 
     // return a response ==============
