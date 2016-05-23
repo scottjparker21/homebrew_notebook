@@ -60,19 +60,19 @@ if ( ! empty($errors)) {
 	   	$data['message'] = 'Success!';
 
 		if (empty($_POST['duration'])) {
-			$_POST['duration'] = NULL;
+			$_POST['duration'] = "";
 		}
 		if (empty($_POST['hops_type'])) {
-			$_POST['hops_type'] = NULL;
+			$_POST['hops_type'] = "";
 		}
 		if (empty($_POST['hops_amt'])) {
-			$_POST['hops_amt'] = NULL;
+			$_POST['hops_amt'] = "";
 		}
 		if (empty($_POST['time_added'])) {
-			$_POST['time_added'] = NULL;
+			$_POST['time_added'] = "";
 		}
 		if (empty($_POST['notes'])) {
-			$_POST['notes'] = NULL;
+			$_POST['notes'] = "";
 		}
 		// $rsi = $_SESSION["rsi"];
 
