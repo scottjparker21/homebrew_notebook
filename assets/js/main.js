@@ -22,7 +22,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
             .when('/newRecipe', {
                 templateUrl : 'views/newRecipe.php',
                 controller  : 'newRecipeController'
-            });
+            })
 
             .when('/boil', {
                 templateUrl : 'views/boil.php',
