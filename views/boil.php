@@ -31,10 +31,10 @@
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDuration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<?php echo	'<input ng-init="formData.duration=' . $read[0]['duration'] . '" type="text" name="duration" ng-model="formData.duration">'; ?>
+				      			<?php echo '<input ng-init="formData.duration=' . $read[0]['duration'] . '" type="text"  ng-model="formData.duration">'; ?>
 				      			<span class="help-block" ng-show="!errorDuration">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
