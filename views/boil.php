@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p> data : <?php echo $data['duration']; ?> </p>
+			<p> data : <?php echo $data['notes']; ?> </p>
 
 			
 
