@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p> data : <?php echo $data['notes']; ?> </p>
+			<p><?php echo print_r($data); ?> </p>
 
 			
 
