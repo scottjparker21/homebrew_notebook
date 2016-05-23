@@ -18,8 +18,7 @@
 		// }
 
 
-	$boil = read();
-	echo $boil['notes'];
+	// $boil = read();
 
 ?>
 	<div class="col-lg-12">
