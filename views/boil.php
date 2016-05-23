@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<?php foreach($read as $value){
+			<?php foreach($read[0] as $value){
 				echo $value;
 			} ?>
 
