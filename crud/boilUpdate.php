@@ -8,7 +8,7 @@ public function read(){
 		$pdo = Database::connect();
 		$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 		$q = $pdo->prepare($sql);
-		$q->execute(array($_SESSION['rsi']);
+		$q->execute(array($_SESSION['rsi']));
 		$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	    Database::disconnect();
 	    return $data;
