@@ -36,7 +36,7 @@
 				console.log(read);
 				console.log(read[0].duration);
 				$( document ).ready(function() {
-				    document.getElementById("duration").value = 'value';
+				    document.getElementById("duration").setAttribute('value','im workign');
 				});
 				
 			</script>
