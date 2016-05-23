@@ -38,9 +38,9 @@ $data = array();        // array to pass back data
 
 		$data['duration']= $duration;
 		$data['hops_type']= $hops_type;
-		$data['duration']= $hops_amt;
-		$data['duration']= $time_added;
-		$data['duration']= $notes;
+		$data['hops_amt']= $hops_amt;
+		$data['time_added']= $time_added;
+		$data['notes']= $notes;
 			
 	    // if there are no errors, return a message
 	    $data['success'] = true;

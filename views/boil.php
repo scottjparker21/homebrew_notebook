@@ -24,7 +24,7 @@
 	<div class="col-lg-12">
 		<center><h1 id="quicksand"> Boil </h1></center>
 	</div>
-	<p> <?php echo $read[0]['duration']; ?> </p>	
+
 		<div class="container">
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
