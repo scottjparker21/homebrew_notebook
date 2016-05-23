@@ -34,10 +34,8 @@
 				echo "var read = ". $js_array . ";\n";
 				?>
 				var json = JSON.parse(read);
-				console.log(read);
 				console.log(json.duration);
-				console.log(json);
-			</script>
+							</script>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
