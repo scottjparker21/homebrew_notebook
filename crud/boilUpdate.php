@@ -3,24 +3,24 @@
 <?php
 
 
-public function read(){
-	try{
-		$pdo = Database::connect();
-		$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
-		$q = $pdo->prepare($sql);
-		$q->execute(array($_SESSION['rsi']));
-		$data = $q->fetchAll(PDO::FETCH_ASSOC);
-	    Database::disconnect();
-	    return $data;
-	} catch (PDOException $error){
+// public function read(){
+// 	try{
+// 		$pdo = Database::connect();
+// 		$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
+// 		$q = $pdo->prepare($sql);
+// 		$q->execute(array($_SESSION['rsi']));
+// 		$data = $q->fetchAll(PDO::FETCH_ASSOC);
+// 	    Database::disconnect();
+// 	    return $data;
+// 	} catch (PDOException $error){
 
-		header( "Location: 500.php" );
-		//echo $error->getMessage();
-		die();
+// 		header( "Location: 500.php" );
+// 		//echo $error->getMessage();
+// 		die();
 
-	}
+// 	}
 
-}
+// }
 
 
 $errors = array();  // array to hold validation errors
@@ -74,7 +74,7 @@ if ( ! empty($errors)) {
 		if (empty($_POST['notes'])) {
 			$_POST['notes'] = NULL;
 		}
-		$rsi = $_SESSION["rsi"];
+		// $rsi = $_SESSION["rsi"];
 
 		$pdo = Database::connect();
 
@@ -83,7 +83,7 @@ if ( ! empty($errors)) {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "UPDATE boil set duration = ?, hops_type = ?, hops_amt = ?, time_added = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,$rid));
+        $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,2));
         Database::disconnect();
         header("Location: index.php");
         
