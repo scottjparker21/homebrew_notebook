@@ -2,7 +2,7 @@
 <?php 
 		require_once '../includes/database.php';
 
-		public function read() {
+		// public function read() {
 		// try{
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
@@ -15,10 +15,10 @@
 		// 	echo "something went wrong.";
 		// 	//echo $error->getMessage();
 		// 	die();
-		}
+		// }
 
 
-	$boil = read();
+	// $boil = read();
 
 ?>
 	<div class="col-lg-12">
@@ -38,7 +38,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input type="text" name="duration" ng-model="formData.duration">
+				      			<input value="<?php $data['duration']; ?>" type="text" name="duration" ng-model="formData.duration">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
