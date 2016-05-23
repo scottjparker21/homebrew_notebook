@@ -29,7 +29,6 @@ if ( ! empty($errors)) {
   $data['errors']  = $errors;
 
 }   else {
-
 		$data['errors']= NULL;
 
 		$name = $_POST['name'];
@@ -65,16 +64,14 @@ if ( ! empty($errors)) {
 		            
 
 		            $recipe_id = $pdo->lastInsertId();
-		            Database::disconnect();
-		       	 	$pdo2 = Database::connect();
 
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO recipe_step (recipe_id) values(?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($recipe_id));
 
-		            $pdo2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql2 = "INSERT INTO recipe_step (recipe_id) values(?)";
-		            $q2 = $pdo->prepare($sql2);
-		            $q2->execute(array($recipe_id));
-
-		            $rsi = $pdo2->lastInsertId();
+		            $rsi = $pdo->lastInsertId();
+		            echo $rsi;
 
 		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            // $sql = "INSERT INTO boil (recipe_step_id,duration,hops_type,hops_amt,time_added,notes) values(?, ?, ?, ?, ?, ?)";
@@ -82,10 +79,10 @@ if ( ! empty($errors)) {
 		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
 
 		           
-		            $pdo2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql3 = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
-		            $q3 = $pdo->prepare($sql3);
-		            $q3->execute(array($rsi,NULL,NULL));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO bottling (recipe_step_id,btl_con,con_duration) values(?, ?, ?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi,NULL,NULL));
 
 		            // echo "post bottling";
 
