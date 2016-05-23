@@ -34,7 +34,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="1" type="text" id="duration" ng-model="formData.duration">
+				      			<input type="text" id="duration" ng-model="formData.duration">
 				      			<span class="help-block" ng-show="!errorDuration">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
