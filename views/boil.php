@@ -34,10 +34,10 @@
 				echo "var read = ". $js_array . ";\n";
 				?>
 				console.log(read);
-				console.log(read[0].duration);
+				document.boilForm.boilVal = read[0].duration;
 			</script>
 		
-			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
+			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
 						<!-- success message -->
@@ -46,7 +46,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="'<script>document.write(read[0].duration);</script>" type="text" ng-model="formData.hops_type">
+				      			<input value="boilVal" type="text" ng-model="formData.hops_type">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
