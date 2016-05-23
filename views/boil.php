@@ -34,6 +34,7 @@
 				echo "var read = ". $js_array . ";\n";
 				?>
 				console.log(read);
+				console.log(read[0].duration);
 				document.getElementsByName("boilVal")[0].value = read[0].duration;
 			</script>
 		
@@ -46,7 +47,8 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="boilVal" type="text" ng-model="formData.hops_type">
+				    	<script> document.write('<input value="' + read[0].duration + '">'); </script>
+				      			<input value="" type="text" ng-model="formData.hops_type">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
