@@ -32,18 +32,18 @@
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorbot_con }">
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorbtl_con }">
 				    		<label class="control-label">Bottle Conditioning</label>
 				    		<div class="controls">
-				      			<?php echo '<input ng-init="formData.bot_con=' . "'" . $bottling['bot_con'] . "'" . '" type="text"  ng-model="formData.bot_con">'; ?>
-				      			<span class="help-block" ng-show="!errorbot_con">{{ errorbot_con }}</span> 
+				      			<?php echo '<input ng-init="formData.btl_con=' . "'" . $bottling['btl_con'] . "'" . '" type="text"  ng-model="formData.btl_con">'; ?>
+				      			<span class="help-block" ng-show="!errorbtl_con">{{ errorbtl_con }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorcon_dur}">
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorcon_duration}">
 				    		<label class="control-label">Conditioning Duration</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.con_dur=' . "'" . $bottling['con_dur'] . "'" . '" type="text" name="con_dur" ng-model="formData.con_dur">'; ?>
-				      			<span class="help-block" ng-show="!errorcon_dur">{{ errorcon_dur }}</span> 
+				    			<?php echo	'<input ng-init="formData.con_duration=' . "'" . $bottling['con_duration'] . "'" . '" type="text" name="con_duration" ng-model="formData.con_duration">'; ?>
+				      			<span class="help-block" ng-show="!errorcon_duration">{{ errorcon_duration }}</span> 
 				    		</div>
 				  		</div>
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
@@ -60,8 +60,8 @@
 				    		</div>
 				  		</div>
 				  		<pre>
-							{{ formData.bot_con }}
-							{{ formData.con_dur}}
+							{{ formData.btl_con }}
+							{{ formData.con_duration}}
 							{{ formData.hops_amt }}
 							{{ formData.time_added }}
 							{{ formData.notes }}
