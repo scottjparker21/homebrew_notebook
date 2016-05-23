@@ -34,7 +34,7 @@
 				echo "var read = ". $js_array . ";\n";
 				?>
 				console.log(read);
-				console.log(read[0]);
+				console.log(read[0].duration);
 			</script>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
