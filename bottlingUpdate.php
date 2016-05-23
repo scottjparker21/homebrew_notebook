@@ -60,7 +60,7 @@ $data = array();        // array to pass back data
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "UPDATE bottling set btl_con = ?, con_duration = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($btl_con,$con_duration,$notes,5));
+        $q->execute(array($btl_con,$con_duration,$notes,31));
         Database::disconnect();
        
         
