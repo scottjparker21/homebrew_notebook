@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<?php echo $read[0]['hops_type'] ; ?>
+			<?php echo '<input value="' . $read[0]['hops_type'] . '" type="text">' ; ?>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
