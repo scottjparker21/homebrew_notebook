@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p> data : <?php print_r($data); ?> </p>
+			<p> data : <?php echo $data['duration']; ?> </p>
 
 			
 
