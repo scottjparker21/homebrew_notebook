@@ -23,6 +23,11 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
                 templateUrl : 'views/newRecipe.php',
                 controller  : 'newRecipeController'
             });
+
+            .when('/boil', {
+                templateUrl : 'views/boil.php',
+                controller  : 'boilController'
+            });
     });
 
     // create the controller and inject Angular's $scope
@@ -78,6 +83,17 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
 
     });
+
+    brewApp.controller('boilController', function($scope) {
+        // create a message to display in our view
+        $scope.message = 'awesome home...someday';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
+    });
+
+  
 
     //navbar controller function
 
