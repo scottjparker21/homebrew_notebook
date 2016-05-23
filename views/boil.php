@@ -1,22 +1,24 @@
 <?php echo $_SESSION["userid"]; 
 
-	// public function read(){
-	// 	try{
-	// 		$pdo = Database::connect();
-	// 		$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
-	// 		$q = $pdo->prepare($sql);
-	// 		$q->execute(array(1));
-	// 		$read = $q->fetchAll(PDO::FETCH_ASSOC);
-	// 	    Database::disconnect();
-	// 	    return $read;
-	// 	} catch (PDOException $error){
-	// 		echo "something went wrong.";
-	// 		//echo $error->getMessage();
-	// 		die();
-	// 	}
-	// }
+	public function read(){
+		// try{
+			$pdo = Database::connect();
+			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
+			$q = $pdo->prepare($sql);
+			$q->execute(array(1));
+			$read = $q->fetchAll(PDO::FETCH_ASSOC);
+		    Database::disconnect();
+		    return $read;
+		// } catch (PDOException $error){
+		// 	echo "something went wrong.";
+		// 	//echo $error->getMessage();
+		// 	die();
+		// }
+	}
 
-	// read();
+	$boil = read();
+	echo $boil;
+	print_r($boil);
 
 ?>
 	<div class="col-lg-12">
