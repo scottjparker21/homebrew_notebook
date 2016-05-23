@@ -2,7 +2,7 @@
 <?php 
 		require_once '../includes/database.php';
 
-
+		public function read() {
 		// try{
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
@@ -10,15 +10,15 @@
 			$q->execute(array(1));
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 		    Database::disconnect();
-		    // return $data;
+		    return $data;
 		// } catch (PDOException $error){
 		// 	echo "something went wrong.";
 		// 	//echo $error->getMessage();
 		// 	die();
-		// }
+		}
 
 
-	// $boil = read();
+	$boil = read();
 
 ?>
 	<div class="col-lg-12">
