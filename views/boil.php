@@ -27,7 +27,14 @@
 		
 		<div class="container">
 
-			<?php echo '<input value="' . $read[0]['hops_type'] . '" type="text">' ; ?>
+			<script type='text/javascript'>
+				<?php
+				// $php_array = array('abc','def','ghi');
+				$js_array = json_encode($read);
+				echo "var read = ". $js_array . ";\n";
+				?>
+				console.log(read);
+			</script>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
