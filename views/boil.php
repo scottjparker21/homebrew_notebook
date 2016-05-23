@@ -1,7 +1,6 @@
-<?php  require_once 'includes/session.php'; ?>
+
 <?php 
 	
-	echo $_SESSION["userid"]; 
 
 
 		// try{
