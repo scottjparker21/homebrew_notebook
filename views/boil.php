@@ -33,9 +33,9 @@
 				$js_array = json_encode($read);
 				echo "var read = ". $js_array . ";\n";
 				?>
-				var json = JSON.parse(read);
-				console.log(json.duration);
-							</script>
+				console.log(read);
+				console.log(read[0]);
+			</script>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
