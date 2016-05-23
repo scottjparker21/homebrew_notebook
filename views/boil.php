@@ -35,7 +35,7 @@
 				?>
 				console.log(read);
 				console.log(read[0].duration);
-				document.getElementsByName("boilVal")[0].value = read[0].duration;
+				
 			</script>
 		
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
