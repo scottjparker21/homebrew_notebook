@@ -33,9 +33,10 @@
 				$js_array = json_encode($read);
 				echo "var read = ". $js_array . ";\n";
 				?>
+				var json = JSON.parse(data);
 				console.log(read);
-				console.log(read['duration']);
-				console.log(read.duration)
+				console.log(json.duration);
+				console.log(json);
 			</script>
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
