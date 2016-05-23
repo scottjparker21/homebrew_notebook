@@ -29,8 +29,7 @@
 
 			
 
-			
-
+		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
