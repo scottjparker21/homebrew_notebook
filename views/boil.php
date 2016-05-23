@@ -1,24 +1,25 @@
-<?php echo $_SESSION["userid"]; 
+<?php 
+	
+	echo $_SESSION["userid"]; 
 
-	public function read(){
+
 		// try{
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
 			$q->execute(array(1));
-			$read = $q->fetchAll(PDO::FETCH_ASSOC);
+			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 		    Database::disconnect();
-		    return $read;
+		    return $data;
 		// } catch (PDOException $error){
 		// 	echo "something went wrong.";
 		// 	//echo $error->getMessage();
 		// 	die();
 		// }
-	}
 
-	// $boil = read();
-	// echo $boil;
-	// print_r($boil);
+
+	$boil = read();
+	echo $boil['notes'];
 
 ?>
 	<div class="col-lg-12">
