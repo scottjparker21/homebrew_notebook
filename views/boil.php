@@ -27,11 +27,9 @@
 		
 		<div class="container">
 
-			<script>
-				var read = <?php echo $read[0]['duration']; ?>;
-				console.log(read);
+			
 
-			</script>
+			
 
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
@@ -42,7 +40,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="{{ sql }}" type="text" name="duration" ng-model="formData.duration">
+				      			<input value="1" type="text" name="duration" ng-model="formData.duration">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>

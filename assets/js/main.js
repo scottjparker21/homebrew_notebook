@@ -87,8 +87,6 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              var active = (viewLocation === $location.path());
              return active;
         };
-        $scope.sql = read;
-        console.log(read);
         $scope.formData = {};
         // $scope.processForm = function() {
         // };
