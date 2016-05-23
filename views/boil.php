@@ -26,9 +26,7 @@
 	</div>
 		
 		<div class="container">
-			<p> <?php print_r($read) ?>;
 
-			
 
 		
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
