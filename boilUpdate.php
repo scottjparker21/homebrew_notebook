@@ -72,7 +72,7 @@ $data = array();        // array to pass back data
         $q = $pdo->prepare($sql);
         $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,2));
         Database::disconnect();
-        header("Location: index.php");
+       
         
          Database::disconnect();
     // }

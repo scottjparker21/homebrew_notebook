@@ -100,7 +100,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           .success(function(data) {
-            console.log(data);
+            // console.log(data);
 
             // if (!data.success) {
 
@@ -108,7 +108,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           
             // } else {
               // if successful, bind success message to message
-              console.log(data);
+              // console.log(data);
               // $scope.message = data.rsi;
               
             // }
