@@ -71,12 +71,12 @@ if ( ! empty($errors)) {
 		            $q->execute(array($recipe_id));
 
 		            $rsi = $pdo->lastInsertId();
-		            $data['rsi'] = $rsi;
+		            // $data['rsi'] = $rsi;
 
-		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            // $sql = "INSERT INTO boil (recipe_step_id,duration,hops_type,hops_amt,time_added,notes) values(?, ?, ?, ?, ?, ?)";
-		            // $q = $pdo->prepare($sql);
-		            // $q->execute(array($rsi,NULL,NULL,NULL,NULL));
+		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            $sql = "INSERT INTO boil (recipe_step_id) values(?)";
+		            $q = $pdo->prepare($sql);
+		            $q->execute(array($rsi));
 
 		           
 		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
