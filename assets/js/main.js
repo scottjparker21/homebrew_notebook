@@ -70,7 +70,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           
             } else {
               // if successful, bind success message to message
-
+              console.log(data);
               // $scope.message = data.rsi;
               $scope.message = data.message;
             }
