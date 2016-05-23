@@ -41,14 +41,14 @@ $data = array();        // array to pass back data
 // 	$errors['uid'] = "Cannot create recipe if not logged in.";
 
 // response if there are errors
-if ( ! empty($errors)) {
+// if ( ! empty($errors)) {
 
   // if there are items in our errors array, return those errors
-  $data['success'] = false;
-  $data['errors']  = $errors;
+//   $data['success'] = false;
+//   $data['errors']  = $errors;
 
-}   else {
-		$data['errors']= NULL;
+// }   else {
+// 		$data['errors']= NULL;
 		
 		// $duration = $_POST['duration'];
 		// $hops_type = $_POST['hops_type'];
@@ -89,7 +89,7 @@ if ( ! empty($errors)) {
         // header("Location: index.php");
         
          // Database::disconnect();
-    }
+    // }
 
     // return a response ==============
-	echo json_encode($data);
+	// echo json_encode($data);
