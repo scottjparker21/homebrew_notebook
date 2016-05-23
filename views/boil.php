@@ -28,7 +28,7 @@
 		<div class="container">
 
 			<?php 
-				echo $value[0]['duration'];
+				echo $read[0]['duration'];
 			 ?>
 
 			
