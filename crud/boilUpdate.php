@@ -60,32 +60,32 @@ if ( ! empty($errors)) {
 	   	$data['message'] = 'Success!';
 
 		if (empty($_POST['duration'])) {
-			$_POST['duration'] = "";
+			$_POST['duration'] = NULL;
 		}
 		if (empty($_POST['hops_type'])) {
-			$_POST['hops_type'] = "";
+			$_POST['hops_type'] = NULL;
 		}
 		if (empty($_POST['hops_amt'])) {
-			$_POST['hops_amt'] = "";
+			$_POST['hops_amt'] = NULL;
 		}
 		if (empty($_POST['time_added'])) {
-			$_POST['time_added'] = "";
+			$_POST['time_added'] = NULL;
 		}
 		if (empty($_POST['notes'])) {
-			$_POST['notes'] = "";
+			$_POST['notes'] = NULL;
 		}
 		// $rsi = $_SESSION["rsi"];
 
 		$pdo = Database::connect();
 
 		         
-        $pdo = Database::connect();
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "UPDATE boil set duration = ?, hops_type = ?, hops_amt = ?, time_added = ?, notes = ? WHERE recipe_step_id = ?";
-        $q = $pdo->prepare($sql);
-        $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,2));
-        Database::disconnect();
-        header("Location: index.php");
+        // $pdo = Database::connect();
+        // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // $sql = "UPDATE boil set duration = ?, hops_type = ?, hops_amt = ?, time_added = ?, notes = ? WHERE recipe_step_id = ?";
+        // $q = $pdo->prepare($sql);
+        // $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,2));
+        // Database::disconnect();
+        // header("Location: index.php");
         
     }
 
