@@ -34,7 +34,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<?php echo	'<input ng-init="formData.duration=' . $read[0]['duration'] . '" type="text" name="hops_amt" ng-model="formData.duration">'; ?>
+				      			<?php echo	'<input ng-init="formData.duration=' . $read[0]['duration'] . '" type="text" name="duration" ng-model="formData.duration">'; ?>
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
