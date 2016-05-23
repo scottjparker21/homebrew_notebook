@@ -36,7 +36,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDuration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<?php echo '<input ng-init="formData.duration=' . $boil['duration'] . '" type="text"  ng-model="formData.duration">'; ?>
+				      			<?php echo '<input ng-init="formData.duration=' . "'" . $boil['duration'] . "'" . '" type="text"  ng-model="formData.duration">'; ?>
 				      			<span class="help-block" ng-show="!errorDuration">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
@@ -64,7 +64,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.notes=' . $boil['notes'] . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $boil['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
