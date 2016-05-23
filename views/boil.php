@@ -15,7 +15,7 @@
 			die();
 		}
 	}
-	
+
 	read();
 
 ?>
@@ -27,7 +27,7 @@
 		<?php 
 			echo "<p>" . $read . "</p>";
 			print_r($read);
-			echo "<p>" . $read['notes'] . "</p>"
+			echo "<p>" . $read['notes'] . "</p>";
 
 		?>
 			
