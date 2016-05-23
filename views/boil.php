@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p><?php echo print_r($data); ?> </p>
+			<p><?php echo $data[2]; ?> </p>
 
 			
 
