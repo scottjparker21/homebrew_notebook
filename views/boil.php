@@ -1,6 +1,6 @@
 
 <?php 
-	
+		require_once '../includes/database.php';
 
 
 		// try{
@@ -26,12 +26,7 @@
 	</div>
 		
 		<div class="container">
-		<?php 
-		
-			// // print_r($read);
-			// echo "<p>" . $read['notes'] . "</p>";
 
-		?>
 			
 
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
