@@ -28,7 +28,7 @@
 		<div class="container">
 
 			<script>
-				var read = <?php echo $read; ?>;
+				var read = <?php echo $read[0]['duration']; ?>;
 				console.log(read);
 
 			</script>
@@ -42,7 +42,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="{{ sql.id }}" type="text" name="duration" ng-model="formData.duration">
+				      			<input value="{{ sql }}" type="text" name="duration" ng-model="formData.duration">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
