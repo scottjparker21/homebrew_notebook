@@ -43,7 +43,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_type}">
 				    		<label class="control-label">Hops Type</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.hops_type=' . "hops type" . '" type="text" name="hops_type" ng-model="formData.hops_type">'; ?>
+				    			<?php echo	'<input ng-init="formData.hops_type=' . "'hops type'" . '" type="text" name="hops_type" ng-model="formData.hops_type">'; ?>
 				      			<span class="help-block" ng-show="!errorhops_type">{{ errorhops_type }}</span> 
 				    		</div>
 				  		</div>
