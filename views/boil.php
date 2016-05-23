@@ -29,6 +29,7 @@
 
 			<?php 
 				$read = $read[0]['duration'];
+				echo $read;
 			 ?>
 
 			
