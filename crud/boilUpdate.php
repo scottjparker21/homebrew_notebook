@@ -49,34 +49,35 @@ if ( ! empty($errors)) {
 
 }   else {
 		$data['errors']= NULL;
-		$duration = $_POST['duration'];
-		$hops_type = $_POST['hops_type'];
-		$hops_amt = $_POST['hops_amt'];
-		$time_added = $_POST['time_added'];
-		$notes = $_POST['notes'];
+		
+		// $duration = $_POST['duration'];
+		// $hops_type = $_POST['hops_type'];
+		// $hops_amt = $_POST['hops_amt'];
+		// $time_added = $_POST['time_added'];
+		// $notes = $_POST['notes'];
 			
-	    // if there are no errors, return a message
-	    $data['success'] = true;
-	   	$data['message'] = 'Success!';
+	 //    // if there are no errors, return a message
+	 //    $data['success'] = true;
+	 //   	$data['message'] = 'Success!';
 
-		if (empty($_POST['duration'])) {
-			$_POST['duration'] = NULL;
-		}
-		if (empty($_POST['hops_type'])) {
-			$_POST['hops_type'] = NULL;
-		}
-		if (empty($_POST['hops_amt'])) {
-			$_POST['hops_amt'] = NULL;
-		}
-		if (empty($_POST['time_added'])) {
-			$_POST['time_added'] = NULL;
-		}
-		if (empty($_POST['notes'])) {
-			$_POST['notes'] = NULL;
-		}
-		// $rsi = $_SESSION["rsi"];
+		// if (empty($_POST['duration'])) {
+		// 	$_POST['duration'] = NULL;
+		// }
+		// if (empty($_POST['hops_type'])) {
+		// 	$_POST['hops_type'] = NULL;
+		// }
+		// if (empty($_POST['hops_amt'])) {
+		// 	$_POST['hops_amt'] = NULL;
+		// }
+		// if (empty($_POST['time_added'])) {
+		// 	$_POST['time_added'] = NULL;
+		// }
+		// if (empty($_POST['notes'])) {
+		// 	$_POST['notes'] = NULL;
+		// }
+		// // $rsi = $_SESSION["rsi"];
 
-		$pdo = Database::connect();
+		// $pdo = Database::connect();
 
 		         
         // $pdo = Database::connect();
@@ -87,7 +88,7 @@ if ( ! empty($errors)) {
         // Database::disconnect();
         // header("Location: index.php");
         
-         Database::disconnect();
+         // Database::disconnect();
     }
 
     // return a response ==============
