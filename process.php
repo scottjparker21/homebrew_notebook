@@ -71,6 +71,7 @@ if ( ! empty($errors)) {
 		            $q->execute(array($recipe_id));
 
 		            $rsi = $pdo->lastInsertId();
+		            $_SESSION["rsi"] = $rsi;
 		            // $data['rsi'] = $rsi;
 
 		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
