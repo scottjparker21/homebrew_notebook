@@ -27,19 +27,9 @@
 		
 		<div class="container">
 
-			<script type='text/javascript'>
-				<?php
-				// $php_array = array('abc','def','ghi');
-				$js_array = json_encode($read);
-				echo "var read = ". $js_array . ";\n";
-				?>
-				console.log(read);
-				console.log(read[0].duration);
-				$( document ).ready(function() {
-				    document.getElementById("duration").setAttribute('value','im workign');
-				});
+			
 				
-			</script>
+		
 		
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
