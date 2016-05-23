@@ -23,8 +23,7 @@
 ?>
 	<div class="col-lg-12">
 		<center><h1 id="quicksand"> Boil </h1></center>
-	</div>
-
+	</div>	
 		<div class="container">
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
@@ -35,7 +34,8 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<span class="help-block" ng-show="!errorduration">{{ errorDuration }}</span> 
+				      			<input value="1" type="text" id="duration" ng-model="formData.duration">
+				      			<span class="help-block" ng-show="!errorDuration">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_type}">
