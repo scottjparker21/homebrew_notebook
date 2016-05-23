@@ -27,7 +27,9 @@
 		
 		<div class="container">
 
-			<?php print_r($read); ?>
+			<?php foreach($read as $value){
+				echo $value;
+			} ?>
 
 			
 
