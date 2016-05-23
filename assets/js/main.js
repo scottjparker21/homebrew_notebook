@@ -88,6 +88,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              return active;
         };
         $scope.formData = {};
+        $scope.urlenc = $.param($scope.formData);
         // $scope.processForm = function() {
         // };
         // process the form

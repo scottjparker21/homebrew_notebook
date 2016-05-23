@@ -78,6 +78,7 @@
 							{{ formData.hops_amt }}
 							{{ formData.time_added }}
 							{{ formData.notes }}
+							{{urlenc}}
 						</pre>
 				  	</div>	
 				</div>
