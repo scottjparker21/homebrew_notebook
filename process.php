@@ -79,10 +79,10 @@ if ( ! empty($errors)) {
 		            $q->execute(array($rsi));
 
 		           
-		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		            $sql = "INSERT INTO bottling (recipe_step_id) values(?)";
-		            $q = $pdo->prepare($sql);
-		            $q->execute(array($rsi));
+		            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		            // $sql = "INSERT INTO bottling (recipe_step_id) values(?)";
+		            // $q = $pdo->prepare($sql);
+		            // $q->execute(array($rsi));
 
 		            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		            $sql = "INSERT INTO fermentation (recipe_step_id) values(?)";
