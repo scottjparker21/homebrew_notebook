@@ -23,14 +23,8 @@
 ?>
 	<div class="col-lg-12">
 		<center><h1 id="quicksand"> Boil </h1></center>
-	</div>
-		
+	</div>	
 		<div class="container">
-
-			
-				
-		
-		
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
@@ -47,7 +41,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_type}">
 				    		<label class="control-label">Hops Type</label>
 				    		<div class="controls">
-				    			<?php echo	'<input value="' . $read[0]['hops_type'] . '" type="text" name="hops_type" ng-model="formData.hops_type">'; ?>
+				    			<?php echo	'<input ng-init="formData.hops_type=' . $read[0]['hops_type'] . '" type="text" name="hops_type" ng-model="formData.hops_type">'; ?>
 				      			<span class="help-block" ng-show="!errorhops_type">{{ errorhops_type }}</span> 
 				    		</div>
 				  		</div>
@@ -61,14 +55,14 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errortime_added }">
 				    		<label class="control-label">Time Added</label>
 				    		<div class="controls">
-				    			<?php echo	'<input value="' . $read[0]['time_added'] . '" type="text" name="time_added" ng-model="formData.time_added">'; ?>
+				    			<?php echo	'<input ng-init="formData.time_added=' . $read[0]['time_added'] . '" type="text" name="time_added" ng-model="formData.time_added">'; ?>
 				      			<span class="help-block" ng-show="errortime_added">{{ errortime_added }}</span> 
 				    		</div>
 				  		</div>
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<input value="' . $read[0]['notes'] . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<input ng-init="formData.notes=' . $read[0]['notes'] . '" type="text" name="notes" ng-model="formData.notes">'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
@@ -80,7 +74,6 @@
 				  		</div>
 				  		<pre>
 							{{ formData }}
-
 						</pre>
 				  	</div>	
 				</div>
