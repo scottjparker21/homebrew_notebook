@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p><?php echo $read['duration']; ?> </p>
+			<?php echo "<p>" . $read['duration']; . "</p>"; ?> </p>
 
 			
 
