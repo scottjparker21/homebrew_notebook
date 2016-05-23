@@ -73,7 +73,11 @@
 				    		</div>
 				  		</div>
 				  		<pre>
-							{{ formData }}
+							{{ formData.duration }}
+							{{ formData.hops_type}}
+							{{ formData.hops_amt }}
+							{{ formData.time_added }}
+							{{ formData.notes }}
 						</pre>
 				  	</div>	
 				</div>
