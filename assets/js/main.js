@@ -94,7 +94,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         $scope.processForm = function() {
           $http({
           method  : 'POST',
-          url     : '/homebrew_notebook/boilUpdate.php',
+          url     : '/homebrew_notebook/crud/boilUpdate.php',
           data    : $.param($scope.formData),  // pass in data as strings
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
