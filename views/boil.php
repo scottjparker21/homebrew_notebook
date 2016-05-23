@@ -27,6 +27,8 @@
 		
 		<div class="container">
 
+			<p> data : <?php print_r($data); ?> </p>
+
 			
 
 			<form class="form-register form-signin" ng-submit="processForm()" enctype="multipart/form-data">
@@ -78,6 +80,7 @@
 				  		</div>
 				  		<pre>
 							{{ formData }}
+
 						</pre>
 				  	</div>	
 				</div>
