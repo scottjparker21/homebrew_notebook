@@ -87,6 +87,7 @@ if ( ! empty($errors)) {
         // Database::disconnect();
         // header("Location: index.php");
         
+         Database::disconnect();
     }
 
     // return a response ==============
