@@ -10,7 +10,7 @@
 			$q->execute(array(1));
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 		    Database::disconnect();
-		    return $data;
+		    // return $data;
 		// } catch (PDOException $error){
 		// 	echo "something went wrong.";
 		// 	//echo $error->getMessage();
