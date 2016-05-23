@@ -26,6 +26,7 @@
 	</div>
 		
 		<div class="container">
+			<p> <?php print_r($read) ?>;
 
 			
 
