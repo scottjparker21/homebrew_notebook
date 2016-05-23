@@ -1,22 +1,22 @@
 <?php echo $_SESSION["userid"]; 
 
-	public function read(){
-		try{
-			$pdo = Database::connect();
-			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
-			$q = $pdo->prepare($sql);
-			$q->execute(array(1));
-			$read = $q->fetchAll(PDO::FETCH_ASSOC);
-		    Database::disconnect();
-		    return $read;
-		} catch (PDOException $error){
-			echo "something went wrong.";
-			//echo $error->getMessage();
-			die();
-		}
-	}
+	// public function read(){
+	// 	try{
+	// 		$pdo = Database::connect();
+	// 		$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
+	// 		$q = $pdo->prepare($sql);
+	// 		$q->execute(array(1));
+	// 		$read = $q->fetchAll(PDO::FETCH_ASSOC);
+	// 	    Database::disconnect();
+	// 	    return $read;
+	// 	} catch (PDOException $error){
+	// 		echo "something went wrong.";
+	// 		//echo $error->getMessage();
+	// 		die();
+	// 	}
+	// }
 
-	read();
+	// read();
 
 ?>
 	<div class="col-lg-12">
@@ -25,9 +25,9 @@
 		
 		<div class="container">
 		<?php 
-			echo "<p>" . $read . "</p>";
-			print_r($read);
-			echo "<p>" . $read['notes'] . "</p>";
+		
+			// // print_r($read);
+			// echo "<p>" . $read['notes'] . "</p>";
 
 		?>
 			
@@ -38,32 +38,39 @@
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorName }">
-				    		<label class="control-label">Name</label>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
+				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input type="text" name="name" ng-model="formData.name">
-				      			<span class="help-block" ng-show="!errorName">{{ errorName }}</span> 
+				      			<input type="text" name="duration" ng-model="formData.duration">
+				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorStyle}">
-				    		<label class="control-label">Style</label>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_type}">
+				    		<label class="control-label">Hops Type</label>
 				    		<div class="controls">
-				      			<input type="text" name="style" ng-model="formData.style">
-				      			<span class="help-block" ng-show="!errorStyle">{{ errorStyle }}</span> 
+				      			<input type="text" name="hops_type" ng-model="formData.hops_type">
+				      			<span class="help-block" ng-show="!errorhops_type">{{ errorhops_type }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorMaltType }">
-				    		<label class="control-label">Malt Type</label>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_amt }">
+				    		<label class="control-label">Hops Amount</label>
 				    		<div class="controls">
-				      			<input type="text" name="maltType" ng-model="formData.maltType">
-				      			<span class="help-block" ng-show="!errorMaltType">{{ errorMaltType }}</span> 
+				      			<input type="text" name="hops_amt" ng-model="formData.hops_amt">
+				      			<span class="help-block" ng-show="!errorhops_amt">{{ errorhops_amt }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDescription }">
-				    		<label class="control-label">Description</label>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errortime_added }">
+				    		<label class="control-label">Time Added</label>
 				    		<div class="controls">
-				      			<input type="text" name="description" ng-model="formData.description">
-				      			<span class="help-block" ng-show="errorDescription">{{ errorDescription }}</span> 
+				      			<input type="text" name="time_added" ng-model="formData.time_added">
+				      			<span class="help-block" ng-show="errortime_added">{{ errortime_added }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+				    		<label class="control-label">Notes</label>
+				    		<div class="controls">
+				      			<input type="text" name="notes" ng-model="formData.notes">
+				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
 				  		<div class="form-row form-actions control-group">
