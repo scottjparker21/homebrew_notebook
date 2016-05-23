@@ -27,9 +27,9 @@
 		
 		<div class="container">
 
-			<?php foreach($read[0] as $value){
-				echo $value;
-			} ?>
+			<?php 
+				echo $value[0]['duration'];
+			 ?>
 
 			
 
