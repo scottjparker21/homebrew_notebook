@@ -80,9 +80,9 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
     });
 
-    brewApp.controller('boilController', function($scope) {
+    brewApp.controller('boilController', function($scope,$http) {
         // create a message to display in our view
-        $scope.message = 'awesome home...someday';
+        $scope.message = 'awesome Boil update page...soon';
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
              return active;
