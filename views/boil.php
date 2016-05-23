@@ -35,7 +35,7 @@
 				?>
 				console.log(read);
 				console.log(read[0].duration);
-				document.getElementById("duration").value = read[0].duration;
+				document.getElementById("duration").value = 'value';
 			</script>
 		
 			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
@@ -47,7 +47,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      			<input value="" type="text" id="duration" ng-model="formData.duration">
+				      			<input type="text" id="duration" ng-model="formData.duration">
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
