@@ -8,7 +8,7 @@
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
 			$q->execute(array(1));
-			$data = $q->fetchAll(PDO::FETCH_ASSOC);
+			$read = $q->fetchAll(PDO::FETCH_ASSOC);
 		    Database::disconnect();
 		    // return $data;
 		// } catch (PDOException $error){
@@ -27,7 +27,7 @@
 		
 		<div class="container">
 
-			<p><?php echo $data[2]; ?> </p>
+			<p><?php echo $read['duration']; ?> </p>
 
 			
 
@@ -40,7 +40,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorduration }">
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
-				      		<?php echo	'<input value="' . $data['duration'] . '" type="text" name="duration" ng-model="formData.duration">'; ?>
+				      		<?php echo	'<input value="' . $read['duration'] . '" type="text" name="duration" ng-model="formData.duration">'; ?>
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
