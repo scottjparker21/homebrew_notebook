@@ -48,7 +48,7 @@
 				    		<label class="control-label">Duration</label>
 				    		<div class="controls">
 				    	<script> document.write('<input value="' + read[0].duration + '">'); </script>
-				      			<input value="" type="text" ng-model="formData.hops_type">
+				      			<!-- <input value="" type="text" ng-model="formData.hops_type"> -->
 				      			<span class="help-block" ng-show="!errorName">{{ errorDuration }}</span> 
 				    		</div>
 				  		</div>
