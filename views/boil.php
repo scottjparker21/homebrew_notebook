@@ -33,7 +33,7 @@
 				$js_array = json_encode($read);
 				echo "var read = ". $js_array . ";\n";
 				?>
-				var json = JSON.parse(data);
+				var json = JSON.parse(read);
 				console.log(read);
 				console.log(json.duration);
 				console.log(json);
