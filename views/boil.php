@@ -57,7 +57,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errortime_added }">
 				    		<label class="control-label">Time Added</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.time_added=' . $boil['time_added'] . '" type="text" name="time_added" ng-model="formData.time_added">'; ?>
+				    			<?php echo	'<input ng-init="formData.time_added=' ."'" . $boil['time_added'] ."'" . '" type="text" name="time_added" ng-model="formData.time_added">'; ?>
 				      			<span class="help-block" ng-show="errortime_added">{{ errortime_added }}</span> 
 				    		</div>
 				  		</div>
