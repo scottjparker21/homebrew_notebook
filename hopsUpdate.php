@@ -56,16 +56,16 @@ $data = array();        // array to pass back data
 		if (empty($_POST['step'])) {
 			$_POST['step'] = NULL;
 		}
-		$rsi = $_SESSION["rsi"];
+		// $rsi = $_SESSION["rsi"];
 
 		$pdo = Database::connect();
 
 		         
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "UPDATE hops set name = ?, amt = ?, time_added = ?, time_added = ?, step = ? WHERE recipe_step_id = ?";
+        $sql = "UPDATE hops set name = ?, amt = ?, time_added = ?, step = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($name,$amt,$time_added,$time_added,$step,31));
+        $q->execute(array($name,$amt,$time_added,$step,31));
         Database::disconnect();
        
         
