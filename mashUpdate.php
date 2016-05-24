@@ -63,7 +63,7 @@ $data = array();        // array to pass back data
 		         
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "UPDATE boil set malt_amt = ?, malt_type = ?, water_amt = ?, notes = ? WHERE recipe_step_id = ?";
+        $sql = "UPDATE mash set malt_amt = ?, malt_type = ?, water_amt = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($malt_amt,$malt_type,$water_amt,$notes,31));
         Database::disconnect();
