@@ -23,6 +23,7 @@
 			        Database::disconnect();
  
 			        print_r($data2);
+			        echo "name= " . $data2['name'];
 	        	}
 	        }
 	        
