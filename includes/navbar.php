@@ -20,6 +20,7 @@
                         <li ng-class="{ active: isActive('/newRecipe')}"><a href="#/newRecipe">New Recipe</a></li>
                         <li ng-class="{ active: isActive('/boil')}"><a href="#/boil">Boil</a></li>
                         <li ng-class="{ active: isActive('/bottling')}"><a href="#/bottling">Bottling</a></li>
+                        <li ng-class="{ active: isActive('/fermentation')}"><a href="#/fermentation">Fermentation</a></li>
                       </ul> 
                   <li><a href=""></a></li>                
         			</ul>
