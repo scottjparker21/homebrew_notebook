@@ -8,7 +8,7 @@
 			$sql = "SELECT `recipe_id` FROM `recipe` INNER JOIN `recipe_step` ON `recipe`.`id` = `recipe_step`.`recipe_id` WHERE `recipe`.`uid` = ?";
 			$q = $pdo->prepare($sql);
 			$q->execute(array($uid));
-			$data = $q->fetch(PDO::FETCH_ASSOC);
+			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	        Database::disconnect();
 
 	        print_r($data)
