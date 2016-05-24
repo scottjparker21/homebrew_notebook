@@ -43,8 +43,8 @@ $data = array();        // array to pass back data
 	 //    // if there are no errors, return a message
 	    $data['success'] = true;
 	   	$data['message'] = 'Success!';
-
-		// if (empty($_POST['name'])) {
+	   	
+		if (empty($_POST['name'])) {
 			$_POST['name'] = NULL;
 		}
 		if (empty($_POST['amt'])) {
