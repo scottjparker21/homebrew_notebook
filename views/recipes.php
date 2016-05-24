@@ -1,5 +1,6 @@
 <?php
-	require_once '../includes/session.php';
+	require_once '../includes/database.php';
+	session_start();
 
 			$uid = $_SESSION["userid"];
 
@@ -10,7 +11,7 @@
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	        Database::disconnect();
 
-	        print_r($data);
+	        print_r($data)
 	        
 
 ?>
