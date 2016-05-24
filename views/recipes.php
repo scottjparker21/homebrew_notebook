@@ -11,13 +11,18 @@
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	        Database::disconnect();
 
-	        print_r($data);
-
-	        $i = 0;
-
 	        foreach ($data as $recipe_id => $value) {
-	        	foreach ($value as $id){
-	        		echo $id;
+	        	foreach ($value as $rid){
+	        		echo $rid;
+
+	        		$pdo = Database::connect();
+					$sql = "SELECT * FROM `recipe` WHERE `uid` = ? ";
+					$q = $pdo->prepare($sql);
+					$q->execute(array($uid));
+					$data2 = $q->fetch(PDO::FETCH_ASSOC);
+			        Database::disconnect();
+
+			        print_r($data2);
 	        	}
 	        }
 	        
