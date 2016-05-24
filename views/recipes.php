@@ -14,9 +14,9 @@
 	        // print_r($data);
 	        $i = 0;
 
-	        foreach ($data[$i] as $value) {
+	        foreach ($data[$i] as $row) {
 
-	        	echo $value;
+	        	echo $row;
 	        	$i++;
 	        	echo $i;
 	        }
