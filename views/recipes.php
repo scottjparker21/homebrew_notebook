@@ -16,9 +16,9 @@
 
 	        foreach ($data[$i] as $row) {
 
-	        	echo $row;
-	        	$i++;
-	        	echo $i;
+	        	foreach ($row as $value){
+	        		echo $value;
+	        	}
 	        }
 	        
 
