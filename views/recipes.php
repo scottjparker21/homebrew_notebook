@@ -19,6 +19,7 @@
 	        	foreach ($row as $value){
 	        		echo $value;
 	        	}
+	        	$i++;
 	        }
 	        
 
