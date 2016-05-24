@@ -16,7 +16,9 @@
 	        $i = 0;
 
 	        foreach ($data as $recipe_id => $value) {
-	        	echo $value;
+	        	foreach ($value as $id){
+	        		echo $id;
+	        	}
 	        }
 	        
 
