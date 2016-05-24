@@ -21,7 +21,7 @@
 					$q->execute(array($rid));
 					$data2 = $q->fetch(PDO::FETCH_ASSOC);
 			        Database::disconnect();
-
+ 
 			        print_r($data2);
 	        	}
 	        }
