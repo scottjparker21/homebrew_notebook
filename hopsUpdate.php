@@ -30,15 +30,15 @@ $data = array();        // array to pass back data
 // }   else {
 		$data['errors']= NULL;
 		
-		// $name = $_POST['name'];
-		// $amt = $_POST['amt'];
-		// $time_added = $_POST['time_added'];
-		// $step = $_POST['step'];
+		$name = $_POST['name'];
+		$amt = $_POST['amt'];
+		$time_added = $_POST['time_added'];
+		$step = $_POST['step'];
 
-		// $data['name']= $name;
-		// $data['amt']= $amt;
-		// $data['time_added']= $time_added;
-		// $data['step']= $step;
+		$data['name']= $name;
+		$data['amt']= $amt;
+		$data['time_added']= $time_added;
+		$data['step']= $step;
 			
 	 //    // if there are no errors, return a message
 	    $data['success'] = true;
