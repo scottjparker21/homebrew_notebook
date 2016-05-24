@@ -11,13 +11,14 @@
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	        Database::disconnect();
 
-	        print_r($data);
+	        // print_r($data);
 	        $i = 0;
 
 	        foreach ($data[$i] as $value) {
 
 	        	echo $value;
 	        	$i++;
+	        	echo $i;
 	        }
 	        
 
