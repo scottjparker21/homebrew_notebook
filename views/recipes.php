@@ -13,17 +13,26 @@
 
 	        foreach ($data as $recipe_id => $value) {
 	        	foreach ($value as $rid){
-	        		echo $rid;
+	        		// echo $rid;
 
 	        		$pdo = Database::connect();
 					$sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
 					$q = $pdo->prepare($sql);
 					$q->execute(array($rid));
-					$data2 = $q->fetch(PDO::FETCH_ASSOC);
+					$recipe = $q->fetch(PDO::FETCH_ASSOC);
+			        
+					$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
+					$q2 = $pdo->prepare($sql2);
+					$q2->execute(array($rid));
+					$results = $q2->fetch(PDO::FETCH_ASSOC);
 			        Database::disconnect();
- 
-			        print_r($data2);
-			        echo "name= " . $data2['name'];
+
+			        print_r($results);
+			        // echo "name= " . $data2['name'];
+			        echo '<h1>' . $recipe['name'] . '</h1>';
+			        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
+			        echo '<h3>Color: ' . $results['color'] . '</h3>';
+
 	        	}
 	        }
 	        
