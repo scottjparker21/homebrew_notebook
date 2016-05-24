@@ -10,8 +10,5 @@
 
 	        print_r($data);
 
-	        foreach($data as $value){
-	        	echo $value;
-	       	}
 ?>
  
