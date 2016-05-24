@@ -11,7 +11,7 @@
 			$data = $q->fetchAll(PDO::FETCH_ASSOC);
 	        Database::disconnect();
 
-	        foreach ($data as $value) {
+	        foreach ($data as $key => $value) {
 
 	        	echo $value;
 	        }
