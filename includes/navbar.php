@@ -21,6 +21,7 @@
                         <li ng-class="{ active: isActive('/boil')}"><a href="#/boil">Boil</a></li>
                         <li ng-class="{ active: isActive('/bottling')}"><a href="#/bottling">Bottling</a></li>
                         <li ng-class="{ active: isActive('/fermentation')}"><a href="#/fermentation">Fermentation</a></li>
+                        <li ng-class="{ active: isActive('/hops')}"><a href="#/hops">Hops</a></li>
                       </ul> 
                   <li><a href=""></a></li>                
         			</ul>

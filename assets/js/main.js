@@ -34,6 +34,11 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
                 controller  : 'fermentationController'
             })
 
+            .when('/hops', {
+                templateUrl : 'views/hops.php',
+                controller  : 'hopsController'
+            })
+
             .when('/boil', {
                 templateUrl : 'views/boil.php',
                 controller  : 'boilController'
@@ -163,41 +168,78 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     brewApp.controller('fermentationController', function($scope,$http) {
-            // create a message to display in our view
-            $scope.message = 'awesome Fermentation update page...soon';
-            $scope.isActive = function (viewLocation) {
-                 var active = (viewLocation === $location.path());
-                 return active;
-            };
-            $scope.formData = {};
-            $scope.urlenc = $.param($scope.formData);
-            // $scope.processForm = function() {
-            // };
-            // process the form
-            $scope.processForm = function() {
-              $http({
-              method  : 'POST',
-              url     : '/homebrew_notebook/fermentationUpdate.php',
-              data    : $.param($scope.formData),  // pass in data as strings
-              headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
-             })
-              .success(function(data) {
-                // console.log(data);
+        // create a message to display in our view
+        $scope.message = 'awesome Fermentation update page...soon';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
+        $scope.formData = {};
+        $scope.urlenc = $.param($scope.formData);
+        // $scope.processForm = function() {
+        // };
+        // process the form
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/fermentationUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            // console.log(data);
 
-                // if (!data.success) {
+            // if (!data.success) {
 
-                //   console.log(data);
+            //   console.log(data);
+          
+            // } else {
+              // if successful, bind success message to message
+              // console.log(data);
+              // $scope.message = data.rsi;
               
-                // } else {
-                  // if successful, bind success message to message
-                  // console.log(data);
-                  // $scope.message = data.rsi;
-                  
-                // }
-              });
-            };    
-        });
+            // }
+          });
+        };    
+    });
+
+    brewApp.controller('hopsController', function($scope,$http) {
+        // create a message to display in our view
+        $scope.message = 'awesome Fermentation update page...soon';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
+        $scope.formData = {};
+        $scope.urlenc = $.param($scope.formData);
+        // $scope.processForm = function() {
+        // };
+        // process the form
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/hopsUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            // console.log(data);
+
+            // if (!data.success) {
+
+            //   console.log(data);
+          
+            // } else {
+              // if successful, bind success message to message
+              // console.log(data);
+              // $scope.message = data.rsi;
+              
+            // }
+          });
+        };    
+    });
   
+
   
 
     //navbar controller function
