@@ -12,10 +12,12 @@
 	        Database::disconnect();
 
 	        print_r($data);
+	        $i = 0;
 
-	        foreach ($data as $key => $value) {
+	        foreach ($data[$i] as $value) {
 
 	        	echo $value;
+	        	$i++;
 	        }
 	        
 
