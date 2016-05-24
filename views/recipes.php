@@ -18,7 +18,7 @@
 	        		$pdo = Database::connect();
 					$sql = "SELECT * FROM `recipe` WHERE `uid` = ? ";
 					$q = $pdo->prepare($sql);
-					$q->execute(array($uid));
+					$q->execute(array($rid));
 					$data2 = $q->fetch(PDO::FETCH_ASSOC);
 			        Database::disconnect();
 
