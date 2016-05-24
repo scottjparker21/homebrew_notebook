@@ -12,14 +12,11 @@
 	        Database::disconnect();
 
 	        print_r($data);
+
 	        $i = 0;
 
-	        foreach ($data[$i] as $row) {
-
-	        	foreach ($row as $value){
-	        		echo $value;
-	        	}
-	        	$i++;
+	        foreach ($data as $recipe_id => $value) {
+	        	echo $value;
 	        }
 	        
 
