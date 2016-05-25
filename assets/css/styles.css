@@ -40,6 +40,10 @@ body {
   position: relative;
   background-position: 5% 50%;
 }
+#jumbo-icon{
+  width:50%;
+  height: auto;
+}
 /*.logo {
   position: absolute;
   top: -110px;
