@@ -99,14 +99,12 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           
             } else {
               // if successful, bind success message to message
-              console.log(data);
+              console.log('success');
               // $scope.message = data.rsi;
               $scope.message = data.message;
             }
           });
-          $scope.changeView = function(){
               $location.path('/mash'); // path not hash
-          }
         };
     });
 
