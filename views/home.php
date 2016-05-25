@@ -20,6 +20,7 @@
 		</div>	
 	<div class="container">
 		<div class="row">
+			<p><i class="icon-camera-retro icon-2x"></i> icon-camera-retro</p>
 <!-- 			<center><div class="col-lg-12">
  -->			<center><div class="col-lg-10 col-lg-offset-2">
 					<div class="home-box col-lg-5">
