@@ -33,7 +33,7 @@
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
 					        <img ng-src="{{imgsrc1}}"/>
-					      <div>Mash</div>
+					      <center><div>Mash</div><center>
 					    </div>
 					</div>
 					<div class="col-lg-2">
