@@ -9,6 +9,15 @@
 				</div>
 	  		</div>
 		</div>
+		<div class="container-fluid" style="background-color:#935347;">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-lg-8 col-lg-offset-2">
+						<center><h1>Learn,create, and share with Homebrew Notebook.</h1></center>
+					</div>
+				</div>
+			</div>
+		</div>	
 	<div class="container">
 		<div id="texbox">
 			
