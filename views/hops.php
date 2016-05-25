@@ -30,7 +30,7 @@
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1" style="background-color:floralWhite">
 					<center>
-					<div class="col-lg-2 col-md-2 col-sm-2">
+					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2">
 						<div id="bleh" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
 					        <img ng-src="{{imgsrc1}}" style="width: 100%; height: auto;"/>
 					      <center><div><h4>Mash</h4></div></center>
