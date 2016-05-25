@@ -92,15 +92,15 @@ background:#ede9ce;
   background-color: #64706c;
   border-color:#647061;
 }
-.navbar-inverse .navbar-brand {
-    color: #ede9ce;
+.navbar-default .navbar-brand {
+    color: #777;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
     color: #ede9ce;
 }
-.navbar-inverse .navbar-nav > li > a {
-    color: #ede9ce;
+.navbar-default .navbar-nav > li > a {
+    color: #777;
 }
 
 @media only screen and (max-width : 991px) {
