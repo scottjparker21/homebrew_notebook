@@ -26,34 +26,7 @@
 		<center><h1 id="quicksand"> Hops </h1></center>
 	</div>	
 		<div class="container">
-			<!-- <div class="row">
-				<div class="col-lg-10"> -->
-					<!-- <div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
-					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
-					    </div>
-					</div> -->
-					<!-- <div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
-					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
-					    </div>
-					</div>
-					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
-					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
-					    </div>
-					</div>
-					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
-					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
-					    </div>
-					</div> -->
-				<!-- </div>
-			</div> -->
+			
 			<form class="form-register form-signin" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
