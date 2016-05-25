@@ -3,8 +3,15 @@
 	<html ng-app="brewApp" lang="en" style="background-color:#ede9ce;">
 		<?php require_once 'includes/header.php';?>
 		<body >
-			<?php require_once 'includes/navbar.php';?>			
-	
+			<?php require_once 'includes/navbar.php';?>
+		<!-- 	
+			<div class="jumbotron">
+				<div class="container-fluid">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="">
+              			<img class="" src="" alt="">
+          			</div>
+          		</div>
+			</div>	 -->
 			<div class="container" style="background-color:#ede9ce;">	
 				<div id="content">
 				
