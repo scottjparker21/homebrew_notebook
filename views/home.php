@@ -3,6 +3,7 @@
 				<div class="row">
 				<div class="col-lg-12">
 						<center><h1 id="quicksand"> Homebrew Notebook </h1></center>
+						<center><div><img id="process" ng-src="assets/img/jumbo_icons.svg" /></div></center>
 					</div>
 				</div>
 	  		</div>
