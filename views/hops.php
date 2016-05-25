@@ -1,5 +1,6 @@
 <?php 
 		require_once '../includes/database.php';
+		require_once '../includes/rec_step.php';
 
 		// public function read() {
 		// try{
@@ -26,9 +27,9 @@
 	<div class="col-lg-12">
 		<center><h1 id="quicksand"> Hops </h1></center>
 	</div>	
-		<div class="container" ng-app="">
+		<div class="container">
 			
-			<?php require_once '../includes/rec_step.php'; ?>
+			
 			
 			<form class="form-register form-signin" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
