@@ -50,8 +50,12 @@ h2{
   margin: 10px;
   padding:20px;
 }
+/*font awesome icon styling*/
 .fa-pencil{
   color:white;
+}
+fa-paper-plane-o {
+  color: white;
 }
 #subhead-text{
   position: relative;
