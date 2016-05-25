@@ -1,10 +1,11 @@
 html {
-  background-color: #ede9ce;
+
   position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
+  background-color: #ede9ce;
   margin-bottom: 60px;
 }
 #icon-box {
