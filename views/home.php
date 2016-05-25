@@ -37,7 +37,8 @@
 				</div></center>
 				<center><div class="col-lg-10 col-lg-offset-1">
 					<div class="home-box col-lg-5">
-						<center><h2> Create </h2></center>
+						<center><div><i class="fa fa-university fa-3x "></i></div>
+						<center><h2> Learn </h2></center>
 						<center><p class="white"> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 					</div>
 					<div class=" home-box col-lg-5">
