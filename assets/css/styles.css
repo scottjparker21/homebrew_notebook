@@ -86,6 +86,12 @@ background:#ede9ce;
   margin:20px;
   margin-top: 40px;
 }
+
+/*navbar styling*/
+.navbar-inverse {
+  background-color: #64706c;
+  border-color:#647061;
+}
 @media only screen and (max-width : 991px) {
 
     #home_thumb {
