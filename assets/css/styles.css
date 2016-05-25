@@ -92,6 +92,10 @@ background:#ede9ce;
   background-color: #64706c;
   border-color:#647061;
 }
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #ede9ce;
+}
 @media only screen and (max-width : 991px) {
 
     #home_thumb {
