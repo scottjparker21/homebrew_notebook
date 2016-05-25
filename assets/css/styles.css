@@ -40,6 +40,7 @@ body {
 }
 .home-box{
   background-color: #64706c;
+  height: 60vh;
   margin: 10px;
 }
 #subhead-text{
