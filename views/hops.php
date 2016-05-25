@@ -33,31 +33,31 @@
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
 					        <img ng-src="{{imgsrc1}}"/>
-					      <center><div>Mash</div><center>
+					      <center><div><h3>Mash</h3></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc2='assets/img/boil_b.svg'" ng-mouseover="imgsrc2='assets/img/boil_c.svg'" ng-mouseout="imgsrc2='assets/img/boil_b.svg'">
 					        <img ng-src="{{imgsrc2}}"/>
-					      <div>Boil</div>
+					      <center><div><h3>Boil</h3></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc3='assets/img/hops_b.svg'" ng-mouseover="imgsrc3='assets/img/hops_c.svg'" ng-mouseout="imgsrc3='assets/img/hops_b.svg'">
 					        <img ng-src="{{imgsrc3}}"/>
-					      <div>Hops</div>
+					      <center><div><h3>Hops</h3></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc4='assets/img/carboy_b.svg'" ng-mouseover="imgsrc4='assets/img/carboy_c.svg'" ng-mouseout="imgsrc4='assets/img/carboy_b.svg'">
 					        <img ng-src="{{imgsrc4}}"/>
-					      <div>Fermentation</div>
+					      <center><div><h3>Fermentation</h3></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc5='assets/img/bot_b.svg'" ng-mouseover="imgsrc5='assets/img/bot_c.svg'" ng-mouseout="imgsrc5='assets/img/bot_b.svg'">
 					        <img ng-src="{{imgsrc5}}"/>
-					      <div>Bottling</div>
+					      <center><div><h3>Bottling</h3></div></center>
 					    </div>
 					</div>
 					
