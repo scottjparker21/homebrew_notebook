@@ -40,7 +40,8 @@ body {
 }
 .home-box{
   background-color: #64706c;
-  margin: 10px;
+  margin: auto;
+  /*margin: 10px;*/
 }
 #subhead-text{
   position: relative;
