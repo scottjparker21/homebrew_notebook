@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 	<html ng-app="brewApp" lang="en" style="background-color:#ede9ce;">
 		<?php require_once 'includes/header.php';?>
-		<body style="background-color:#ede9ce;">
+		<body >
 			<?php require_once 'includes/navbar.php';?>
 			<!-- <div class="jumbotron">
 				<div class="container-fluid">
@@ -11,7 +11,7 @@
           			</div>
           		</div>
 			</div> -->	
-			<div class="container">	
+			<div class="container" style="background-color:#ede9ce;">	
 				<div id="content">
 				
 					<div class="row">
