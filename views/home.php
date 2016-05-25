@@ -20,12 +20,12 @@
 		</div>	
 	<div class="container">
 		<div class="row">
-			<i class="fa fa-flag fa-2x pull-left"></i>
+			<i class="fa fa-pencil fa-2x pull-left"></i>
 <!-- 			<center><div class="col-lg-12">
  -->			<center><div class="col-lg-10 col-lg-offset-2">
 					<div class="home-box col-lg-5">
-						<div><span><i class="icon-camera-retro icon-large"></i></span></div>
-						<center><h2> Create </h2></center>
+						<center><div><i class="fa fa-pencil fa-3x pull-left"></i></div>
+						<h2> Create </h2></center>
 						<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 					</div>
 					<div class="home-box col-lg-5">
