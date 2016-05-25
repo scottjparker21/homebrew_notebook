@@ -2,8 +2,8 @@
 			<div class="container-fluid">
 				<div class="row">
 				<div class="col-lg-12">
-						<center><h1 id="quicksand"> Homebrew Notebook </h1></center>
-						<center><div><img id="jumbo-icon" ng-src="assets/img/jumbo_icons.svg" /></div></center>
+						<center><h1 id="quicksand" class="fadInDown"> Homebrew Notebook </h1></center>
+						<center><div><img class="fadInUp" id="jumbo-icon" ng-src="assets/img/jumbo_icons.svg" /></div></center>
 					</div>
 				</div>
 	  		</div>
