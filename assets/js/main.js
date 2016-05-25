@@ -90,12 +90,8 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           //redirect on submit
-          var view = '/mash';
-          $scope.changeView = function(view){
-              $location.path(view); // path not hash
-          }
           .success(function(data) {
-            console.log(data);
+
 
             if (!data.success) {
 
@@ -108,6 +104,9 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
               $scope.message = data.message;
             }
           });
+          $scope.changeView = function(){
+              $location.path('/mash'); // path not hash
+          }
         };
     });
 
