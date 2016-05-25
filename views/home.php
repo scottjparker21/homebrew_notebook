@@ -12,7 +12,7 @@
 			<div id="subhead" class="row" style="background-color:#935347;">
 				<div class="col-lg-12">
 					<div class="col-lg-8 col-lg-offset-2">
-						<center><h1 id="pacifico">Learn,create, and share with Homebrew Notebook.</h1></center>
+						<center><h1 id="pacifico">Learn,Create, and Share with Homebrew Notebook.</h1></center>
 					</div>
 				</div>
 			</div>
