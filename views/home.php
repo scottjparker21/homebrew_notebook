@@ -5,11 +5,9 @@
 				<center><h1 id="quicksand"> Homebrew Notebook </h1></center>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-12" id="textbox">
-				<center><p>Homebrewing is fun!</p></center>
-			</div>
+		<div class="row" style="background-color:#c7ad88;">
+			<div class="col-lg-12">
+				<img id="process" ng-src="assets/img/process.svg" />
 		</div>
 	</div>
-	<p> {{ message }} </p>
-	<p> Angular content is a go </p>
+	
