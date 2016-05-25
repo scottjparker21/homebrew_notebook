@@ -28,30 +28,38 @@
 		<div class="container" ng-app="">
 			<div class="row">
 				<div class="col-lg-10">
-					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='assets/img/bot_b.svg'" ng-mouseover="imgsrc='assets/img/bot_c.svg'" ng-mouseout="imgsrc='assets/img/bot_b.svg'">
+					<center>
+					<div class="col-lg-2">
+						<div id="bleh" ng-init="imgsrc='assets/img/barley_b.svg'" ng-mouseover="imgsrc='assets/img/barley_c.svg'" ng-mouseout="imgsrc='assets/img/barley_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
+					      <div>img description</div>
 					    </div>
 					</div>
-					<!-- <div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
+					<div class="col-lg-2">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/img/boil_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/img/boil_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/img/boil_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
+					      <div>img description</div>
 					    </div>
 					</div>
-					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
+					<div class="col-lg-2">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/img/hops_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/img/hops_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/img/hops_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
+					      <div>img description</div>
 					    </div>
 					</div>
-					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
+					<div class="col-lg-2">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/img/carboy_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/img/carboy_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/img/carboy_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
-					      <div>Image description</div>
+					      <div>img description</div>
 					    </div>
-					</div> -->
+					</div>
+					<div class="col-lg-2">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/img/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/img/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/img/bot_b.svg'">
+					        <img ng-src="{{imgsrc}}"/>
+					      <div>img description</div>
+					    </div>
+					</div>
+					</center>
 				</div>
 			</div>
 			<form class="form-register form-signin" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
