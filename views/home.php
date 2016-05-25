@@ -1,4 +1,4 @@
-		<link rel="stylesheet" type="text/css" href="assets/css/form-register.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<div class="jumbotron">
 			<div class="container-fluid">
 				<div class="row">
