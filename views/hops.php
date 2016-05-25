@@ -28,7 +28,7 @@
 		<div class="container" ng-app="">
 			
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-2" style="background-color:floralWhite">
 					
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
