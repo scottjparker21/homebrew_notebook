@@ -4,8 +4,6 @@
 		<?php require_once 'includes/header.php';?>
 		<body style="background-color:#ede9ce;">
 			<?php require_once 'includes/navbar.php';?>
-			<div class="results">
-			</div>
 			<!-- <div class="jumbotron">
 				<div class="container-fluid">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="">
