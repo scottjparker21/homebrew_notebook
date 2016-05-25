@@ -1,4 +1,4 @@
-//Controllers ---------------------------------------------->
+  //Controllers ---------------------------------------------->
 
     // create the module and named it kodeKiwiApp
     // also include ngRoute for all our routing needs
@@ -82,12 +82,18 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
 
         $scope.formData = {};
         $scope.processForm = function() {
+
           $http({
           method  : 'POST',
           url     : '/homebrew_notebook/process.php',
           data    : $.param($scope.formData),  // pass in data as strings
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
+          //redirect on submit
+          var view = '/mash';
+          $scope.changeView = function(view){
+              $location.path(view); // path not hash
+          }
           .success(function(data) {
             console.log(data);
 
