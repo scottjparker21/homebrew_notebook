@@ -73,7 +73,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
     });
 
-    brewApp.controller('newRecipeController', function($scope,$http) {
+    brewApp.controller('newRecipeController', function($scope,$http,$location) {
         
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
