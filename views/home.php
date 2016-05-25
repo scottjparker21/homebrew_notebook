@@ -7,7 +7,7 @@
 		</div>
 		<div class="row" style="background-color:#c7ad88;">
 			<div class="col-lg-12">
-				<img id="process" ng-src="assets/img/process.svg" />
+				<center><img id="process" ng-src="assets/img/process.svg" /></center>
 		</div>
 	</div>
 	
