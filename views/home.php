@@ -22,6 +22,7 @@
 <!-- 			<center><div class="col-lg-12">
  -->			<center><div class="col-lg-10 col-lg-offset-2">
 					<div class="home-box col-lg-5">
+						<div><i class="icon-camera-retro icon-large"></i></div>
 						<center><h2> Create </h2></center>
 						<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 					</div>
