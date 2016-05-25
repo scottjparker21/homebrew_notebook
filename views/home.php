@@ -12,18 +12,39 @@
 			<div id="subhead" class="row" style="background-color:#935347;">
 				<div class="col-lg-12">
 					<div class="col-lg-8 col-lg-offset-2">
-						<center><h1 id="pacifico">Learn,Create, and Share with Homebrew Notebook.</h1></center>
+						<center><h1 id="pacifico">Create,Share, and Learn with Homebrew Notebook.</h1></center>
 					</div>
 				</div>
 			</div>
 		</div>	
 	<div class="container">
-		<div id="texbox">
-			
-			<div class="row" style="background-color:#c7ad88;">
-				<div class="col-lg-12">
-					<center><img id="process" ng-src="assets/img/process.svg" /></center>
-					<center><h3>THE BREWING PROCESS</h3></center>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="col-lg-4 col-lg-offset-2">
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
+				</div>
+				<div class="col-lg-4">
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
+				</div>
+				<div class="colg-lg-4 col-lg-offset-2">
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
+				</div>
+				<div class="col-lg-4">
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="texbox">
+				<div class="row" style="background-color:#c7ad88;">
+					<div class="col-lg-12">
+						<center><img id="process" ng-src="assets/img/process.svg" /></center>
+						<center><h3>THE BREWING PROCESS</h3></center>
+				</div>
 			</div>
 		</div>
 	</div>
