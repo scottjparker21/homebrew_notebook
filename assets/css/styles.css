@@ -36,6 +36,9 @@ body {
   min-height: 150px;
 
 }
+#subhead-text{
+  position: relative;
+}
 .jumbotron {
   background-image: url(../img/banner.jpg);
   background-size: cover;
@@ -72,6 +75,11 @@ body {
   font-size: 80px;
   color:white;
   text-shadow: 5px 5px 4px #000;
+}
+#pacifico{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
 }
 body{
 background:#ede9ce;
