@@ -1,5 +1,5 @@
 <?php 
-		require_once '../includes/database.php';
+		require_once 'homebrew_notebook/includes/database.php';
 
 		// public function read() {
 		// try{
@@ -29,25 +29,25 @@
 			<div class="row">
 				<center><div class="col-lg-10">
 					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='../assets/image/bot_b.svg'" ng-mouseover="imgsrc='../assets/image/bot_c.svg'" ng-mouseout="imgsrc='../assets/image/bot_b.svg'">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
 					      <div>Image description</div>
 					    </div>
 					</div>
 					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='../assets/image/bot_b.svg'" ng-mouseover="imgsrc='../assets/image/bot_c.svg'" ng-mouseout="imgsrc='../assets/image/bot_b.svg'">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
 					      <div>Image description</div>
 					    </div>
 					</div>
 					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='../assets/image/bot_b.svg'" ng-mouseover="imgsrc='../assets/image/bot_c.svg'" ng-mouseout="imgsrc='../assets/image/bot_b.svg'">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
 					      <div>Image description</div>
 					    </div>
 					</div>
 					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='../assets/image/bot_b.svg'" ng-mouseover="imgsrc='../assets/image/bot_c.svg'" ng-mouseout="imgsrc='../assets/image/bot_b.svg'">
+						<div id="bleh" ng-init="imgsrc='homebrew_notebook/assets/image/bot_b.svg'" ng-mouseover="imgsrc='homebrew_notebook/assets/image/bot_c.svg'" ng-mouseout="imgsrc='homebrew_notebook/assets/image/bot_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
 					      <div>Image description</div>
 					    </div>
