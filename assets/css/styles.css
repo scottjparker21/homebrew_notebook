@@ -6,6 +6,12 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+#icon-box {
+  background-color: #64706c;
+  margin: 10px;
+  padding: 8px;
+
+}
 .footer {
   position: absolute;
   bottom: 0;
