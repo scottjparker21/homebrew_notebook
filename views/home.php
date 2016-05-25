@@ -20,21 +20,21 @@
 	<div class="container">
 		<div class="row">
 			<center><div class="col-lg-12">
-				<div class="home-box col-lg-4 col-lg-offset-2">
-					<center><center><h2> Create </h2></center>
-					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center></center>
+				<div class="home-box col-lg-4 col-lg-offset-4">
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 				</div>
 				<div class="home-box col-lg-4">
-					<center><center><h2> Create </h2></center>
-					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center></center>
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 				</div>
 				<div class="home-box col-lg-4">
-					<center><center><h2> Create </h2></center>
-					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center></center>
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 				</div>
 				<div class=" home-box col-lg-4">
-					<center><center><h2> Create </h2></center>
-					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center></center>
+					<center><h2> Create </h2></center>
+					<center><p> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 				</div>
 			</div></center>
 		</div>
