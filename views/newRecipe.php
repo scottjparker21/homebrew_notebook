@@ -1,4 +1,4 @@
-			<?php echo $_SESSION["userid"]; ?>
+			
 			<div class="col-lg-12">
 				<center><h1 id="quicksand"> New Brew </h1></center>
 			</div>
@@ -43,7 +43,7 @@
 						  		</div>
 						  		<div class="form-row form-actions control-group">
 						    		<div class="controls">
-						      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
+						      			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
 						    		</div>
 						  		</div>
 						  		<pre>

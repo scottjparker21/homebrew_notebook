@@ -2,32 +2,23 @@
 <?php 
 		require_once '../includes/database.php';
 
-		// public function read() {
-		// try{
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
 			$q->execute(array(2));
 			$boil = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
-		    // return $data;
-		// } catch (PDOException $error){
-		// 	echo "something went wrong.";
-		// 	//echo $error->getMessage();
-		// 	die();
-		// }
-
-		    echo "<pre>";
-			print_r($boil);
-			echo "</pre>";
+		 //    echo "<pre>";
+			// print_r($boil);
+			// echo "</pre>";
 
 
 ?>
 	<div class="col-lg-12">
-		<center><h1 id="quicksand"> Boil </h1></center>
+		<center><h1 id="pacifico"> Boil </h1></center>
 	</div>	
 		<div class="container">
-			<form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
+			<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
 						<!-- success message -->
@@ -71,17 +62,17 @@
 				  		<div class="form-row form-actions control-group">
 				    		<div class="controls">
 			
-				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
+				      			<button id="send" type="submit" class="btn btn-success">Save</button>
 				    		</div>
 				  		</div>
-				  		<pre>
+				  		<!-- <pre>
 							{{ formData.duration }}
 							{{ formData.hops_type}}
 							{{ formData.hops_amt }}
 							{{ formData.time_added }}
 							{{ formData.notes }}
-						</pre>
+						</pre> -->
 				  	</div>	
 				</div>
-		  	</form>	
+		  	</form></center>
 		</div>
