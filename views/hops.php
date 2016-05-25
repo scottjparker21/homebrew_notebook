@@ -26,9 +26,9 @@
 		<center><h1 id="quicksand"> Hops </h1></center>
 	</div>	
 		<div class="container" ng-app="">
-			<center>
+			
 			<div class="row">
-				<div class="col-lg-10">
+				<div class="col-lg-10 col-lg-offset-2">
 					
 					<div class="col-lg-2">
 						<div id="bleh" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
@@ -63,7 +63,7 @@
 					
 				</div>
 			</div>
-			</center>
+			
 			<form class="form-register form-signin" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
