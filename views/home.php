@@ -30,7 +30,7 @@
 					</div>
 					
 					<div class="home-box col-lg-5">
-						<center><div><i class="fa a-paper-plane-o fa-3x "></i></div>
+						<center><div><i class="fa fa-paper-plane-o fa-3x "></i></div>
 						<center><h2> Share </h2></center>
 						<center><p class="white"> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 					</div>
