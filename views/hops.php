@@ -25,11 +25,11 @@
 	<div class="col-lg-12">
 		<center><h1 id="quicksand"> Hops </h1></center>
 	</div>	
-		<div class="container">
+		<div class="container" ng-app="">
 			<div class="row">
 				<div class="col-lg-10">
 					<div class="col-lg-3">
-						<div id="bleh" ng-init="imgsrc='/assets/image/bot_b.svg'" ng-mouseover="imgsrc='/assets/image/bot_c.svg'" ng-mouseout="imgsrc='/assets/image/bot_b.svg'">
+						<div id="bleh" ng-init="imgsrc='assets/image/bot_b.svg'" ng-mouseover="imgsrc='assets/image/bot_c.svg'" ng-mouseout="imgsrc='assets/image/bot_b.svg'">
 					        <img ng-src="{{imgsrc}}"/>
 					      <div>Image description</div>
 					    </div>
