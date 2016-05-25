@@ -95,13 +95,20 @@ background:#ede9ce;
 .navbar-inverse .navbar-brand {
     color: #cccccc;
 }
+.navbar-inverse .navbar-nav > li > a {
+    color: #cccccc;
+}
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
     color: #ede9ce;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
     color: #cccccc;
+    background-color: #64706c;
 }
+
 
 @media only screen and (max-width : 991px) {
 
