@@ -39,7 +39,7 @@
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div  ng-init="imgsrc2='assets/img/boil_b.svg'" ng-mouseover="imgsrc2='assets/img/boil_c.svg'" ng-mouseout="imgsrc2='assets/img/boil_b.svg'">
-					        <img class="" ng-src="{{imgsrc2}}" style=""/>
+					        <a href="#/boil"><img class="" ng-src="{{imgsrc2}}" style=""/></a>
 					      <center><div><h4>Boil</h4></div></center>
 					    </div>
 					</div>
