@@ -43,6 +43,8 @@ body {
 #jumbo-icon{
   width:50%;
   height: auto;
+  -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+  filter: drop-shadow( -5px -5px 5px #000 );
 }
 /*.logo {
   position: absolute;
