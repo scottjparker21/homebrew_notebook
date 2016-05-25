@@ -1,3 +1,4 @@
+		<link rel="stylesheet" type="text/css" href="assets/css/form-register.css">
 		<div class="jumbotron">
 			<div class="container-fluid">
 				<div class="row">
