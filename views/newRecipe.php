@@ -44,7 +44,7 @@
 						  		<div class="form-row form-actions control-group">
 						    		<div class="controls">
 					
-						      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
+						      			<button id="send" type="submit" ng-click="go('/mash')" class="btn btn-success">Next Step</button>
 						    		</div>
 						  		</div>
 						  		<pre>
