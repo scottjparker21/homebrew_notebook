@@ -5,7 +5,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  background-color: #ede9ce;
+  background: #ede9ce;
   margin-bottom: 60px;
 }
 #icon-box {
