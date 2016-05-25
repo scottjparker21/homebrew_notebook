@@ -52,7 +52,7 @@ body {
 }
 #quicksand {
   font-family: 'Quicksand', sans-serif;
-  font-size: 32px;
+  font-size: 150%;
 }
 body{
 background: rgba(255,255,255,1);
