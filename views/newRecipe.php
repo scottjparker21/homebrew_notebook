@@ -54,6 +54,11 @@
 						</div>
 				  	</form>	
 				</div>
-		
+					<script>
+						$scope.go = function ( path ) {
+						  $location.path( path );
+						};
+					</script
+			
 			
 
