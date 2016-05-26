@@ -46,7 +46,7 @@
 					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
 					        echo '</form>';
 					        echo '<form action="getrid.php" method="post">';
-					        echo '<input type="hidden" name="read" value="read">';
+					        echo '<input type="hidden" name="rid" value="read">';
 					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
 					        echo '</form>';
 					        echo '</div></center>';
