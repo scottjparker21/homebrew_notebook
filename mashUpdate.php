@@ -66,7 +66,6 @@ $data = array();        // array to pass back data
         $sql = "UPDATE mash set malt_amt = ?, malt_type = ?, water_amt = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($malt_amt,$malt_type,$water_amt,$notes,$rsi));
-        Database::disconnect();
        
         
          Database::disconnect();
