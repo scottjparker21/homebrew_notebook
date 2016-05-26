@@ -34,7 +34,7 @@
 
 							// foreach ($rsid[0] as $value) {
 							//   foreach($value[0] as $rsi){
-							  	echo $rsi[0][0];
+							  	echo $rsid[0][0];
 							//   }
 							// }
 							  
