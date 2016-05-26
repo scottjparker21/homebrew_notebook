@@ -42,7 +42,7 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<button ng-click="viewRec('.$rid.')" type="submit" class="btn btn-success">View/Edit</button>';
+					        echo '<button onclick="setSess('.$rid.')" ng-click="viewRec()" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</div></center>';
 			        	}
 			        	
