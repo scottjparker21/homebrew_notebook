@@ -41,6 +41,7 @@ h2{
   background-color: #f5f5f5;
 }
 #process {
+  background-image: url(../img/process.svg);
   width:100%;
   height: auto;
 }
