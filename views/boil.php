@@ -1,10 +1,14 @@
 
 <?php 
 		require_once '../includes/database.php';
+
+			session_start();
+			$rsi = $_SESSION['rsi'];
+
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
-			$q->execute(array(2));
+			$q->execute(array($rsi));
 			$boil = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
 		 //    echo "<pre>";

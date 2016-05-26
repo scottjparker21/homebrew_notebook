@@ -1,12 +1,11 @@
 <?php 
 		require_once '../includes/database.php';
-
-		// public function read() {
-		// try{
+ 		session_start();
+		$rsi = $_SESSION['rsi'];
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
-			$q->execute(array(31));
+			$q->execute(array($rsi));
 			$bottling = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
 		    // return $data;
