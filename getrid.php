@@ -6,8 +6,7 @@
         // array to pass back data
 $data = array();
 
-$data = json_decode(file_get_contents("php://input"));
-$rid = $data->rid;
+$data 
 
 
 
