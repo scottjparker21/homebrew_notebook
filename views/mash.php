@@ -16,9 +16,9 @@
 		// 	die();
 		// }
 
-		    echo "<pre>";
-			print_r($mash);
-			echo "</pre>";
+		 //    echo "<pre>";
+			// print_r($mash);
+			// echo "</pre>";
 
 
 ?>
@@ -69,13 +69,13 @@
 				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 				    		</div>
 				  		</div>
-				  		<pre>
+				  		<!-- pre>
 							{{ formData.malt_amt }}
 							{{ formData.malt_type}}
 							{{ formData.water_amt }}
 							{{ formData.notes }}
 							{{ formData.notes }}
-						</pre>
+						</pre> -->
 				  	</div>	
 				</div>
 		  	</form>	

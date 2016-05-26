@@ -16,9 +16,9 @@
 		// 	die();
 		// }
 
-		    echo "<pre>";
-			print_r($bottling);
-			echo "</pre>";
+		 //    echo "<pre>";
+			// print_r($bottling);
+			// echo "</pre>";
 
 
 ?>
@@ -62,13 +62,13 @@
 				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 				    		</div>
 				  		</div>
-				  		<pre>
+				  		<!-- <pre>
 							{{ formData.btl_con }}
 							{{ formData.con_duration}}
 							{{ formData.hops_amt }}
 							{{ formData.time_added }}
 							{{ formData.notes }}
-						</pre>
+						</pre> -->
 				  	</div>	
 				</div>
 		  	</form>	
