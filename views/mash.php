@@ -1,6 +1,6 @@
-
+<?php require_once '../includes/session.php';?>
 <?php 
-	require_once 'includes/session.php'; 
+
 	// public function read() {
 		// try{
 			// $rid = $_SESSION['rid'];
