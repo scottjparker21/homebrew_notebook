@@ -34,7 +34,7 @@
 							// print_r($rsid);
 
 			        		//this returns the data from mash
-			    //     		$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
+			       			//$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
 							// $q2 = $pdo->prepare($sql2);
 							// $q2->execute(array($uid2));
 							// $mash = $q2->fetchAll(PDO::FETCH_ASSOC);
@@ -49,7 +49,6 @@
 							$q2 = $pdo->prepare($sql2);
 							$q2->execute(array($rid));
 							$results = $q2->fetch(PDO::FETCH_ASSOC);
-
 
 					        Database::disconnect();
 
