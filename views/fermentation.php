@@ -16,9 +16,9 @@
 		// 	die();
 		// }
 
-		    echo "<pre>";
-			print_r($fermentation);
-			echo "</pre>";
+		 //    echo "<pre>";
+			// print_r($fermentation);
+			// echo "</pre>";
 
 
 ?>
@@ -69,13 +69,13 @@
 				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 				    		</div>
 				  		</div>
-				  		<pre>
+				  		<!-- <pre>
 							{{ formData.yeast_type }}
 							{{ formData.hops_type}}
 							{{ formData.pitching_temp }}
 							{{ formData.duration }}
 							{{ formData.notes }}
-						</pre>
+						</pre> -->
 				  	</div>	
 				</div>
 		  	</form>	
