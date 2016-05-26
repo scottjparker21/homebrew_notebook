@@ -59,7 +59,8 @@
 				</div>
 			</div>
 		</div>
-		<center><div class="row">
+		<div class="row">
+			<center>
 			<div class="process-buttons col-lg-1 col-lg-offset-3 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_milling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
 	        	<div><h5>Milling</h5></div>
 	    	</div>
@@ -72,7 +73,7 @@
 	   	 	</div>
 
 			<div class="process-buttons col-lg-1 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_filtering.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<div><h5>Whirlpool/Filtration</h5></div>
+	        	<div><h5>Filtration</h5></div>
 	    	</div>
 			<div class="process-buttons col-lg-1 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_fermenting.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
 	        	<div><h5>Fermentation</h5></div>
@@ -80,5 +81,6 @@
 			<div class="process-buttons col-lg-1 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_bottling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
 	        	<div><h5>Bottling</h5></div>
 	    	</div>
-	    </div></center>
+	    	</center>
+	    </div>
 	</div>
