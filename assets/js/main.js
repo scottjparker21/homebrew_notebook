@@ -56,7 +56,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     // create the controller and inject Angular's $scope
-    brewApp.controller('homeController', function($scope,$location) {
+    brewApp.controller('homeController', function($scope) {
         // create a message to display in our view
         $scope.message = 'awesome home...someday';
         $scope.isActive = function (viewLocation) {
@@ -65,7 +65,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
     });
 
-    brewApp.controller('recipesController', function($scope) {
+    brewApp.controller('recipesController', function($scope,$location) {
         $scope.message = 'this will be the recipes view';
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
