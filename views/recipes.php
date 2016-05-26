@@ -43,7 +43,7 @@
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
 					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
-					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
+					        echo '<button id="send" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</form>';
 					        echo '</div></center>';
 			        	}
@@ -53,10 +53,10 @@
 		?>
 
 	</div>	
-		<!-- <form class="" ng-submit="viewRec()">
+		<form class="" ng-submit="viewRec()">
 			<input type="text" name="maltType" ng-model="riewRecipes.rid">
 			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
-		</form>	 -->
+		</form>	
 
 
 
