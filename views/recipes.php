@@ -35,7 +35,7 @@
 			        echo '<h1>' . $recipe['name'] . '</h1>';
 			        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 			        echo '<h3>Color: ' . $results['color'] . '</h3>';
-			        echo '</div>';
+			        echo '</div></center>';
 	        	}
 	        }
 
