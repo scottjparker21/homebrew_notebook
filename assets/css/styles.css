@@ -11,6 +11,11 @@ body {
 h2{
   color: white;
 }
+h4{
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+
+}
 .process-buttons{
   background-color:#935347 ;
   min-height: 30px;
