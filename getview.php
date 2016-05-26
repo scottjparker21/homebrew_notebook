@@ -3,7 +3,7 @@
 
 	$_SESSION['rsi'] = $_POST['rid'];
 
-	header( "Location: index.php#/mash" );
+	header( "Location: index.php#/review" );
 
 
 ?>
