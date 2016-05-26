@@ -42,11 +42,13 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
+					        echo '<input type="hidden" value="'. $rid .'" ng-model="rid">';
 					        echo '<button ng-click="viewRec('.$rid.')" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</div></center>';
 			        	}
 			        	
 			        }
+			        
 		?>
 
 	</div>	
