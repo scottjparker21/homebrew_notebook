@@ -4,7 +4,9 @@
 	?>
 
 	<div class="container">
+
 		<h1> <?php echo $_SESSION['username']; ?> 's Recipes </h1>
+		<h1> test </h1>
 
 		<?php
 			
