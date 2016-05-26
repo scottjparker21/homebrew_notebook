@@ -1,7 +1,6 @@
 
 <?php 
 		require_once '../includes/database.php';
-
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
@@ -11,11 +10,9 @@
 		 //    echo "<pre>";
 			// print_r($boil);
 			// echo "</pre>";
-
-
 ?>
 	<div class="col-lg-12">
-		<center><h1 id="pacifico"> Boil </h1></center>
+		<center><h1 class="pacifico"> Boil </h1></center>
 	</div>	
 		<div class="container">
 
