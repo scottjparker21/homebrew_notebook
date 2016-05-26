@@ -4,6 +4,7 @@
 <?php
 // process.php
         // array to pass back data
+$data = array();
 
 $_SESSION['rid'] = $_POST['rid'];
 $data['foo'] = $_POST['rid'];
