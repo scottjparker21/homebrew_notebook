@@ -17,6 +17,7 @@
 					$q = $pdo->prepare($sql);
 					$q->execute(array($uid));
 					$data = $q->fetchAll(PDO::FETCH_ASSOC);
+					print_r($data);
 			        Database::disconnect();
 
 			        foreach ($data as $recipe_id => $value) {
@@ -34,10 +35,16 @@
 							$q2 = $pdo->prepare($sql2);
 							$q2->execute(array($rid));
 							$results = $q2->fetch(PDO::FETCH_ASSOC);
+
+							$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
+							$q2 = $pdo->prepare($sql2);
+							$q2->execute(array($rid));
+							$results = $q2->fetch(PDO::FETCH_ASSOC);
+
 					        Database::disconnect();
 
-					        print_r($recipe);
-					        print_r($results);
+					        // print_r($recipe);
+					        // print_r($results);
 
 					        // echo "name= " . $data2['name'];
 					        echo '<form action="getrid.php" method="post">';
