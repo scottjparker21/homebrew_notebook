@@ -44,9 +44,10 @@
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
 					        echo '<button id="' . $rid . '" ng-click="viewRec()" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</div></center>';
-			        	}
-			        	echo '<h5>' . $recipe['name'] . '</h5>';
+					        echo '<h5>' . $recipe['name'] . '</h5>';
 			        	echo $rid;
+			        	}
+			        	
 			        }
 		?>
 
