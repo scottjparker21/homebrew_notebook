@@ -1,3 +1,5 @@
+
+
 <?php
 	require_once '../includes/database.php';
 	session_start();
@@ -29,12 +31,15 @@
 
 			        print_r($results);
 			        // echo "name= " . $data2['name'];
+			        echo '<center><div class="user-recipe col-lg-6">';
 			        echo '<h1>' . $recipe['name'] . '</h1>';
 			        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 			        echo '<h3>Color: ' . $results['color'] . '</h3>';
-
+			        echo '</div>';
 	        	}
 	        }
+
+
 	        
 
 ?>

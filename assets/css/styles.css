@@ -11,6 +11,11 @@ body {
 h2{
   color: white;
 }
+.user-recipe{
+  background-color:#c7ad88;
+  margin:15px;
+  padding:10px;
+}
 .white{
   color: white;
 }
@@ -100,6 +105,7 @@ h2{
   font-family: 'Pacifico', cursive;
   font-size: 75px;
   color: #c7ad88;
+  margin:15px;
 }
 #pacifico-home{
   font-family: 'Pacifico', cursive;
