@@ -1,12 +1,11 @@
 
+<?php 
+		require_once '../includes/database.php';
 
-<?php
-
-	
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
-			$q->execute(array());
+			$q->execute(array(2));
 			$boil = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
 		 //    echo "<pre>";
@@ -16,7 +15,7 @@
 
 ?>
 	<div class="col-lg-12">
-		<center><h1 class="pacifico"> Boil </h1></center>
+		<center><h1 id="pacifico"> Boil </h1></center>
 	</div>	
 		<div class="container">
 
@@ -45,7 +44,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_amt }">
 				    		<label class="control-label">Hops Amount</label>
 				    		<div class="controls">
-				    			<?php echo	'<input value="' ."'" . $boil['hops_amt'] ."'" . '" type="text" name="hops_amt" ng-model="formData.hops_amt">'; ?>
+				    			<?php echo	'<input ng-init="formData.hops_amt=' ."'" . $boil['hops_amt'] ."'" . '" type="text" name="hops_amt" ng-model="formData.hops_amt">'; ?>
 				      			<span class="help-block" ng-show="!errorhops_amt">{{ errorhops_amt }}</span> 
 				    		</div>
 				  		</div>
