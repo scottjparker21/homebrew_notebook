@@ -11,6 +11,12 @@ body {
 h2{
   color: white;
 }
+.process-buttons{
+  background-color:#935347 ;
+  min-height: 30px;
+  margin:5px;
+  padding:5px;
+}
 .user-recipe{
   background-color: #c7ad88;
   margin: 15px;
