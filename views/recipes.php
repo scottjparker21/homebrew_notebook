@@ -36,6 +36,8 @@
 							$results = $q2->fetch(PDO::FETCH_ASSOC);
 					        Database::disconnect();
 
+					        echo $results['recipe_step_id'];
+
 					        // echo "name= " . $data2['name'];
 					        echo '<form action="getrid.php" method="post">';
 					        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
