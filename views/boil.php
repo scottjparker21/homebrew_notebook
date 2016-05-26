@@ -5,7 +5,7 @@
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
-			$q->execute(array(2));
+			$q->execute(array($_SESSION['rid']));
 			$boil = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
 		 //    echo "<pre>";

@@ -4,7 +4,7 @@
 	?>
 
 	<div class="container">
-
+		<p>{{rid}}</p>
 		<h1> Recipes by: <?php echo $_SESSION['username']; ?> </h1>
 
 		<?php
@@ -42,10 +42,8 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<button id="' . $rid . '" ng-click="viewRec()" type="submit" class="btn btn-success">View/Edit</button>';
+					        echo '<button ng-click="viewRec("' . $rid . '")" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</div></center>';
-					        echo '<h5>' . $recipe['name'] . '</h5>';
-			        	echo $rid;
 			        	}
 			        	
 			        }
