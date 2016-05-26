@@ -38,7 +38,7 @@
 
 					        print_r($results);
 					        // echo "name= " . $data2['name'];
-					        echo '<form class="" ng-submit="viewRec()">';
+					        echo '<form ng-submit="viewRec()" enctype="multipart/form-data">';
 					        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';

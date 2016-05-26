@@ -77,7 +77,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           $http({
             method  : 'POST',
             url     : '/homebrew_notebook/getrid.php',
-            data    : $.param($scope.viewRecipes),  // pass in data as strings
+            data    : $scope.viewRecipes,  // pass in data as strings
             headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
            })
             .success(function(data) {
