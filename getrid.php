@@ -7,7 +7,7 @@
 $data = array();
 
 $data = json_decode(file_get_contents("php://input"));
-$rid = mysql_real_escape_string($data->rid);
+$rid = $data->rid;
 
 
 
