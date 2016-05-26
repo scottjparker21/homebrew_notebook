@@ -1,8 +1,6 @@
 <?php 
 		require_once '../includes/database.php';
-		session_start();
-			$rsi = $_SESSION['rsi'];
-		
+		session_start();	
 	?>
 
 	<div class="container">
@@ -11,7 +9,7 @@
 		<?php
 			
 			
-
+		$rsi = $_SESSION['rsi'];
 		//mash
 		$pdo = Database::connect();
 			$sql = 'SELECT * FROM mash WHERE recipe_step_id = ?';
