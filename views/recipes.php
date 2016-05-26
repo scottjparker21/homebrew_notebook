@@ -32,11 +32,9 @@
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
 							
 
-							// foreach ($rsid[0] as $value) {
-							//   foreach($value[0] as $rsi){
-							  	
-							//   }
-							// }
+							foreach ($rsid[0] as $value) {
+							  echo $value['id'];
+							}
 							  
 							
 							
@@ -84,7 +82,7 @@
 			        	}
 			        	print_r($rsid);	
 			        }
-			                
+
 		?>
 
 	</div>	
