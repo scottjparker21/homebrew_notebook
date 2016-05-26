@@ -1,6 +1,6 @@
 <?php  require_once 'includes/session.php'; 
 	
-		$rid = $_SESSION['rid'];
+		
 	
 	?>
 <!DOCTYPE html>
@@ -24,6 +24,7 @@
 						<div class="col-lg-12"> -->
 						<!-- content -->
 							<div id="main">
+								<?php $rid = $_SESSION['rid']; ?>
 						        <div ng-view></div>
 						    </div>
 				<!-- 		    
