@@ -1,15 +1,15 @@
 <?php 
 		require_once '../includes/database.php';
-		
+		session_start();
+			$rsi = $_SESSION['rsi'];
 		
 	?>
 
 	<div class="container">
-		<h1> Recipes by: <?php echo $_SESSION['rsi']; ?> </h1>
+		<h1> Review <?php echo $_SESSION['rsi']; ?> </h1>
 
 		<?php
-			session_start();
-			$rsi = $_SESSION['rsi'];
+			
 			
 
 		//mash
