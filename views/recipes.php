@@ -36,8 +36,7 @@
 							  foreach($value as $k=>$v){
 							  	echo $k;
 							  	echo $v;
-							  }
-							}
+							
 							  
 							
 							
@@ -73,15 +72,16 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<input type="hidden" name="rid" value="'.$ris.'">';
+					        echo '<input type="hidden" name="rid" value="'.$v.'">';
 					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
 					        echo '</form>';
 					        echo '<form action="getview.php" method="post">';
-					        echo '<input type="hidden" name="rid" value="'.$ris.'">';
+					        echo '<input type="hidden" name="rid" value="'.$v.'">';
 					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
 					        echo '</form>';
 					        echo '</div></center>';
-						  
+						    }
+						}
 			        	}
 			        	print_r($rsid);	
 			        }
