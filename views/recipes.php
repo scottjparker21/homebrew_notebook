@@ -40,11 +40,10 @@
 							// $mash = $q2->fetchAll(PDO::FETCH_ASSOC);
 							// print_r($mash);
 
-			        		$pdo = Database::connect();
-							$sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
-							$q = $pdo->prepare($sql);
-							$q->execute(array($rid));
-							$recipe = $q->fetch(PDO::FETCH_ASSOC);
+							// $sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
+							// $q = $pdo->prepare($sql);
+							// $q->execute(array($rid));
+							// $recipe = $q->fetch(PDO::FETCH_ASSOC);
 					        
 							// $sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
 							// $q2 = $pdo->prepare($sql2);
