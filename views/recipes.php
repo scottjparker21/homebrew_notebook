@@ -33,12 +33,13 @@
 							
 
 							foreach ($rsid[0] as $value) {
-							 
+							  
 							  $ris = $value[0];
 							  
-							}
+							  echo $ris;
+							
 
-							echo $ris;
+
 
 
 			        		//this returns the data from mash
@@ -77,6 +78,7 @@
 					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
 					        echo '</form>';
 					        echo '</div></center>';
+						  }
 			        	}
 			        	
 			        }	        
