@@ -18,14 +18,13 @@
 					$q->execute(array($uid));
 					$data = $q->fetchAll(PDO::FETCH_ASSOC);
 					// print_r($data);
-			        Database::disconnect();
+			        
 
 			        foreach ($data as $recipe_id => $value) {
 
 			        	foreach ($value as $rid){
-			        		// echo $rid;
+			        		echo $rid;
 
-			        		$pdo = Database::connect();
 
 							// $sql3 = "SELECT `id` FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
 							// $q3 = $pdo->prepare($sql3);
