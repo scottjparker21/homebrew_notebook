@@ -49,7 +49,7 @@
 					        echo '</div></center>';
 					        echo $rid;
 			        	}
-			        	echo 'outer '$rid;
+			        	echo 'outer ' . $rid;
 			        }
 			        
 		?>
