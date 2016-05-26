@@ -17,7 +17,7 @@
 					$q = $pdo->prepare($sql);
 					$q->execute(array($uid));
 					$data = $q->fetchAll(PDO::FETCH_ASSOC);
-					print_r($data);
+					// print_r($data);
 			        Database::disconnect();
 
 			        foreach ($data as $recipe_id => $value) {
