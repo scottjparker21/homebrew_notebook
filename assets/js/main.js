@@ -72,8 +72,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              return active;
         };
         $scope.viewRec = function(rid){
-          var r = rid;
-            $scope.rid = r;
+          $scope.rid = r;
             // $location.path('/mash'); // path not hash
         };
     });

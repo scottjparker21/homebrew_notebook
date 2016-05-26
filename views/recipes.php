@@ -4,7 +4,7 @@
 	?>
 
 	<div class="container">
-		<p>{{rid}}</p>
+		<div id="rid" ng-show="rid">{{ rid }}</div>
 		<h1> Recipes by: <?php echo $_SESSION['username']; ?> </h1>
 
 		<?php
