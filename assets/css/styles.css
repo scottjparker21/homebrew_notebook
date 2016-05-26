@@ -98,9 +98,15 @@ h2{
 }
 #pacifico{
   font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-size: 75px;
+  color: #c7ad88;
+}
+#pacifico-home{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
   color: white;
 }
+
 body{
 background:#ede9ce;
 }
