@@ -5,8 +5,7 @@
 
 	<div class="container">
 
-		<h1> <?php echo $_SESSION['username']; ?> 's Recipes </h1>
-		<h1> test </h1>
+		<h1> Recipes by: <?php echo $_SESSION['username']; ?> </h1>
 
 		<?php
 			
@@ -47,5 +46,6 @@
 			        	}
 			        }
 		?>
+			<button ng-click="viewRec()" type="submit" class="btn btn-success">Save</button>
 	</div>	
  

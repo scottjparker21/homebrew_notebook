@@ -56,7 +56,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
     });
 
     // create the controller and inject Angular's $scope
-    brewApp.controller('homeController', function($scope) {
+    brewApp.controller('homeController', function($scope,$location) {
         // create a message to display in our view
         $scope.message = 'awesome home...someday';
         $scope.isActive = function (viewLocation) {
@@ -70,6 +70,9 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         $scope.isActive = function (viewLocation) {
              var active = (viewLocation === $location.path());
              return active;
+        };
+        $scope.viewRec = function(){
+            $location.path('/mash'); // path not hash
         };
     });
 
