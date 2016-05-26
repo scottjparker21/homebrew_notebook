@@ -56,9 +56,9 @@ $data = array();        // array to pass back data
 		if (empty($_POST['notes'])) {
 			$_POST['notes'] = NULL;
 		}
-		// $rsi = $_SESSION["rsi"];
+		$rsi = $_SESSION["rsi"];
 
-		$pdo = Database::connect();
+
 
 		         
         $pdo = Database::connect();
@@ -67,9 +67,7 @@ $data = array();        // array to pass back data
         $q = $pdo->prepare($sql);
         $q->execute(array($yeast_type,$pitching_temp,$duration,$notes,31));
         Database::disconnect();
-       
-        
-         Database::disconnect();
+
     // }
 
     // return a response ==============

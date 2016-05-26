@@ -61,21 +61,15 @@ $data = array();        // array to pass back data
 		if (empty($_POST['notes'])) {
 			$_POST['notes'] = NULL;
 		}
-		// $rsi = $_SESSION["rsi"];
-
-		$pdo = Database::connect();
-
+		$rsi = $_SESSION["rsi"];
 		         
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "UPDATE boil set duration = ?, hops_type = ?, hops_amt = ?, time_added = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,2));
+        $q->execute(array($duration,$hops_type,$hops_amt,$time_added,$notes,$rsi));
         Database::disconnect();
        
-        
-         Database::disconnect();
-    // }
 
     // return a response ==============
 	echo json_encode($data);

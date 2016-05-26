@@ -51,20 +51,16 @@ $data = array();        // array to pass back data
 		if (empty($_POST['notes'])) {
 			$_POST['notes'] = NULL;
 		}
-		// $rsi = $_SESSION["rsi"];
-
-		$pdo = Database::connect();
+		$rsi = $_SESSION["rsi"];
 
 		         
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "UPDATE bottling set btl_con = ?, con_duration = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($btl_con,$con_duration,$notes,31));
+        $q->execute(array($btl_con,$con_duration,$notes,$rsi));
         Database::disconnect();
-       
-        
-         Database::disconnect();
+
     // }
 
     // return a response ==============
