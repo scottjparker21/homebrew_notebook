@@ -31,7 +31,7 @@
 							$q3 = $pdo3->prepare($sql3);
 							$q3->execute(array($rid));
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
-							print_r($data);
+							print_r($rsid);
 
 			        		//this returns the data from mash
 			    //     		$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
