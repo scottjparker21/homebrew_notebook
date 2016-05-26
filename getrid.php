@@ -7,8 +7,7 @@
 
 
 $_SESSION['rid'] = $_POST['rid'];
-echo $_POST['rid'];
 
-die();
+header( "Location: index.php#/mash" );
 
     // return a response ==============
