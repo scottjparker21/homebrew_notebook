@@ -32,8 +32,8 @@
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
 							// print_r($rsid);
 
-							foreach($rsid as $val){
-								echo $val => $id;
+							foreach($rsid as $val=$v){
+								echo $v => $id;
 							}
 
 			        		//this returns the data from mash
