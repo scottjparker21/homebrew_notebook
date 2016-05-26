@@ -82,9 +82,9 @@
 					        echo '</div></center>';
 						  
 			        	}
-			        	
+			        	print_r($rsid);	
 			        }
-			        print_r($rsid);	        
+			                
 		?>
 
 	</div>	
