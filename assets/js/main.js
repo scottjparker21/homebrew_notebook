@@ -89,6 +89,8 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
 
         $scope.formData = {};
         $scope.processForm = function() {
+          
+          console.log($scope.formData);
 
           $http({
           method  : 'POST',
