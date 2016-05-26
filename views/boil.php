@@ -45,7 +45,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_amt }">
 				    		<label class="control-label">Hops Amount</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.hops_amt=' ."'" . $boil['hops_amt'] ."'" . '" type="text" name="hops_amt" ng-model="formData.hops_amt">'; ?>
+				    			<?php echo	'<input value="' ."'" . $boil['hops_amt'] ."'" . '" type="text" name="hops_amt" ng-model="formData.hops_amt">'; ?>
 				      			<span class="help-block" ng-show="!errorhops_amt">{{ errorhops_amt }}</span> 
 				    		</div>
 				  		</div>
