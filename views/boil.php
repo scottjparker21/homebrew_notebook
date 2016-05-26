@@ -1,6 +1,7 @@
 
-<?php 
-		require_once '../includes/database.php';
+
+<?php require_once '../includes/database.php';
+
 
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM boil WHERE recipe_step_id = ?';
