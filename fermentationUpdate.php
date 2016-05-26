@@ -65,7 +65,7 @@ $data = array();        // array to pass back data
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "UPDATE fermentation set yeast_type = ?, pitching_temp = ?, duration = ?, notes = ? WHERE recipe_step_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($yeast_type,$pitching_temp,$duration,$notes,31));
+        $q->execute(array($yeast_type,$pitching_temp,$duration,$notes,$rsi));
         Database::disconnect();
 
     // }
