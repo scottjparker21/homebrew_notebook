@@ -7,6 +7,7 @@
 
 $_SESSION['rid'] = $_POST['rid'];
 $data['foo'] = $_POST['rid'];
+$data['bar'] = $_POST['r'];
 $data['sess'] = $_SESSION['rid'] ;
 
     // return a response ==============
