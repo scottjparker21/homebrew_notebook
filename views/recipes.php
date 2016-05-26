@@ -47,8 +47,9 @@
 					        echo '<button id="send" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</form>';
 					        echo '</div></center>';
+					        echo $rid;
 			        	}
-			        	
+			        	echo 'outer '$rid;
 			        }
 			        
 		?>
