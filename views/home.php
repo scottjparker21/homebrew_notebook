@@ -54,10 +54,13 @@
 			<div id="texbox">
 				<div class="row" style="background-color:#c7ad88;">
 					<div class="col-lg-12">
-						<center><img id="process" ng-src="assets/img/process.svg" /></center>
+						<center><img id="process" ng-src="{{imgsrc}}" /></center>
 						<center><h3 style"color:white;">BREWING PROCESS</h3></center>
 				</div>
 			</div>
 		</div>
-		
+			<div class="img-responsive" ng-init="imgsrc='assets/img/process.svg'" ng-mouseover="imgsrc='assets/img/process_milling.svg'" ng-mouseout="imgsrc='assets/img/process.svg'">
+	        <center><div><h4>Milling</h4></div></center>
+	    </div>
+
 	</div>
