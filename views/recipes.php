@@ -1,8 +1,13 @@
+	<?php 
+		require_once '../includes/database.php';
+		session_start();
+	?>
+
 	<div class="container">
+		<h1> <?php echo $_SESSION['username']; ?> 's Recipes </h1>
 
 		<?php
-			require_once '../includes/database.php';
-			session_start();
+			
 
 					$uid = $_SESSION["userid"];
 
