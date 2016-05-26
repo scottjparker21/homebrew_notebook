@@ -25,7 +25,16 @@
 			        	foreach ($value as $rid){
 			        		// echo $rid;
 
-			        		$sql2 = "SELECT * FROM `mash` INNER JOIN `mash` ON `recipe_step`.`id` = `mash`.`recipe_step_id` WHERE `mash`.`recipe_step_id` = ?";
+			        		$pdo = Database::connect();
+
+							$sql3 = "SELECT * FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
+							$q3 = $pdo3->prepare($sql3);
+							$q3->execute(array($uid3));
+							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
+							print_r($data);
+
+			        		//this returns the data from mash
+			        		$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
 							$q2 = $pdo->prepare($sql2);
 							$q2->execute(array($uid2));
 							$mash = $q2->fetchAll(PDO::FETCH_ASSOC);
