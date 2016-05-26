@@ -33,10 +33,12 @@
 							
 
 							foreach ($rsid[0] as $value) {
-							  echo $value[0];
-							  $ris = $value[0];
+							  foreach($value[0] as $rsi){
+							  	echo $rsi[0];
+							  }
+							
 							  
-							  echo $ris;
+							  echo 'outer ' . $ris;
 							
 
 
@@ -78,7 +80,7 @@
 					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
 					        echo '</form>';
 					        echo '</div></center>';
-						  }
+						  
 			        	}
 			        	
 			        }	        
