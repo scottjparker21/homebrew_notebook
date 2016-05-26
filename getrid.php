@@ -5,7 +5,7 @@
         // array to pass back data
 
 
-$_SESSION['rid'] = $_POST['rid'];
+$_SESSION['rsi'] = $_POST['rid'];
 
 header( "Location: index.php#/mash" );
 

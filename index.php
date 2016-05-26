@@ -24,7 +24,7 @@
 						<div class="col-lg-12"> -->
 						<!-- content -->
 							<div id="main">
-								<?php $rid = $_SESSION['rid']; ?>
+								<?php $rsi = $_SESSION['rsi']; ?>
 						        <div ng-view></div>
 						    </div>
 				<!-- 		    
