@@ -25,21 +25,27 @@
 			        	foreach ($value as $rid){
 			        		// echo $rid;
 
+			        		$sql2 = "SELECT * FROM `mash` INNER JOIN `mash` ON `recipe_step`.`id` = `mash`.`recipe_step_id` WHERE `recipe_step`.`id` = ?";
+							$q2 = $pdo->prepare($sql2);
+							$q2->execute(array($uid2));
+							$mash = $q2->fetchAll(PDO::FETCH_ASSOC);
+							print_r($mash);
+
 			        		$pdo = Database::connect();
 							$sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
 							$q = $pdo->prepare($sql);
 							$q->execute(array($rid));
 							$recipe = $q->fetch(PDO::FETCH_ASSOC);
 					        
-							$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
-							$q2 = $pdo->prepare($sql2);
-							$q2->execute(array($rid));
-							$results = $q2->fetch(PDO::FETCH_ASSOC);
+							// $sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
+							// $q2 = $pdo->prepare($sql2);
+							// $q2->execute(array($rid));
+							// $results = $q2->fetch(PDO::FETCH_ASSOC);
 
-							$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
-							$q2 = $pdo->prepare($sql2);
-							$q2->execute(array($rid));
-							$results = $q2->fetch(PDO::FETCH_ASSOC);
+							// $sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
+							// $q2 = $pdo->prepare($sql2);
+							// $q2->execute(array($rid));
+							// $results = $q2->fetch(PDO::FETCH_ASSOC);
 
 					        Database::disconnect();
 
