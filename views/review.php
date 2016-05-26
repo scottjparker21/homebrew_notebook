@@ -20,34 +20,34 @@
 
 		//boil
 
-			$sql2 = 'SELECT * FROM boil WHERE recipe_step_id = ?';
-			$q2 = $pdo->prepare($sql2);
-			$q2->execute(array($rsi));
-			$boil = $q2->fetch(PDO::FETCH_ASSOC);
+		// 	$sql2 = 'SELECT * FROM boil WHERE recipe_step_id = ?';
+		// 	$q2 = $pdo->prepare($sql2);
+		// 	$q2->execute(array($rsi));
+		// 	$boil = $q2->fetch(PDO::FETCH_ASSOC);
 
-		//hops
-			$sql3 = 'SELECT * FROM hops WHERE recipe_step_id = ?';
-			$q3 = $pdo->prepare($sql3);
-			$q3->execute(array($rsi));
-			$hops = $q3->fetch(PDO::FETCH_ASSOC);
-
-
-
-		//bottling
-			$sql4 = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
-			$q4 = $pdo->prepare($sql4);
-			$q4->execute(array($rsi));
-			$bottling = $q4->fetch(PDO::FETCH_ASSOC);
+		// //hops
+		// 	$sql3 = 'SELECT * FROM hops WHERE recipe_step_id = ?';
+		// 	$q3 = $pdo->prepare($sql3);
+		// 	$q3->execute(array($rsi));
+		// 	$hops = $q3->fetch(PDO::FETCH_ASSOC);
 
 
-		//fermentation
-			$sql5 = 'SELECT * FROM fermentation WHERE recipe_step_id = ?';
-			$q5 = $pdo->prepare($sql5);
-			$q5->execute(array($rsi));
-			$fermentation = $q5->fetch(PDO::FETCH_ASSOC);
+
+		// //bottling
+		// 	$sql4 = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
+		// 	$q4 = $pdo->prepare($sql4);
+		// 	$q4->execute(array($rsi));
+		// 	$bottling = $q4->fetch(PDO::FETCH_ASSOC);
+
+
+		// //fermentation
+		// 	$sql5 = 'SELECT * FROM fermentation WHERE recipe_step_id = ?';
+		// 	$q5 = $pdo->prepare($sql5);
+		// 	$q5->execute(array($rsi));
+		// 	$fermentation = $q5->fetch(PDO::FETCH_ASSOC);
 		Database::disconnect();
 
 		    echo $mash['malt_amt'];
-		    echo $hops['type'];
+		    // echo $hops['type'];
 					        
 		?>
