@@ -73,18 +73,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
         $scope.viewRec = function(rid){
           obj = {r : rid};
-          $location.path('/mash');
-          $http({
-          method  : 'POST',
-          url     : '/homebrew_notebook/getrid.php',
-          data    : obj,  // pass in data as strings
-          // headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
-         })
-          //redirect on submit
-          .success(function(data) {
-
-            console.log(data);
-          }); // path not hash
+          $.post('/getrid.php', { r: rid });
         };
     });
 
