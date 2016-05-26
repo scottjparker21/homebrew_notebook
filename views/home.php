@@ -62,5 +62,9 @@
 			<div class="img-responsive" ng-init="imgsrc='assets/img/process.svg'" ng-mouseover="imgsrc='assets/img/process_milling.svg'" ng-mouseout="imgsrc='assets/img/process.svg'">
 	        <center><div><h4>Milling</h4></div></center>
 	    </div>
+	    </div>
+			<div class="img-responsive" ng-init="imgsrc='assets/img/process.svg'" ng-mouseover="imgsrc='assets/img/process_mashing.svg'" ng-mouseout="imgsrc='assets/img/process.svg'">
+	        <center><div><h4>Mashing</h4></div></center>
+	    </div>
 
 	</div>
