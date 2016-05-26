@@ -1,18 +1,22 @@
-<?php require_once '../includes/session.php';?>
 <?php 
-
-	// public function read() {
+		require_once '../includes/database.php';
+		// public function read() {
 		// try{
-			// $rid = $_SESSION['rid'];
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM mash WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
-			$q->execute(array(3));
+			$q->execute(array(31));
 			$mash = $q->fetch(PDO::FETCH_ASSOC);
 		    Database::disconnect();
-
-
-
+		    // return $data;
+		// } catch (PDOException $error){
+		// 	echo "something went wrong.";
+		// 	//echo $error->getMessage();
+		// 	die();
+		// }
+		    echo "<pre>";
+			print_r($mash);
+			echo "</pre>";
 ?>
 	<div class="col-lg-12">
 		<center><h1 class="pacifico"> Mash </h1></center>
@@ -61,13 +65,13 @@
 				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 				    		</div>
 				  		</div>
-				  		<!-- pre>
+				  		<pre>
 							{{ formData.malt_amt }}
 							{{ formData.malt_type}}
 							{{ formData.water_amt }}
 							{{ formData.notes }}
 							{{ formData.notes }}
-						</pre> -->
+						</pre>
 				  	</div>	
 				</div>
 		  	</form>	
