@@ -33,7 +33,7 @@
 							
 
 							foreach ($rsid[0] as $value) {
-							  
+							  echo $value[0];
 							  $ris = $value[0];
 							  
 							  echo $ris;
