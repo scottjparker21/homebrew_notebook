@@ -23,7 +23,7 @@
 
 ?>
 	<div class="col-lg-12">
-		<center><h1 id="quicksand"> Fermentation </h1></center>
+		<center><h1 class="pacifico"> Fermentation </h1></center>
 	</div>	
 		<div class="container">
 

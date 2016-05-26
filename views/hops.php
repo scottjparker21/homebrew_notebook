@@ -24,7 +24,7 @@
 ?>
 
 	<div class="col-lg-12">
-		<center><h1 id="quicksand"> Hops </h1></center>
+		<center><h1 class="pacifico"> Hops </h1></center>
 	</div>	
 		<div class="container" ng-app="">
 			
