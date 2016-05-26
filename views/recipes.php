@@ -27,7 +27,7 @@
 
 			        		$pdo = Database::connect();
 
-							$sql3 = "SELECT * FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
+							$sql3 = "SELECT `id` FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
 							$q3 = $pdo->prepare($sql3);
 							$q3->execute(array($rid));
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
