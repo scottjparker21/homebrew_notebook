@@ -49,6 +49,11 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
                 controller  : 'resultsController'
             })
 
+            .when('/review', {
+                templateUrl : 'views/review.php',
+                controller  : 'reviewController'
+            })
+
             .when('/boil', {
                 templateUrl : 'views/boil.php',
                 controller  : 'boilController'
@@ -63,6 +68,15 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              var active = (viewLocation === $location.path());
              return active;
         };
+    });
+
+    brewApp.controller('reviewController', function($scope,$location,$http) {
+        $scope.message = 'this will be the review view';
+        $scope.isActive = function (viewLocation) {
+             var active = (viewLocation === $location.path());
+             return active;
+        };
+            
     });
 
     brewApp.controller('recipesController', function($scope,$location,$http) {
