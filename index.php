@@ -1,9 +1,7 @@
 <?php  require_once 'includes/session.php'; 
-	if(empty($_SESSION['rid']){
-		$_SESSION['rid'] = 1;
-	}else{
+	
 		$rid = $_SESSION['rid'];
-	}
+	
 	?>
 <!DOCTYPE html>
 	<html ng-app="brewApp" lang="en" style="background-color:#ede9ce;">
