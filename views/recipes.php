@@ -36,7 +36,7 @@
 							  foreach($value[0] as $rsi){
 							  	echo $rsi[0];
 							  }
-							
+							}
 							  
 							  echo 'outer ' . $ris;
 							
