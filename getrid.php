@@ -7,7 +7,7 @@
 
 $_SESSION['rid'] = $_POST['rid'];
 $data['foo'] = $_POST['rid'];
-$data['bar'] = $_POST['r'];
+$data['bar'] = $_POST['rid'];
 $data['bar'] = $_POST['obj'];
 $data['sess'] = $_SESSION['rid'] ;
 
