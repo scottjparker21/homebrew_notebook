@@ -32,8 +32,11 @@
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
 							
 
-							foreach ($rsid[0] as $value) {
-							  echo $value['id'];
+							foreach ($rsid as $key=>$value) {
+							  foreach($value as $k=>$v){
+							  	echo $k;
+							  	echo $v;
+							  }
 							}
 							  
 							
