@@ -69,7 +69,6 @@ $data = array();        // array to pass back data
         Database::disconnect();
        
         
-         Database::disconnect();
     // }
 
     // return a response ==============
