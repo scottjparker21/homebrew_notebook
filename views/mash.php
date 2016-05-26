@@ -1,5 +1,6 @@
 <?php 
 		require_once '../includes/database.php';
+		session_start();
 		// public function read() {
 		// try{
 			$pdo = Database::connect();

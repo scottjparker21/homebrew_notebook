@@ -36,8 +36,6 @@
 							$results = $q2->fetch(PDO::FETCH_ASSOC);
 					        Database::disconnect();
 
-					        print_r($results);
-					        echo $rid;
 					        // echo "name= " . $data2['name'];
 					        echo '<form action="getrid.php" method="post">';
 					        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
@@ -45,7 +43,6 @@
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
 					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
-					        // echo '<input  ng-init="viewRecipes.rid=' . "'" . $rid . "'" . '" ng-model="viewRecipes.rid">';
 					        echo '<button id="send" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</form>';
 					        echo '</div></center>';
@@ -56,10 +53,10 @@
 		?>
 
 	</div>	
-		<form class="" ng-submit="viewRec()">
+		<!-- <form class="" ng-submit="viewRec()">
 			<input type="text" name="maltType" ng-model="riewRecipes.rid">
 			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
-		</form>	
+		</form>	 -->
 
 
 
