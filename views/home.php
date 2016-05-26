@@ -54,23 +54,9 @@
 			<div id="texbox">
 				<div class="row" style="background-color:#c7ad88;">
 					<div class="col-lg-12">
-						<center><img id="process" /></center>
+						<center><img id="process" ng-src="assets/img/process.svg" /></center>
 						<center><h3 style"color:white;">BREWING PROCESS</h3></center>
 				</div>
 			</div>
 		</div>
-		<ul>
-		    <li>
-		        <a href="#">Milling</a>
-		        <img src="assets/img/process.svg" alt="">
-		    </li>
-		    <li>
-		        <a href="#">Item 2</a>
-		        <img src="" alt="">
-		    </li>
-		    <li>
-		        <a href="#">Item 3</a>
-		        <img src="" alt="">
-		    </li>
-		</ul>
 	</div>

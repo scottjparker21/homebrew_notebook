@@ -14,7 +14,7 @@ h2{
 .user-recipe{
   background-color: #c7ad88;
   margin: 15px;
-  padding: 10px;
+  padding:10px;
 }
 .white{
   color: white;
@@ -41,8 +41,6 @@ h2{
   background-color: #f5f5f5;
 }
 #process {
-  background-image: url(../img/process.svg);
-  display:block;
   width:100%;
   height: auto;
 }
