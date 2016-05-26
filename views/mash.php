@@ -2,7 +2,7 @@
 <?php 
 	// public function read() {
 		// try{
-			$rid = $_SESSION['rid'];
+			// $rid = $_SESSION['rid'];
 			$pdo = Database::connect();
 			$sql = 'SELECT * FROM mash WHERE recipe_step_id = ?';
 			$q = $pdo->prepare($sql);
