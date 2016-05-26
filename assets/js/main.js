@@ -71,13 +71,13 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              var active = (viewLocation === $location.path());
              return active;
         };
-        $scope.viewRec = function(rid){
-          $scope.rid = rid;
-          console.log($scope.rid);
+        $scope.viewRec = function(){
+          // $scope.rid = rid;
+          // console.log($scope.rid);
           $http({
             method  : 'POST',
             url     : '/homebrew_notebook/getrid.php',
-            data    : $scope.rid,  // pass in data as strings
+            data    : $.param($scope.viewRecipes),  // pass in data as strings
             headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
            })
             .success(function(data) {
@@ -87,7 +87,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
                 console.log('success');
               }
             });
-          $location.path('/mash');
+          // $location.path('/mash');
         };
         
     });

@@ -38,12 +38,14 @@
 
 					        print_r($results);
 					        // echo "name= " . $data2['name'];
+					        echo '<form class="" ng-submit="viewRec()">';
 					        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<input type="hidden" value="'. $rid .'" ng-model="rid">';
-					        echo '<button ng-click="viewRec('.$rid.')" type="submit" class="btn btn-success">View/Edit</button>';
+					        echo '<input type="hidden" name="rid" value="'. $rid .'" ng-model="viewRecipes.rid">';
+					        echo '<button id="send" type="submit" class="btn btn-success">View/Edit</button>';
+					        echo '</form>';
 					        echo '</div></center>';
 			        	}
 			        	
@@ -52,4 +54,12 @@
 		?>
 
 	</div>	
+		<form class="" ng-submit="viewRec()">
+			<input type="text" name="maltType" ng-model="riewRecipes.rid">
+			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
+		</form>	
+
+
+
+
  
