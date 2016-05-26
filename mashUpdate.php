@@ -1,7 +1,7 @@
 <?php  require_once 'includes/session.php'; ?>
 
 <?php
-
+session_start();
 
 $errors = array();  // array to hold validation errors
 $data = array();        // array to pass back data
