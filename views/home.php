@@ -60,24 +60,24 @@
 			</div>
 		</div>
 
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_milling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Milling</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_milling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Milling</h4></div>
 	    	</div>
 
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_mashing.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Mashing</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_mashing.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Mashing</h4></div>
 	    	</div>
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_boiling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Boiling</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_boiling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Boiling</h4></div>
 	   	 	</div>
 
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_filtering.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Whirlpool/Filtration</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_filtering.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Whirlpool/Filtration</h4></div>
 	    	</div>
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_fermenting.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Fermentation</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_fermenting.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Fermentation</h4></div>
 	    	</div>
-			<div class="img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_bottling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
-	        	<center><div><h4>Bottling</h4></div></center>
+			<div class="col-lg-2 img-responsive" ng-init="imgsrc='assets/img/processing.svg'" ng-mouseover="imgsrc='assets/img/process_bottling.svg'" ng-mouseout="imgsrc='assets/img/processing.svg'">
+	        	<div><h4>Bottling</h4></div>
 	    	</div>
 	</div>
