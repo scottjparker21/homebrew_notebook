@@ -14,7 +14,7 @@
 		// 	//echo $error->getMessage();
 		// 	die();
 		// }
-		    echo $_SESSION['rid'];
+		    echo $rid;
 		    echo "<pre>";
 			print_r($mash);
 			echo "</pre>";
