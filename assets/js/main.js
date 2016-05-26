@@ -73,6 +73,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
         };
         $scope.viewRec = function(rid){
           $scope.rid = rid;
+          console.log($scope.rid);
           $location.path('/mash');
         };
         $http.post('/homebrew_notebook/getrid.php',{'rid' : $scope.rid}).success(function(data){ console.log(data);});
