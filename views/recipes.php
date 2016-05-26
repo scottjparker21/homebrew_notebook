@@ -30,14 +30,15 @@
 							$q3 = $pdo->prepare($sql3);
 							$q3->execute(array($rid));
 							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
-							print_r($rsid);
+							
 
 							foreach ($rsid[0] as $value) {
-							  echo $value[0];
+							 
+							  $ris = $value[0];
 							  
 							}
 
-
+							echo $ris;
 
 
 			        		//this returns the data from mash
@@ -68,11 +69,11 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
+					        echo '<input type="hidden" name="rid" value="'.$ris.'">';
 					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
 					        echo '</form>';
 					        echo '<form action="getview.php" method="post">';
-					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
+					        echo '<input type="hidden" name="rid" value="'.$ris.'">';
 					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
 					        echo '</form>';
 					        echo '</div></center>';
