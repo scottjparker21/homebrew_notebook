@@ -44,7 +44,7 @@
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
 					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
 					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
-					        echo '<form>';
+					        echo '</form>';
 					        echo '<form action="getrid.php" method="post">';
 					        echo '<input type="hidden" name="rid" value="'.$rid.'">';
 					        echo '<input type="hidden" name="rid" value="view">';
