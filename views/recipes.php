@@ -43,7 +43,7 @@
 					        echo '<h1>' . $recipe['name'] . '</h1>';
 					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<input name="rid" ng-init="viewRecipes.rid=' . "'" . $rid . "'" . '" ng-model="viewRecipes.rid">';
+					        echo '<input type="hidden" name="rid" ng-init="viewRecipes.rid=' . "'" . $rid . "'" . '" ng-model="viewRecipes.rid">';
 					        echo '<button id="send" type="submit" class="btn btn-success">View/Edit</button>';
 					        echo '</form>';
 					        echo '</div></center>';
