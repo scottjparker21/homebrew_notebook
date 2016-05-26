@@ -72,14 +72,13 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              return active;
         };
         $scope.viewRec = function(rid){
-          var r = {};
-          r.recipe_id = rid;
+          $scope.rid = rid;
           $location.path('/mash');
           $http({
           method  : 'POST',
           url     : '/homebrew_notebook/getrid.php',
-          data    : r,  // pass in data as strings
- // set the headers so angular passing info as form data (not request payload)
+          data    : $.param($scope.rid),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           //redirect on submit
           .success(function(data) {

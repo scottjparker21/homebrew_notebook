@@ -5,8 +5,8 @@
 // process.php
         // array to pass back data
 
-$_SESSION['rid'] = $_POST['recipe_id'];
-$data['foo'] = $_POST['recipe_id'];
+$_SESSION['rid'] = $_POST['rid'];
+$data['foo'] = $_POST['rid'];
 $data['sess'] = $_SESSION['rid'] ;
 
     // return a response ==============
