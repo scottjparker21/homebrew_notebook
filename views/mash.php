@@ -16,10 +16,10 @@
 		// 	//echo $error->getMessage();
 		// 	die();
 		// }
-		    echo $rid;
-		    echo "<pre>";
-			print_r($mash);
-			echo "</pre>";
+		 //    echo $rid;
+		 //    echo "<pre>";
+			// print_r($mash);
+			// echo "</pre>";
 ?>
 	<div class="col-lg-12">
 		<center><h1 class="pacifico"> Mash </h1></center>
@@ -68,13 +68,13 @@
 				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
 				    		</div>
 				  		</div>
-				  		<pre>
+				  		<!-- <pre>
 							{{ formData.malt_amt }}
 							{{ formData.malt_type}}
 							{{ formData.water_amt }}
 							{{ formData.notes }}
 							{{ formData.notes }}
-						</pre>
+						</pre> -->
 				  	</div>	
 				</div>
 		  	</form>	

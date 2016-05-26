@@ -34,8 +34,8 @@
 
 							foreach ($rsid as $key=>$value) {
 							  foreach($value as $k=>$v){
-							  	echo $k;
-							  	echo $v;
+							  	// echo $k;
+							  	// echo $v;
 							
 							  
 							
@@ -83,7 +83,7 @@
 						    }
 						}
 			        	}
-			        	print_r($rsid);	
+			        	
 			        }
 
 		?>
