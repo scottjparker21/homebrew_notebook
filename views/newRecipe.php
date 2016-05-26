@@ -46,9 +46,9 @@
 						      			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
 						    		</div>
 						  		</div>
-						  		<pre>
+						  		<!-- <pre>
 									{{ formData }}
-								</pre>
+								</pre> -->
 						  	</div>	
 						</div>
 				  	</form>	
