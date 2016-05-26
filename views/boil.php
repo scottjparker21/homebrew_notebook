@@ -18,6 +18,9 @@
 		<center><h1 id="pacifico"> Boil </h1></center>
 	</div>	
 		<div class="container">
+
+			<?php require_once '../includes/rec_steps.php';?>
+			
 			<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
