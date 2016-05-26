@@ -26,11 +26,11 @@
 			        		echo $rid;
 
 
-							// $sql3 = "SELECT `id` FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
-							// $q3 = $pdo->prepare($sql3);
-							// $q3->execute(array($rid));
-							// $rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
-							// print_r($rsid);
+							$sql3 = "SELECT `recipe_step`.`id` FROM `recipe_step` INNER JOIN `recipe` ON `recipe_step`.`recipe_id` = `recipe`.`id` WHERE `recipe_step`.`recipe_id` = ?";
+							$q3 = $pdo->prepare($sql3);
+							$q3->execute(array($rid));
+							$rsid = $q3->fetchAll(PDO::FETCH_ASSOC);
+							print_r($rsid);
 
 			        		//this returns the data from mash
 			       			//$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
