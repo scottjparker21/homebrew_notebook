@@ -36,52 +36,45 @@
 							  foreach($value as $k=>$v){
 							  	// echo $k;
 							  	// echo $v;
-							
-							  
-							
-							
+							  	
+				        		//this returns the data from mash
+				       			//$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
+								// $q2 = $pdo->prepare($sql2);
+								// $q2->execute(array($uid2));
+								// $mash = $q2->fetchAll(PDO::FETCH_ASSOC);
+								// print_r($mash);
 
+								$sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
+								$q = $pdo->prepare($sql);
+								$q->execute(array($rid));
+								$recipe = $q->fetch(PDO::FETCH_ASSOC);
+						        
+								$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
+								$q2 = $pdo->prepare($sql2);
+								$q2->execute(array($rid));
+								$results = $q2->fetch(PDO::FETCH_ASSOC);
 
+						        Database::disconnect();
 
+						        // print_r($recipe);
+						        // print_r($results);
 
-			        		//this returns the data from mash
-			       			//$sql2 = "SELECT * FROM `mash` INNER JOIN `recipe_step` ON `mash`.`recipe_step_id` = `recipe_step`.`id` WHERE `mash`.`recipe_step_id` = ?";
-							// $q2 = $pdo->prepare($sql2);
-							// $q2->execute(array($uid2));
-							// $mash = $q2->fetchAll(PDO::FETCH_ASSOC);
-							// print_r($mash);
-
-							$sql = "SELECT * FROM `recipe` WHERE `id` = ? ";
-							$q = $pdo->prepare($sql);
-							$q->execute(array($rid));
-							$recipe = $q->fetch(PDO::FETCH_ASSOC);
-					        
-							$sql2 = "SELECT * FROM `results` WHERE `id` = ? ";
-							$q2 = $pdo->prepare($sql2);
-							$q2->execute(array($rid));
-							$results = $q2->fetch(PDO::FETCH_ASSOC);
-
-					        Database::disconnect();
-
-					        // print_r($recipe);
-					        // print_r($results);
-
-					        // echo "name= " . $data2['name'];
-					        echo '<form action="getrid.php" method="post">';
-					        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
-					        echo '<h1>' . $recipe['name'] . '</h1>';
-					        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
-					        echo '<h3>Color: ' . $results['color'] . '</h3>';
-					        echo '<input type="hidden" name="rid" value="'.$v.'">';
-					        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
-					        echo '</form>';
-					        echo '<form action="getview.php" method="post">';
-					        echo '<input type="hidden" name="rid" value="'.$v.'">';
-					        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
-					        echo '</form>';
-					        echo '</div></center>';
-						    }
-						}
+						        // echo "name= " . $data2['name'];
+						        echo '<form action="getrid.php" method="post">';
+						        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
+						        echo '<h1>' . $recipe['name'] . '</h1>';
+						        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
+						        echo '<h3>Color: ' . $results['color'] . '</h3>';
+						        echo '<input type="hidden" name="rid" value="'.$v.'">';
+						        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
+						        echo '</form>';
+						        echo '<form action="getview.php" method="post">';
+						        echo '<input type="hidden" name="rid" value="'.$v.'">';
+						        echo '<button id="send" type="submit" class="btn btn-success">View</button>';
+						        echo '</form>';
+						        echo '</div></center>';
+						    	}
+							}
 			        	}
 			        	
 			        }
