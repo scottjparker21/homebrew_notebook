@@ -20,34 +20,61 @@
 
 		//boil
 
-		// 	$sql2 = 'SELECT * FROM boil WHERE recipe_step_id = ?';
-		// 	$q2 = $pdo->prepare($sql2);
-		// 	$q2->execute(array($rsi));
-		// 	$boil = $q2->fetch(PDO::FETCH_ASSOC);
+			$sql2 = 'SELECT * FROM boil WHERE recipe_step_id = ?';
+			$q2 = $pdo->prepare($sql2);
+			$q2->execute(array($rsi));
+			$boil = $q2->fetch(PDO::FETCH_ASSOC);
 
 		// //hops
-		// 	$sql3 = 'SELECT * FROM hops WHERE recipe_step_id = ?';
-		// 	$q3 = $pdo->prepare($sql3);
-		// 	$q3->execute(array($rsi));
-		// 	$hops = $q3->fetch(PDO::FETCH_ASSOC);
+			$sql3 = 'SELECT * FROM hops WHERE recipe_step_id = ?';
+			$q3 = $pdo->prepare($sql3);
+			$q3->execute(array($rsi));
+			$hops = $q3->fetch(PDO::FETCH_ASSOC);
 
 
 
 		// //bottling
-		// 	$sql4 = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
-		// 	$q4 = $pdo->prepare($sql4);
-		// 	$q4->execute(array($rsi));
-		// 	$bottling = $q4->fetch(PDO::FETCH_ASSOC);
+			$sql4 = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
+			$q4 = $pdo->prepare($sql4);
+			$q4->execute(array($rsi));
+			$bottling = $q4->fetch(PDO::FETCH_ASSOC);
 
 
 		// //fermentation
-		// 	$sql5 = 'SELECT * FROM fermentation WHERE recipe_step_id = ?';
-		// 	$q5 = $pdo->prepare($sql5);
-		// 	$q5->execute(array($rsi));
-		// 	$fermentation = $q5->fetch(PDO::FETCH_ASSOC);
+			$sql5 = 'SELECT * FROM fermentation WHERE recipe_step_id = ?';
+			$q5 = $pdo->prepare($sql5);
+			$q5->execute(array($rsi));
+			$fermentation = $q5->fetch(PDO::FETCH_ASSOC);
 		Database::disconnect();
 
-		    echo $mash['malt_amt'];
-		    // echo $hops['type'];
-					        
+		    			        
 		?>
+
+						<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
+				    		<label class="control-label">Malt Ammount</label>
+				    		<div class="controls">
+				      			<?php echo '<input ng-init="formData.malt_amt=' . "'" . $mash['malt_amt'] . "'" . '" type="text"  ng-model="formData.malt_amt">'; ?>
+				      			<span class="help-block" ng-show="!errormalt_amt">{{ errormalt_amt }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_type}">
+				    		<label class="control-label">Malt Type</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.malt_type=' . "'" . $mash['malt_type'] . "'" . '" type="text" name="malt_type" ng-model="formData.malt_type">'; ?>
+				      			<span class="help-block" ng-show="!errormalt_type">{{ errormalt_type }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorwater_amt }">
+				    		<label class="control-label">Water Amount</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.water_amt=' ."'" . $mash['water_amt'] ."'" . '" type="text" name="water_amt" ng-model="formData.water_amt">'; ?>
+				      			<span class="help-block" ng-show="!errorwater_amt">{{ errorwater_amt }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+				    		<label class="control-label">Notes</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
+				    		</div>
+				  		</div>
