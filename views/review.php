@@ -50,6 +50,8 @@
 		    			        
 		?>
 
+					<div>
+						<h2> Mash </h2>
 						<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
 				    		<label class="control-label">Malt Ammount</label>
 				    		<div class="controls">
@@ -74,7 +76,55 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" style="height:200px;" ng-model="formData.notes">'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
+				  	</div>
+				  	<div>
+				  		<h2> Boil </h2>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDuration }">
+				    		<label class="control-label">Duration</label>
+				    		<div class="controls">
+				      			<?php echo '<input ng-init="formData.duration=' . "'" . $boil['duration'] . "'" . '" type="text"  ng-model="formData.duration">'; ?>
+				      			<span class="help-block" ng-show="!errorDuration">{{ errorDuration }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_type}">
+				    		<label class="control-label">Hops Type</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.hops_type=' . "'" . $boil['hops_type'] . "'" . '" type="text" name="hops_type" ng-model="formData.hops_type">'; ?>
+				      			<span class="help-block" ng-show="!errorhops_type">{{ errorhops_type }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorhops_amt }">
+				    		<label class="control-label">Hops Amount</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.hops_amt=' ."'" . $boil['hops_amt'] ."'" . '" type="text" name="hops_amt" ng-model="formData.hops_amt">'; ?>
+				      			<span class="help-block" ng-show="!errorhops_amt">{{ errorhops_amt }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errortime_added }">
+				    		<label class="control-label">Time Added</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.time_added=' ."'" . $boil['time_added'] ."'" . '" type="text" name="time_added" ng-model="formData.time_added">'; ?>
+				      			<span class="help-block" ng-show="errortime_added">{{ errortime_added }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+				    		<label class="control-label">Notes</label>
+				    		<div class="controls">
+				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $boil['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
+				    		</div>
+				  		</div>
+				  		<div class="form-row form-actions control-group">
+				    		<div class="controls">
+			
+				      			<button id="send" type="submit" class="btn btn-success">Save</button>
+				    		</div>
+				  		</div>
+				  	</div>
+				  	<div>
+				  		
+				  	</div>
