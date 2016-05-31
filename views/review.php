@@ -51,60 +51,60 @@
 		?>
 
 					<div>
-						<form class="form-register form-signin" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
-				<div class="form-register-with-email">
-					<div class="form-white-background">
-						<!-- success message -->
-						<div id="message" ng-show="message">{{ message }}</div>
+						<form class="" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="">
+								<div class="form-white-background">
+									<!-- success message -->
+									<div id="message" ng-show="message">{{ message }}</div>
 
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
-				    		<label class="control-label">Malt Ammount</label>
-				    		<div class="controls">
-				      			<?php echo '<input ng-init="formData.malt_amt=' . "'" . $mash['malt_amt'] . "'" . '" type="text"  ng-model="formData.malt_amt">'; ?>
-				      			<span class="help-block" ng-show="!errormalt_amt">{{ errormalt_amt }}</span> 
-				    		</div>
-				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_type}">
-				    		<label class="control-label">Malt Type</label>
-				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.malt_type=' . "'" . $mash['malt_type'] . "'" . '" type="text" name="malt_type" ng-model="formData.malt_type">'; ?>
-				      			<span class="help-block" ng-show="!errormalt_type">{{ errormalt_type }}</span> 
-				    		</div>
-				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorwater_amt }">
-				    		<label class="control-label">Water Amount</label>
-				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.water_amt=' ."'" . $mash['water_amt'] ."'" . '" type="text" name="water_amt" ng-model="formData.water_amt">'; ?>
-				      			<span class="help-block" ng-show="!errorwater_amt">{{ errorwater_amt }}</span> 
-				    		</div>
-				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
-				    		<label class="control-label">Notes</label>
-				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
-				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
-				    		</div>
-				  		</div>
-				  		<div class="form-row form-actions control-group">
-				    		<div class="controls">
-			
-				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
-				    		</div>
-				  		</div>
-				  		<!-- <pre>
-							{{ formData.malt_amt }}
-							{{ formData.malt_type}}
-							{{ formData.water_amt }}
-							{{ formData.notes }}
-							{{ formData.notes }}
-						</pre> -->
-				  	</div>	
-				</div>
-		  	</form>	
+							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
+							    		<label class="control-label">Malt Ammount</label>
+							    		<div class="controls">
+							      			<?php echo '<input ng-init="formData.malt_amt=' . "'" . $mash['malt_amt'] . "'" . '" type="text"  ng-model="formData.malt_amt">'; ?>
+							      			<span class="help-block" ng-show="!errormalt_amt">{{ errormalt_amt }}</span> 
+							    		</div>
+							  		</div>
+							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_type}">
+							    		<label class="control-label">Malt Type</label>
+							    		<div class="controls">
+							    			<?php echo	'<input ng-init="formData.malt_type=' . "'" . $mash['malt_type'] . "'" . '" type="text" name="malt_type" ng-model="formData.malt_type">'; ?>
+							      			<span class="help-block" ng-show="!errormalt_type">{{ errormalt_type }}</span> 
+							    		</div>
+							  		</div>
+							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorwater_amt }">
+							    		<label class="control-label">Water Amount</label>
+							    		<div class="controls">
+							    			<?php echo	'<input ng-init="formData.water_amt=' ."'" . $mash['water_amt'] ."'" . '" type="text" name="water_amt" ng-model="formData.water_amt">'; ?>
+							      			<span class="help-block" ng-show="!errorwater_amt">{{ errorwater_amt }}</span> 
+							    		</div>
+							  		</div>
+							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+							    		<label class="control-label">Notes</label>
+							    		<div class="controls">
+							    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+							      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
+							    		</div>
+							  		</div>
+							  		<div class="form-row form-actions control-group">
+							    		<div class="controls">
+						
+							      			<button id="send" type="submit" class="btn btn-success">Update Recipe</button>
+							    		</div>
+							  		</div>
+							  		<!-- <pre>
+										{{ formData.malt_amt }}
+										{{ formData.malt_type}}
+										{{ formData.water_amt }}
+										{{ formData.notes }}
+										{{ formData.notes }}
+									</pre> -->
+							  	</div>	
+							</div>
+					  	</form>	
 				  	</div>
 				  	<div>
-				  		<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="form-register-with-email">
+				  		<center><form class="" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="">
 								<div class="form-white-background">
 									<!-- success message -->
 									<div id="message" ng-show="message">{{ message }}</div>
@@ -147,7 +147,7 @@
 							  		<div class="form-row form-actions control-group">
 							    		<div class="controls">
 						
-							      			<button id="send" type="submit" class="btn btn-success">Save</button>
+							      			<button id="send" type="submit" class="btn btn-success">Update Recipe</button>
 							    		</div>
 							  		</div>
 							  		<!-- <pre>

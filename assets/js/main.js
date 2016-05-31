@@ -76,12 +76,11 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              var active = (viewLocation === $location.path());
              return active;
         };
-        //boil controller
+        //form data appended to scope here
         $scope.formData = {};
         $scope.urlenc = $.param($scope.formData);
-        // $scope.processForm = function() {
-        // };
-        // process the form
+ 
+        // update Boil
         $scope.processForm = function() {
           $http({
           method  : 'POST',
@@ -90,20 +89,10 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           .success(function(data) {
-            // console.log(data);
-
-            // if (!data.success) {
-
-            //   console.log(data);
-          
-            // } else {
-              // if successful, bind success message to message
-              // console.log(data);
-              // $scope.message = data.rsi;
-              
-            // }
+            //success message here
           });
         };
+        //update mash
         $scope.processForm = function() {
           $http({
           method  : 'POST',
@@ -112,18 +101,7 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
          })
           .success(function(data) {
-            // console.log(data);
-
-            // if (!data.success) {
-
-            //   console.log(data);
-          
-            // } else {
-              // if successful, bind success message to message
-              // console.log(data);
-              // $scope.message = data.rsi;
-              
-            // }
+            //success message here
           });
         }; 
 
