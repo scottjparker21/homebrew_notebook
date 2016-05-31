@@ -76,6 +76,34 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
              var active = (viewLocation === $location.path());
              return active;
         };
+        //boil controller
+        $scope.formData = {};
+        $scope.urlenc = $.param($scope.formData);
+        // $scope.processForm = function() {
+        // };
+        // process the form
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/boilUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            // console.log(data);
+
+            // if (!data.success) {
+
+            //   console.log(data);
+          
+            // } else {
+              // if successful, bind success message to message
+              // console.log(data);
+              // $scope.message = data.rsi;
+              
+            // }
+          });
+        }; 
             
     });
 
