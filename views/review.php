@@ -25,7 +25,7 @@
 			$q2->execute(array($rsi));
 			$boil = $q2->fetch(PDO::FETCH_ASSOC);
 
-		// //hops
+		//hops
 			$sql3 = 'SELECT * FROM hops WHERE recipe_step_id = ?';
 			$q3 = $pdo->prepare($sql3);
 			$q3->execute(array($rsi));
@@ -33,14 +33,14 @@
 
 
 
-		// //bottling
+		//bottling
 			$sql4 = 'SELECT * FROM bottling WHERE recipe_step_id = ?';
 			$q4 = $pdo->prepare($sql4);
 			$q4->execute(array($rsi));
 			$bottling = $q4->fetch(PDO::FETCH_ASSOC);
 
 
-		// //fermentation
+		//fermentation
 			$sql5 = 'SELECT * FROM fermentation WHERE recipe_step_id = ?';
 			$q5 = $pdo->prepare($sql5);
 			$q5->execute(array($rsi));
@@ -126,5 +126,5 @@
 				  		</div>
 				  	</div>
 				  	<div>
-				  		
+
 				  	</div>
