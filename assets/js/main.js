@@ -104,8 +104,42 @@ var brewApp = angular.module('brewApp', ['ngRoute']);
             //success message here
           });
         }; 
-
-            
+        //update fermentation
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/fermentationUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            //add success 
+          });
+        };
+        //update hops
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/hopsUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            // success message here
+          });
+        };  
+        //update bottling
+        $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : '/homebrew_notebook/bottlingUpdate.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+         })
+          .success(function(data) {
+            // success message here
+          });
+        };      
     });
 
     brewApp.controller('recipesController', function($scope,$location,$http) {
