@@ -218,8 +218,8 @@
 				  	</div>
 		<!-- Fermentation -->	  		
 				  	<div class="col-lg-6">
-				  		<form class="form-register form-signin" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="form-register-with-email">
+				  		<form class="" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="">
 								<div class="form-white-background">
 									<!-- success message -->
 									<div id="message" ng-show="message">{{ message }}</div>
@@ -271,8 +271,8 @@
 				  	</div>
 			 <!-- Bottling -->			
 				  	<div class="col-lg-6">
-				  		<form class="form-register form-signin" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="form-register-with-email">
+				  		<form class="" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="">
 								<div class="form-white-background">
 									<!-- success message -->
 									<div id="message" ng-show="message">{{ message }}</div>
