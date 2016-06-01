@@ -18,8 +18,8 @@
 				</div>
 			</div>
 		</div>	
-	<div id="overview" class="container">
-		<div class="row">
+	<!-- <div id="overview" class="container"> -->
+		<div id="overview" class="row">
 		
 <!-- 			<center><div class="col-lg-12">
  -->			<center><div class="col-lg-10 col-lg-offset-1">
@@ -50,7 +50,7 @@
 <!-- 				</div></center>
 			</div></center> -->
 		</div>
-	</div>
+<!-- 	</div> -->
 	<div class="container">
 		<div class="row">
 			<div id="texbox">
