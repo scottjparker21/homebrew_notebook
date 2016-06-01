@@ -83,10 +83,7 @@
 		?>
 
 	</div>	
-		<form class="" ng-submit="viewRec()">
-			<input type="text" name="maltType" ng-model="riewRecipes.rid">
-			<button id="send" type="submit" class="btn btn-success">Save & Continue</button>
-		</form>	
+		
 
 
 
