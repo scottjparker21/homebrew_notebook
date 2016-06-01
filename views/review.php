@@ -40,7 +40,10 @@
 		?>		
 				<div class="container">
 			<!-- Mash -->
-					<div class="col-lg-6">
+					<div class="col-lg-4">
+						<img class="" ng-src="assets/img/barley_b.svg" style=""/>
+					</div>	
+					<div class="col-lg-8">
 						<form class="" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="">
 								<div class="form-white-background">
