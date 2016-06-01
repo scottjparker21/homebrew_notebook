@@ -2,10 +2,7 @@
 <?php  require_once 'includes/session.php'; 
 
 	$_SESSION['rsi'] = $_POST['rsid'];
-	echo "rid= " . $_POST['rid'];
-	echo "rsi= " . $_POST['rsid'];
-	die();
-
+	$_SESSION['rid'] = $_POST['rid'];
 
 	header( "Location: index.php#/review" );
 

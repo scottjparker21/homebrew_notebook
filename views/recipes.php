@@ -65,6 +65,7 @@
 						        echo '<h1>' . $recipe['name'] . '</h1>';
 						        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
 						        echo '<h3>Color: ' . $results['color'] . '</h3>';
+						        echo '<input type="hidden" name="rid" value="'.$rid.'">';
 						        echo '<input type="hidden" name="rsid" value="'.$v.'">';
 						        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
 						        echo '</form>';
