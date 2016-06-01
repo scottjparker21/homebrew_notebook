@@ -38,10 +38,11 @@
 
 			Database::disconnect();		    			        
 		?>		
-				<div class="container">
+			<div class="container">
 			<!-- Mash -->
+				<div class="row">
 					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/barley_b.svg" style=""/>
+						<img class="" ng-src="assets/img/barley_c.svg" style=""/>
 					</div>	
 					<div class="col-lg-8">
 						<form class="" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
@@ -95,8 +96,13 @@
 							</div>
 					  	</form>	
 				  	</div>
+				</div>
 			<!-- Boil -->
-				  	<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-4">
+						<img class="" ng-src="assets/img/boil_c.svg" style=""/>
+					</div>	
+				  	<div class="col-lg-8">
 				  		<center><form class="" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="">
 								<div class="form-white-background">
@@ -155,8 +161,13 @@
 							</div>
 					  	</form></center>
 				  	</div>
-			<!-- Hops -->	  	
-				  	<div class="col-lg-6">
+				</div>
+			<!-- Hops -->
+				<div class="row">
+					<div class="col-lg-4">
+						<img class="" ng-src="assets/img/hops_c.svg" style=""/>
+					</div>	  	
+				  	<div class="col-lg-8">
 				  		<form class="" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="">
 								<div class="form-white-background">
@@ -207,10 +218,14 @@
 							  	</div>	
 							</div>
 					  	</form>	
-
 				  	</div>
-		<!-- Fermentation -->	  		
-				  	<div class="col-lg-6">
+				 </div>
+		<!-- Fermentation -->
+				<div class="row">
+					<div class="col-lg-4">
+						<img class="" ng-src="assets/img/carboy_c.svg" style=""/>
+					</div>		  			
+				  	<div class="col-lg-8">
 				  		<form class="" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="">
 								<div class="form-white-background">
@@ -262,8 +277,13 @@
 							</div>
 					  	</form>
 				  	</div>
-			 <!-- Bottling -->			
-				  	<div class="col-lg-6">
+				</div>
+			 <!-- Bottling -->
+			 	<div class="row">
+					<div class="col-lg-4">
+						<img class="" ng-src="assets/img/bot_c.svg" style=""/>
+					</div>				
+				  	<div class="col-lg-8">
 				  		<form class="" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="">
 								<div class="form-white-background">
@@ -308,4 +328,5 @@
 							</div>
 					  	</form>	
 				  	</div>
-				</div>  
+				</div>
+			</div>  
