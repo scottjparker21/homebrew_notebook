@@ -100,8 +100,6 @@ h5{
 .jumbotron-hops {
   background-image: url(../img/hops_jumbo.jpg);
   background-size: cover;
-  width: 100%;
-  height: auto;
   margin-top: 0;
   margin-bottom: 0px;
   min-height: 220px;
