@@ -97,6 +97,15 @@ h5{
   position: relative;
   background-position: 5% 50%;
 }
+.jumbotron-hops {
+  background-image: url(../img/hops_stock.jpeg);
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0px;
+  min-height: 220px;
+  position: relative;
+  background-position: 5% 50%;
+}
 #jumbo-icon{
   width:50%;
   height: auto;

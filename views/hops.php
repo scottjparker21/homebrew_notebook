@@ -22,6 +22,18 @@
 
 
 ?>
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<div class="jumbotron-hops">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="col-lg-12">
+					<center><h1 id="quicksand" class="animated fadeInLeft"> Hops </h1></center>
+					
+				</div>
+			</div>
+  		</div>
+	</div>
 
 	<div class="col-lg-12">
 		<center><h1 class="pacifico"> Hops </h1></center>
