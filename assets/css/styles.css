@@ -104,9 +104,9 @@ h5{
   background-size: cover;
   margin-top: 0;
   margin-bottom: 0px;
-  min-height: 200px;
+  min-height: 230px;
   position: relative;
-  background-position: 0px 50px;
+  background-position: 0px 25px;
 }
 #jumbo-icon{
   width:50%;
