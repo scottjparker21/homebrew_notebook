@@ -95,11 +95,13 @@ h5{
   margin-bottom: 0px;
   min-height: 300px;
   position: relative;
-  background-position: 5% 25%;
+  background-position: 5% 100%;
 }
 .jumbotron-hops {
   background-image: url(../img/hops_jumbo.jpg);
   background-size: cover;
+  width: 50%;
+  height: auto;
   margin-top: 0;
   margin-bottom: 0px;
   min-height: 220px;
