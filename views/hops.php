@@ -28,15 +28,11 @@
 		<div class="container-fluid">
 			<div class="row">
 			<div class="col-lg-12">
-					<center><h1 id="quicksand" class="animated fadeInLeft"> Hops </h1></center>
+					<center><h1  class="pacifico animated fadeInLeft"> Hops </h1></center>
 					
 				</div>
 			</div>
   		</div>
-	</div>
-
-	<div class="col-lg-12">
-		<center><h1 class="pacifico"> Hops </h1></center>
 	</div>	
 		<div class="container" ng-app="">
 			
