@@ -17,8 +17,10 @@ h5 {
 }
 #boil-jumbotron{
   background: url(../img/boil_jumbotron.jpg);
-  background-size: cover;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 #overview {
   background-color: #64706c;
