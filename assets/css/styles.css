@@ -138,6 +138,13 @@ h5{
   font-size: 50px;
   color: white;
 }
+.pacifico-jumbo{
+  font-family: 'Pacifico', cursive;
+  font-size: 110px;
+  color: white;
+  margin:15px;
+  text-shadow: 5px 5px 4px #000;
+}
 
 body{
 background:#ede9ce;
