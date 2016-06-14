@@ -15,12 +15,11 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
-#boil-jumbotron{
+#boil-background {
   background: url(../img/boil_background.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 #overview {
   background-color: #64706c;

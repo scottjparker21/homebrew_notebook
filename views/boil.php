@@ -15,9 +15,9 @@
 			// print_r($boil);
 			// echo "</pre>";
 ?>
-<div id="boil-jumbotron">
+<div id="boil-background">
 	<div class="col-lg-12">
-		<center><h1 class="pacifico"> Boil </h1></center>
+		<center><h1 class="pacifico-jumbo"> Boil </h1></center>
 	</div>	
 		<div class="container">
 
