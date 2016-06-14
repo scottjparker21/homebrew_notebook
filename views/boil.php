@@ -18,7 +18,7 @@
 	<div class="col-lg-12">
 		<center><h1 class="pacifico"> Boil </h1></center>
 	</div>	
-		<div class="container">
+		<div id="boil-jumbotron" class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
 			

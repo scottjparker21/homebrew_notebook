@@ -8,31 +8,33 @@ body {
   background: #ede9ce;
   margin-bottom: 60px;
 }
-h2{
+h2 {
   color: white;
 }
-h5{
+h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
-
 }
-#overview{
+#boil-jumbotron{
+  background-image: url(../img/boil-jumbotron.jpg);
+}
+#overview {
   background-color: #64706c;
   padding-top: 25px;
   margin: 0px;
 }
-.process-buttons{
+.process-buttons {
   background-color:#935347 ;
   min-height: 30px;
   margin:5px;
   padding:5px;
 }
-.user-recipe{
+.user-recipe {
   background-color: #c7ad88;
   margin: 15px;
   padding:10px;
 }
-.white{
+.white {
   color: white;
 }
 #icon-box {
@@ -43,7 +45,7 @@ h5{
   padding-top: 12px;
   margin-bottom:30px;
 }
-#step-icon{
+#step-icon {
   width: 100%;
   height: auto;
 
@@ -60,11 +62,11 @@ h5{
   width:100%;
   height: auto;
 }
-#subhead{
+#subhead {
   min-height: 115px;
   padding-top:10px;
 }
-.home-box{
+.home-box {
   background-color: #64706c;
   border: 3px solid white;
   height: 20vw;
@@ -72,20 +74,20 @@ h5{
   padding:20px;
 }
 /*font awesome icon styling*/
-.fa-pencil{
+.fa-pencil {
   color:white;
 }
 .fa-paper-plane-o {
   color: white;
 }
-.fa-university{
+.fa-university {
   color: white;
 }
-.fa-server{
+.fa-server {
   color: white;
 }
 
-#subhead-text{
+#subhead-text {
   position: relative;
 }
 .jumbotron {
@@ -108,7 +110,7 @@ h5{
   position: relative;
   background-position: 0px 0px;
 }
-#jumbo-icon{
+#jumbo-icon {
   width:50%;
   height: auto;
   -webkit-filter: drop-shadow( 5px 5px 5px rgba(0,0,0,0.6));
@@ -127,18 +129,18 @@ h5{
   color:white;
   text-shadow: 5px 5px 4px #000;
 }
-.pacifico{
+.pacifico {
   font-family: 'Pacifico', cursive;
   font-size: 75px;
   color: #c7ad88;
   margin:15px;
 }
-#pacifico-home{
+#pacifico-home {
   font-family: 'Pacifico', cursive;
   font-size: 50px;
   color: white;
 }
-.pacifico-jumbo{
+.pacifico-jumbo {
   font-family: 'Pacifico', cursive;
   font-size: 110px;
   color: white;
@@ -147,7 +149,7 @@ h5{
   text-shadow: 5px 5px 4px #000;
 }
 
-body{
+body {
 background:#ede9ce;
 }
 #textbox {
