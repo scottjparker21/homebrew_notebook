@@ -15,10 +15,11 @@
 			// print_r($boil);
 			// echo "</pre>";
 ?>
+<div id="boil-jumbotron">
 	<div class="col-lg-12">
 		<center><h1 class="pacifico"> Boil </h1></center>
 	</div>	
-		<div id="boil-jumbotron" class="container">
+		<div class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
 			
@@ -80,3 +81,4 @@
 				</div>
 		  	</form></center>
 		</div>
+</div>
