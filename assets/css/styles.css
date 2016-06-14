@@ -19,7 +19,7 @@ h5 {
   background: url(../img/boil_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #overview {
   background-color: #64706c;
