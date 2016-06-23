@@ -15,6 +15,12 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+#mash-background {
+  background: url(../img/mash_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #boil-background {
   background: url(../img/boil_background.jpg);
   background-repeat: no-repeat;
