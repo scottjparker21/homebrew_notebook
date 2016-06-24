@@ -32,7 +32,7 @@
 			<center><div class="row">
 			<form class="recipe-form" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
-					<div class="form-white-background">
+					<div class="">
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
