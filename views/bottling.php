@@ -29,7 +29,7 @@
 
 			<?php require_once '../includes/rec_steps.php';?>
 			
-			<form class="form-register form-signin" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
+			<form class="form-register form-signin recipe-form" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
 						<!-- success message -->
