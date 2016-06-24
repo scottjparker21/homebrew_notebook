@@ -31,8 +31,7 @@
 			<?php require_once '../includes/rec_steps.php';?>
 			<div class="row">
 			<form class="form-register" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-				<div class="form-register-with-email">
-					<div class="form-white-background">
+				
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
@@ -77,8 +76,7 @@
 							{{ formData.duration }}
 							{{ formData.notes }}
 						</pre> -->
-				  	</div>	
-				</div>
+				 
 		  	</form>
 		  	</div></center>	
 		</div>
