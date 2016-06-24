@@ -29,7 +29,7 @@
 		<div class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
-			
+			<center><div class="row">
 			<form class="form-register form-signin" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
@@ -79,6 +79,7 @@
 						</pre> -->
 				  	</div>	
 				</div>
-		  	</form>	
+		  	</form>
+		  	</div></center>	
 		</div>
 	</div>
