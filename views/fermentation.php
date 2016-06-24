@@ -79,6 +79,7 @@
 						</pre> -->
 				  	</div>	
 				</div>
-		  	</form>	
+		  	</form>
+		  </div></center>
 		</div>
 	</div>
