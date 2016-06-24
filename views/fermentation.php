@@ -29,10 +29,10 @@
 		<div class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
-			<center><div class="row">
-			<form class="recipe-form" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-				<div class="">
-					<div class="">
+			
+			<form class="form-register form-signin" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
+				<div class="form-register-with-email">
+					<div class="form-white-background">
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
@@ -79,7 +79,6 @@
 						</pre> -->
 				  	</div>	
 				</div>
-		  	</form>
-		  </div></center>
+		  	</form>	
 		</div>
 	</div>
