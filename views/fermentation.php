@@ -23,15 +23,16 @@
 
 ?>
 	<div id="fermentation-background">
-		<center><div class="col-lg-12">
+		<div class="col-lg-12">
 			<center><h1 class="pacifico-jumbo"> Fermentation </h1></center>
 		</div>	
 		<div class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
-			<div class="row">
-			<form class="form-register" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-				
+			<center><div class="row">
+			<form class="recipe-form" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
+				<div class="form-register-with-email">
+					<div class="form-white-background">
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
 
@@ -76,8 +77,8 @@
 							{{ formData.duration }}
 							{{ formData.notes }}
 						</pre> -->
-				 
-		  	</form>
-		  	</div></center>	
+				  	</div>	
+				</div>
+		  	</form>	
 		</div>
 	</div>
