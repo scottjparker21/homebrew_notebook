@@ -31,7 +31,7 @@
 			<?php require_once '../includes/rec_steps.php';?>
 			<center><div class="row">
 			<form class="recipe-form" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-				<div class="form-register-with-email">
+				<div class="">
 					<div class="">
 						<!-- success message -->
 						<div id="message" ng-show="message">{{ message }}</div>
