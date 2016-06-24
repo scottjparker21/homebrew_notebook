@@ -26,6 +26,9 @@ h5 {
   padding: 0 20px 15px;
   border-bottom: 2px solid #6caee0;
 }
+.recipe-form input {
+  margin-bottom: 12px;
+}
 #fermentation-background {
   background: url(../img/yeast_background.jpg);
   background-repeat: no-repeat;
