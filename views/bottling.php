@@ -29,7 +29,7 @@
 
 			<?php require_once '../includes/rec_steps.php';?>
 			
-			<center><form class="form-register form-signin" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
+			<form class="form-register form-signin" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
 						<!-- success message -->
@@ -71,6 +71,6 @@
 						</pre> -->
 				  	</div>	
 				</div>
-		  	</form><center>
+		  	</form>	
 		</div>
 	</div>
