@@ -15,6 +15,18 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+#fermentation-background {
+  background: url(../img/yeast_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#bottling-background {
+  background: url(../img/bottling_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #mash-background {
   background: url(../img/mash_background.jpg);
   background-repeat: no-repeat;
