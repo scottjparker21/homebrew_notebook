@@ -12,7 +12,6 @@
       		<div class="collapse navbar-collapse" id="myNavbar">
         			<ul class="nav navbar-nav">
              			<li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-              		<li ng-class="{ active: isActive('/recipes')}"><a href="#/recipes">Something</a></li>
                   
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Recipes<span class="caret"></span></a>
                       <ul class="dropdown-menu">
