@@ -23,7 +23,7 @@
 ?>
 	<div id="bottling-background">
 		<div class="col-lg-12">
-			<center><h1 class="pacifico"> Bottling </h1></center>
+			<center><h1 class="pacifico-jumbo"> Bottling </h1></center>
 		</div>	
 		<div class="container">
 
