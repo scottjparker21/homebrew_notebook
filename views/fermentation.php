@@ -23,13 +23,13 @@
 
 ?>
 	<div id="fermentation-background">
-		<div class="col-lg-12">
+		<center><div class="col-lg-12">
 			<center><h1 class="pacifico-jumbo"> Fermentation </h1></center>
 		</div>	
 		<div class="container">
 
 			<?php require_once '../includes/rec_steps.php';?>
-			<center><div class="row">
+			<div class="row">
 			<form class="form-register" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
