@@ -70,7 +70,7 @@
 			$sql2 = 'SELECT * from recipe WHERE id = ?';
 			$q2 = $pdo->prepare($sql2);
 			$q2->execute(array($urid));
-			$ur = $q2->fetchAll(PDO::FETCH_ASSOC);
+			$ur = $q2->fetch(PDO::FETCH_ASSOC);
 
 			echo '<p>' . $ur['name'] . '</p>';
 		
