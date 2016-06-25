@@ -64,7 +64,8 @@
 	$q->execute();
 	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
 	foreach($user_recipes as $ur=>$value) {
-		echo '<p>'.$ur.'</p>';
+		foreach ($value as $urid)
+		echo '<p>'.$urid.'</p>';
 		echo '<p>'.$value.'</p>';
 	}
 ?>
