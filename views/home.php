@@ -56,7 +56,7 @@
 		</div>
 	</div>
 
-	<div class="container" style="background-color:#ede9ce;">
+	<div class="row" style="background-color:#ede9ce;">
 		<div class="row">
 			<center><h1 id="pacifico-home"> Recent User Recipes </h1></center>
 		</div>
@@ -93,7 +93,7 @@
 		</div>
 	</div>
 <!-- start infographic -->
-		<div class="container" style="background-color:#c7ad88;">
+		<div class="row" style="background-color:#c7ad88;">
 			<div class="row">
 				<div id="texbox">
 					<div class="row">
