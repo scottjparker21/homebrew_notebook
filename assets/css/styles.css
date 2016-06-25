@@ -25,6 +25,7 @@ h5 {
 }
 .user-recipe-outer{
   text-align: center;
+  position: relative;
 }
 .recipe-form {
   width: 800px;
