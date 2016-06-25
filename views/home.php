@@ -58,7 +58,7 @@
 
 	<div class="container" style="background-color:#ede9ce;">
 		<div class="row">
-			<center><h1> Recent User Recipes </h1></center>
+			<center><h1 id="pacifico-home"> Recent User Recipes </h1></center>
 		</div>
 		<!-- user recipes -->
 		<div class="row">
