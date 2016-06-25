@@ -101,6 +101,7 @@
 						<div class="col-lg-12">
 							<center><img id="process" ng-src="{{imgsrc}}" /></center>
 							<center><h3 style"color:white;">BREWING PROCESS</h3></center>
+						</div>
 					</div>
 				</div>
 			</div>
