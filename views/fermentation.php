@@ -55,7 +55,7 @@
 				      			<span class="help-block" ng-show="errorduration">{{ errorduration }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+				  		<div class=" control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
 				    			<?php echo	'<input class="input-size" ng-init="formData.notes=' ."'" . $fermentation['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
