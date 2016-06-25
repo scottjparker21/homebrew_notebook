@@ -58,7 +58,7 @@
 				  		<div class=" control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<input class="input-size" ng-init="formData.notes=' ."'" . $fermentation['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<textarea cols="60" rows="60" ng-init="formData.notes=' ."'" . $fermentation['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes"/>'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
