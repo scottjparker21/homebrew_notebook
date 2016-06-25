@@ -59,15 +59,19 @@
 <?php
 	// grabs three most recent user recipes
 	$pdo = Database::connect();
-	$sql = 'SELECT * from recipe_step ORDER BY id DESC LIMIT 3';
+	$sql = 'SELECT * from recipe ORDER BY id DESC LIMIT 3';
 	$q = $pdo->prepare($sql);
 	$q->execute();
 	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
-	foreach($user_recipes as $ur=>$value) {
-		foreach ($value as $urid)
-		echo '<p>'.$urid.'</p>';
-		echo '<p>'.$value.'</p>';
-	}
+	// foreach($user_recipes as $ur=>$value) {
+	// 	foreach ($value as $urid)
+	// 	echo '<p>'.$urid.'</p>';
+		
+	// }
+	echo $user_recipes['id'];
+	echo $user_recipes['name'];
+	echo $user_recipes['style'];
+	echo $user_recipes['malt_type'];
 ?>
 	<div class="container" style="background-color:#ede9ce;">
 		<div class="row">
