@@ -26,8 +26,7 @@
 			<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
-						<!-- success message -->
-						<div id="message" ng-show="message">{{ message }}</div>
+						
 
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDuration }">
 				    		<label class="control-label">Duration</label>

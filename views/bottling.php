@@ -32,8 +32,6 @@
 			<form class="form-register form-signin " name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
 					<div class="form-white-background">
-						<!-- success message -->
-						<div id="message" ng-show="message">{{ message }}</div>
 
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorbtl_con }">
 				    		<label class="control-label">Bottle Conditioning</label>
