@@ -59,7 +59,7 @@
 <?php
 	// grabs three most recent user recipes
 	$pdo = Database::connect();
-	$sql = 'SELECT * from recipe ORDER BY id DESC LIMIT 3';
+	$sql = 'SELECT id from recipe ORDER BY id DESC LIMIT 3';
 	$q = $pdo->prepare($sql);
 	$q->execute();
 	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
