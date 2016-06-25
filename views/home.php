@@ -55,35 +55,33 @@
 			</div></center> -->
 		</div>
 	</div>
-<!-- user recipes -->
-<?php
-	// grabs three most recent user recipes
-	$pdo = Database::connect();
-	$sql = 'SELECT id from recipe ORDER BY id DESC LIMIT 3';
-	$q = $pdo->prepare($sql);
-	$q->execute();
-	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
-	foreach($user_recipes as $ur=>$value) {
-		foreach ($value as $urid)
-		echo '<p>'.$urid.'</p>';
 
-			$sql2 = 'SELECT * from recipe WHERE id = ?';
-			$q2 = $pdo->prepare($sql2);
-			$q2->execute(array($urid));
-			$ur = $q2->fetch(PDO::FETCH_ASSOC);
-
-			echo '<p>' . $ur['name'] . '</p>';
-		
-	}
-	// echo '<p>' . $user_recipes['id'] . '</p>';
-	// echo '<p>' . $user_recipes['name'] . '</p>';
-	// echo '<p>' . $user_recipes['style'] . '</p>';
-	// echo '<p>' . $user_recipes['malt_type'] . '</p>';
-?>
 	<div class="container" style="background-color:#ede9ce;">
 		<div class="row">
 			<center><h1> Recent User Recipes </h1></center>
 		</div>
+		<!-- user recipes -->
+			<?php
+				// grabs three most recent user recipes
+				$pdo = Database::connect();
+				$sql = 'SELECT id from recipe ORDER BY id DESC LIMIT 3';
+				$q = $pdo->prepare($sql);
+				$q->execute();
+				$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
+				foreach($user_recipes as $ur=>$value) {
+					foreach ($value as $urid) {
+						$sql2 = 'SELECT * from recipe WHERE id = ?';
+						$q2 = $pdo->prepare($sql2);
+						$q2->execute(array($urid));
+						$ur = $q2->fetch(PDO::FETCH_ASSOC);
+
+						echo '<p>' . $ur['name'] . '</p>';
+						echo '<p>' . $ur['style'] . '</p>';
+						echo '<p>' . $ur['malt_type'] . '</p>';	
+					}
+				}
+				Database::disconnect();
+			?>
 
 
 	</div>
