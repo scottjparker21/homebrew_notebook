@@ -15,7 +15,11 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
-
+.input-size{
+  font-size: 14px;
+  height: 60px;
+  width: 40%;
+}
 .user-recipe-outer{
   text-align: center;
   position: relative;
