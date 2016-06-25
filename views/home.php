@@ -62,7 +62,7 @@
 		</div>
 		<!-- user recipes -->
 		<center><div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 user-recipe-outer">
 			<?php
 				// grabs three most recent user recipes
 				$pdo = Database::connect();
