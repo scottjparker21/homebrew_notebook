@@ -79,8 +79,8 @@
 						// echo '<p>' . $ur['name'] . '</p>';
 						// echo '<p>' . $ur['style'] . '</p>';
 						// echo '<p>' . $ur['malt_type'] . '</p>';	
-						echo 	'<center><div class="col-lg-3  user-recipe-box"></center>';
-						echo 		'<img ng-src="assets/img/white_bot_icon.svg"/>';
+						echo 	'<div class="col-lg-3  user-recipe-box">';
+						echo 		'<center><img ng-src="assets/img/white_bot_icon.svg"/></center>';
 						echo     	'<h2>' . $ur['name'] . '</h2>';
 						echo     	'<h2>' . $ur['style'] . '</h2>';
 						echo     	'<h2>' . $ur['malt_type'] . '</h2>';			
