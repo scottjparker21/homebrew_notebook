@@ -63,8 +63,9 @@
 	$q = $pdo->prepare($sql);
 	$q->execute();
 	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
-	foreach($user_recipes as $ur) {
+	foreach($user_recipes as $ur=>$value) {
 		echo '<p>'.$ur.'</p>';
+		echo '<p>'.$value.'</p>';
 	}
 ?>
 	<div class="container" style="background-color:#ede9ce;">
