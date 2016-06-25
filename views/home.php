@@ -78,16 +78,12 @@
 						// echo '<p>' . $ur['name'] . '</p>';
 						// echo '<p>' . $ur['style'] . '</p>';
 						// echo '<p>' . $ur['malt_type'] . '</p>';	
-						echo '<div class="row">';
-						echo 	'<div class="col-lg-3 user-recipe-box">';
-						echo '<img ng-src="assets/img/white_bot_icon.svg"/>';
-						echo     	'<h2>' . $ur['name'] . '</h2>';			
-						echo '</div>';
-						echo	'<div class="col-lg-3 user-recipe-box">';
+						echo '<div class="row user-recipe-box">';
+						echo 	'<div class="col-lg-3">';
+						echo '		<img ng-src="assets/img/white_bot_icon.svg"/>';
+						echo     	'<h2>' . $ur['name'] . '</h2>';
 						echo     	'<h2>' . $ur['style'] . '</h2>';
-						echo '</div>';
-						echo	'<div class="col-lg-3 user-recipe-box">';
-						echo     	'<h2>' . $ur['malt_type'] . '</h2>';
+						echo     	'<h2>' . $ur['malt_type'] . '</h2>';			
 						echo	'</div>';
 						echo '</div>';
 					}
