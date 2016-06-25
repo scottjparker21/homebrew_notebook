@@ -98,8 +98,8 @@
 				<div id="texbox">
 					<div class="row">
 						<div class="col-lg-12">
-							<center><img id="process" ng-src="{{imgsrc}}" /></center>
-							<center><h1 style"pacifico-home">The Brewing Process</h3></center>
+							<center><h1 id="pacifico-home">The Brewing Process</h3></center>
+							<center><img id="process" ng-src="{{imgsrc}}" /></center>		
 						</div>
 					</div>
 				</div>
