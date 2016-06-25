@@ -68,10 +68,10 @@
 	// 	echo '<p>'.$urid.'</p>';
 		
 	// }
-	echo $user_recipes['id'];
-	echo $user_recipes['name'];
-	echo $user_recipes['style'];
-	echo $user_recipes['malt_type'];
+	echo '<p>' . $user_recipes['id'] . '</p>';
+	echo '<p>' . $user_recipes['name'] . '</p>';
+	echo '<p>' . $user_recipes['style'] . '</p>';
+	echo '<p>' . $user_recipes['malt_type'] . '</p>';
 ?>
 	<div class="container" style="background-color:#ede9ce;">
 		<div class="row">
