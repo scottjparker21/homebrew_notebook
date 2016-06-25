@@ -18,7 +18,8 @@ h5 {
 .input-size{
   font-size: 14px;
   height: 140px;
-  width: 70%;
+  width: 100%;
+  resize: none;
 }
 .user-recipe-outer{
   text-align: center;
