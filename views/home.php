@@ -62,7 +62,7 @@
 	$sql = 'SELECT * from recipe ORDER BY id DESC LIMIT 3';
 	$q = $pdo->prepare($sql);
 	$q->execute();
-	$user_recipes = $q->fetch(PDO::FETCH_ASSOC);
+	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
 	foreach($user_recipes as $ur=>$value) {
 		foreach ($value as $urid)
 		echo '<p>'.$urid.'</p>';
