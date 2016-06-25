@@ -93,7 +93,6 @@
 		</div>
 	</div>
 <!-- start infographic -->
-	<div class="container" style="background-color:#c7ad88;">
 		<div class="container" style="background-color:#c7ad88;">
 			<div class="row">
 				<div id="texbox">
@@ -130,4 +129,3 @@
 		    	</center>
 		    </div>
 		</div>
-	</div>
