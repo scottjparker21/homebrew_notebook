@@ -61,8 +61,9 @@
 			<center><h1> Recent User Recipes </h1></center>
 		</div>
 		<!-- user recipes -->
-		<center><div class="row">
+		<div class="row">
 			<div class="col-lg-12 user-recipe-outer">
+			<center>
 			<?php
 				// grabs three most recent user recipes
 				$pdo = Database::connect();
@@ -89,8 +90,9 @@
 				}
 				Database::disconnect();
 			?>
+			</center>
 			</div>
-		</div></center>
+		</div>
 	</div>
 <!-- start infographic -->
 	<div class="container" style="background-color:#c7ad88;">
