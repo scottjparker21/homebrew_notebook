@@ -61,7 +61,7 @@
 			<center><h1> Recent User Recipes </h1></center>
 		</div>
 		<!-- user recipes -->
-		<div class="row user-recipe-box">
+		<div class="row">
 			<div class="col-lg-12">
 			<?php
 				// grabs three most recent user recipes
@@ -79,7 +79,7 @@
 						// echo '<p>' . $ur['name'] . '</p>';
 						// echo '<p>' . $ur['style'] . '</p>';
 						// echo '<p>' . $ur['malt_type'] . '</p>';	
-						echo 	'<div class="col-lg-3">';
+						echo 	'<div class="col-lg-3  user-recipe-box">';
 						echo 		'<img ng-src="assets/img/white_bot_icon.svg"/>';
 						echo     	'<h2>' . $ur['name'] . '</h2>';
 						echo     	'<h2>' . $ur['style'] . '</h2>';
