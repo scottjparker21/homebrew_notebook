@@ -1,3 +1,7 @@
+	<?php 
+		require_once '../includes/database.php';
+		session_start();	
+	?>
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<div class="jumbotron">
@@ -50,6 +54,25 @@
 <!-- 				</div></center>
 			</div></center> -->
 		</div>
+	</div>
+<!-- user recipes -->
+<?php
+	// grabs three most recent user recipes
+	$pdo = Database::connect();
+	$sql = 'SELECT * from recipe_step ORDER BY id DESC LIMIT 3';
+	$q = $pdo->prepare($sql);
+	$q->execute();
+	$user_recipes = $q->fetchAll(PDO::FETCH_ASSOC);
+	foreach($user_recipes as $ur) {
+		echo '<p>'.$ur.'</p>';
+	}
+?>
+	<div class="container" style="background-color:#ede9ce;">
+		<div class="row">
+			<center><h1> Recent User Recipes </h1></center>
+		</div>
+
+
 	</div>
 	<div class="container" style="background-color:#c7ad88;">
 		<div class="container" style="background-color:#c7ad88;">

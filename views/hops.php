@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<div id="hops-background">
 		<div class="col-lg-12">
-				<center><h1  class="pacifico-jumbo animated fadeInLeft"> Hops </h1></center>		
+				<center><h1  class="pacifico-jumbo c"> Hops </h1></center>		
 		</div>
 		<div class="container" ng-app="">
 			<?php require_once '../includes/rec_steps.php';?>		
