@@ -66,8 +66,13 @@
 	foreach($user_recipes as $ur=>$value) {
 		foreach ($value as $urid)
 		echo '<p>'.$urid.'</p>';
-		echo '<p>'.$value.'</p>';
 
+			$sql2 = 'SELECT * from recipe WHERE id = ?';
+			$q2 = $pdo->prepare($sql2);
+			$q2->execute(array($urid));
+			$ur = $q2->fetchAll(PDO::FETCH_ASSOC);
+
+			echo '<p>' . $ur['name'] . '</p>';
 		
 	}
 	// echo '<p>' . $user_recipes['id'] . '</p>';

@@ -56,10 +56,6 @@
 
 						        Database::disconnect();
 
-						        // print_r($recipe);
-						        // print_r($results);
-
-						        // echo "name= " . $data2['name'];
 						        echo '<form action="getrid.php" method="post">';
 						        echo '<center><div class="user-recipe col-lg-5 col-lg-offset-1">';
 						        echo '<h1>' . $recipe['name'] . '</h1>';
