@@ -20,6 +20,10 @@ h5 {
   height: 140px;
   width: 100%;
   resize: none;
+  padding-left:0;
+  padding-top:0;
+  padding-bottom:0.4em;
+  padding-right: 0.4em;
 }
 .user-recipe-outer{
   text-align: center;
