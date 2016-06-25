@@ -15,6 +15,13 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+.user-recipe-box{
+  border: 3px solid white;
+  height: auto;
+  min-width: 400px;
+  margin: 20px;
+  padding:20px;
+}
 .recipe-form {
   width: 800px;
   box-sizing: border-box;

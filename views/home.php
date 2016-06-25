@@ -78,6 +78,18 @@
 						echo '<p>' . $ur['name'] . '</p>';
 						echo '<p>' . $ur['style'] . '</p>';
 						echo '<p>' . $ur['malt_type'] . '</p>';	
+						echo '<div class="row">';
+						echo '<imgsrc="assets/img/white_bot_icon.svg">'
+						echo 	'<div class="col-lg-3 user-recipe-box">';
+						echo     	'<h2>' . $ur['name'] . '</h2>';			
+						echo '</div>';
+						echo	'<div class="col-lg-3 user-recipe-box">';
+						echo     	'<h2>' . $ur['name'] . '</h2>';
+						echo '</div>';
+						echo	'<div class="col-lg-3 user-recipe-box">';
+						echo     	'<h2>' . $ur['name'] . '</h2>';
+						echo	'</div>';
+						echo '</div>';
 					}
 				}
 				Database::disconnect();
