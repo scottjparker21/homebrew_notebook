@@ -62,7 +62,7 @@
 		</div>
 		<!-- user recipes -->
 		<div class="row">
-			<div class="col-lg-12">
+			<center><div class="col-lg-12">
 			<?php
 				// grabs three most recent user recipes
 				$pdo = Database::connect();
@@ -79,7 +79,7 @@
 						// echo '<p>' . $ur['name'] . '</p>';
 						// echo '<p>' . $ur['style'] . '</p>';
 						// echo '<p>' . $ur['malt_type'] . '</p>';	
-						echo 	'<div class="col-lg-3  user-recipe-box">';
+						echo 	'<center><div class="col-lg-3  user-recipe-box"></center>';
 						echo 		'<img ng-src="assets/img/white_bot_icon.svg"/>';
 						echo     	'<h2>' . $ur['name'] . '</h2>';
 						echo     	'<h2>' . $ur['style'] . '</h2>';
@@ -89,7 +89,7 @@
 				}
 				Database::disconnect();
 			?>
-			</div>
+			</div></center>
 		</div>
 	</div>
 <!-- start infographic -->
