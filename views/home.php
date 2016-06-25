@@ -59,13 +59,15 @@
 <?php
 	// grabs three most recent user recipes
 	$pdo = Database::connect();
-	$sql = 'SELECT id from recipe ORDER BY id DESC LIMIT 3';
+	$sql = 'SELECT * from recipe ORDER BY id DESC LIMIT 3';
 	$q = $pdo->prepare($sql);
 	$q->execute();
 	$user_recipes = $q->fetch(PDO::FETCH_ASSOC);
 	foreach($user_recipes as $ur=>$value) {
 		foreach ($value as $urid)
 		echo '<p>'.$urid.'</p>';
+		echo '<p>'.$value.'</p>';
+
 		
 	}
 	// echo '<p>' . $user_recipes['id'] . '</p>';
