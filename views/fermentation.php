@@ -51,7 +51,7 @@
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div class="img-responsive" >
-					        <a href="#/fermentation"><img class="" ng-src="imgsrc4='assets/img/carboy_c.svg" style=""/></a>
+					        <a href="#/fermentation"><img class="" ng-src="assets/img/carboy_c.svg" style=""/></a>
 					      <center><div><h4>Fermentation</h4></div></center>
 					    </div>
 					</div>
