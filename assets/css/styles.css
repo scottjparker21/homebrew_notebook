@@ -15,6 +15,9 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+.recipes-page{
+  background-color: #c7ad88;
+}
 .input-size{
   font-size: 14px;
   height: 140px;
@@ -93,11 +96,6 @@ h5 {
   min-height: 30px;
   margin:5px;
   padding:5px;
-}
-.user-recipe {
-  background-color: #c7ad88;
-  margin: 15px;
-  padding:10px;
 }
 .white {
   color: white;
