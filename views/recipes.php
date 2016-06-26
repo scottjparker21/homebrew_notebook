@@ -5,7 +5,7 @@
 
 	<div class="container recipes-page">
 		<div id="rid" ng-show="rid">{{ rid }}</div>
-		<h1> Recipes by: <?php echo $_SESSION['username']; ?> </h1>
+		<center><h1 class="white"> Recipes by: <?php echo $_SESSION['username']; ?> </h1></center>
 
 		<?php
 					$uid = $_SESSION["userid"];
@@ -41,9 +41,9 @@
 
 						        echo '<form action="getrid.php" method="post">';
 						        echo '<center><div class="user-recipe-box col-lg-5 col-lg-offset-1">';
-						        echo '<h1>' . $recipe['name'] . '</h1>';
-						        echo '<h3>Style: ' . $recipe['style'] . '</h3>';
-						        echo '<h3>Color: ' . $results['color'] . '</h3>';
+						        echo '<h1 class="white">' . $recipe['name'] . '</h1>';
+						        echo '<h3 class="white">Style: ' . $recipe['style'] . '</h3>';
+						        echo '<h5 class="white">Color: ' . $results['color'] . '</h3>';
 						        echo '<input type="hidden" name="rid" value="'.$rid.'">';
 						        echo '<input type="hidden" name="rsid" value="'.$v.'">';
 						        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
