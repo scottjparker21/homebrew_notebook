@@ -59,7 +59,7 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorstep }">
 				    		<label class="control-label">Step</label>
 				    		<div class="controls">
-				    			<?php echo	'<textarea class="notes-input" cols="30" ng-init="formData.step=' ."'" . $hops['step'] ."'" . '" type="text" name="step" ng-model="formData.step">'; ?>
+				    			<?php echo	'<input ng-init="formData.step=' ."'" . $hops['step'] ."'" . '" type="text" name="step" ng-model="formData.step">'; ?>
 				      			<span class="help-block" ng-show="step">{{ step }}</span> 
 				    		</div>
 				  		</div>

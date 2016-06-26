@@ -56,10 +56,10 @@
 				      			<span class="help-block" ng-show="errortime_added">{{ errortime_added }}</span> 
 				    		</div>
 				  		</div>
-				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
+				  		<div class="control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<textarea class="notes-input" cols="30" ng-init="formData.notes=' ."'" . $boil['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<textarea class="notes-input" cols="30" rows="10" ng-init="formData.notes=' ."'" . $boil['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
