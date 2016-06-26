@@ -33,7 +33,7 @@
 					<center>
 					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2">
 						<div class="img-responsive" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
-					        <a href="#/mash"><img class="" ng-src="{{imgsrc1}}" /></a>
+					        <a href="#/mash"><img class="animated pulse" ng-src="{{imgsrc1}}" /></a>
 					      <center><div><h4>Mash</h4></div></center>
 					    </div>
 					</div>
