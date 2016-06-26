@@ -58,14 +58,14 @@
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errornotes }">
 				    		<label class="control-label">Notes</label>
 				    		<div class="controls">
-				    			<?php echo	'<input ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
+				    			<?php echo	'<textarea class="notes-input" cols="30" ng-init="formData.notes=' ."'" . $mash['notes'] ."'" . '" type="text" name="notes" ng-model="formData.notes">'; ?>
 				      			<span class="help-block" ng-show="errornotes">{{ errornotes }}</span> 
 				    		</div>
 				  		</div>
 				  		<div class="form-row form-actions control-group">
 				    		<div class="controls">
 			
-				      			<button id="send" type="submit" class="btn btn-success">Next Step</button>
+				      			<button id="send" type="submit" class="btn btn-success">Save</button>
 				    		</div>
 				  		</div>
 				  		<!-- <pre>
