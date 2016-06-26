@@ -21,7 +21,42 @@
 	</div>	
 		<div class="container">
 
-			<?php require_once '../includes/rec_steps.php';?>
+			<div class="row">
+				<div id="icon-box" class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<center>
+					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2">
+						<div class="img-responsive" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
+					        <a href="#/mash"><img class="animated pulse" ng-src="{{imgsrc1}}" /></a>
+					      <center><div><h4>Mash</h4></div></center>
+					    </div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<div  class="img-responsive">
+					        <a href="#/boil"><img class="animated pulse" ng-src="assets/img/boil_c.svg" style=""/></a>
+					      <center><div><h4>Boil</h4></div></center>
+					    </div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="img-responsive" ng-init="imgsrc3='assets/img/hops_b.svg'" ng-mouseover="imgsrc3='assets/img/hops_c.svg'" ng-mouseout="imgsrc3='assets/img/hops_b.svg'">
+					        <a href="#/hops"><img class="animated pulse" ng-src="{{imgsrc3}}" style=""/></a>
+					      <center><div><h4>Hops</h4></div></center>
+					    </div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="img-responsive" ng-init="imgsrc4='assets/img/carboy_b.svg'" ng-mouseover="imgsrc4='assets/img/carboy_c.svg'" ng-mouseout="imgsrc4='assets/img/carboy_b.svg'">
+					        <a href="#/fermentation"><img class="animated pulse" ng-src="{{imgsrc4}}" style=""/></a>
+					      <center><div><h4>Fermentation</h4></div></center>
+					    </div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="img-responsive" ng-init="imgsrc5='assets/img/bot_b.svg'" ng-mouseover="imgsrc5='assets/img/bot_c.svg'" ng-mouseout="imgsrc5='assets/img/bot_b.svg'">
+					        <a href="#/bottling"><img class="animated pulse" ng-src="{{imgsrc5}}" style=""/></a>
+					      <center><div><h4>Bottling</h4></div></center>
+					    </div>
+					</div>
+					</center>
+				</div>
+			</div>
 			
 			<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 				<div class="form-register-with-email">
