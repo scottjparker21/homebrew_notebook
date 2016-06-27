@@ -3,7 +3,7 @@
 		session_start();
 	?>
 
-	<div class="container recipes-page">
+	<div class="container">
 		<div id="rid" ng-show="rid">{{ rid }}</div>
 		<center><h1 class="blue"> Recipes by: <?php echo $_SESSION['username']; ?> </h1></center>
 
