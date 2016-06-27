@@ -68,6 +68,12 @@ h5 {
   background-position: center;
   background-size: cover;
 }
+#recipes-background {
+  background: url(../img/recipes_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #bottling-background {
   background: url(../img/bottling_background.jpg);
   background-repeat: no-repeat;
