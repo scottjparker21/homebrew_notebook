@@ -32,6 +32,7 @@ h5 {
 }
 .recipe-page-box{
   border: 3px solid #64706c;
+  background-color: white;
   text-align: center;
   height: auto;
   width: 30%;
