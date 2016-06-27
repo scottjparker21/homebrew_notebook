@@ -5,7 +5,7 @@
 	<div id="recipes-background">
 		<div class="container">
 			<div id="rid" ng-show="rid">{{ rid }}</div>
-			<center><h1 id="pacifico-jumbo"> Your Recipes </h1></center>
+			<center><h1 class="pacifico-jumbo"> Your Recipes </h1></center>
 
 			<?php
 						$uid = $_SESSION["userid"];
