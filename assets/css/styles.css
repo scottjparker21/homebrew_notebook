@@ -1,11 +1,11 @@
 html {
-  background: #c7ad88;
+  background: white;
   position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-  background: #c7ad88;
+  background: white;
   margin-bottom: 60px;
 }
 h2 {
