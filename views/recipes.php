@@ -41,9 +41,9 @@
 
 							        echo '<form action="getrid.php" method="post">';
 							        echo '<center><div class="recipe-page-box col-lg-5 col-lg-offset-1">';
-							        echo '<h1 class="blue">' . $recipe['name'] . '</h1>';
-							        echo '<h3 class="blue">Style: ' . $recipe['style'] . '</h3>';
-							        echo '<h5 class="blue">Color: ' . $results['color'] . '</h3>';
+							        echo '<h1 class="white">' . $recipe['name'] . '</h1>';
+							        echo '<h3 class="white">Style: ' . $recipe['style'] . '</h3>';
+							        echo '<h5 class="white">Color: ' . $results['color'] . '</h3>';
 							        echo '<input type="hidden" name="rid" value="'.$rid.'">';
 							        echo '<input type="hidden" name="rsid" value="'.$v.'">';
 							        echo '<button id="send" type="submit" class="btn btn-success">Edit</button>';
