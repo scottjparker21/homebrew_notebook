@@ -6,7 +6,7 @@ html {
 body {
   /* Margin bottom by footer height */
   background: white;
-  margin-bottom:;
+  margin-bottom:-60px;
 }
 h2 {
   color: white;
@@ -136,7 +136,7 @@ h5 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #64706c;
+  background: #64706c;
 }
 #process {
   width:65%;
