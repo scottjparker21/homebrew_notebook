@@ -48,7 +48,7 @@
 								<div class="form-white-background">
 									<!-- success message -->
 									<center><div>
-										<img class="" ng-src="assets/img/barley_c.svg" style=""/>
+										<img class="review-icons" ng-src="assets/img/barley_c.svg" style=""/>
 									</div></center>
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
 							    		<label class="control-label">Malt Ammount</label>
