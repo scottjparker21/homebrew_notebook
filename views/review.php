@@ -5,7 +5,7 @@
 <div id="review-background">
 
 	<div class="container">
-		<h1> Review <?php echo $_SESSION['rsi']; ?> </h1>
+		<center><h1 class="pacifico-jumbo"> Recipe Overview </h1></center>
 
 		<?php			
 			$rsi = $_SESSION['rsi'];
