@@ -2,7 +2,7 @@
 		    <footer class="footer">
 	      		<div class="container">
 	        		<center>
-	        			<p class="text-muted">HomeBrewBud</p>
+	        			<p class="text-muted">Homebrew Notebook</p>
 	        			<a href="sitemap.php"> Site Map </a>
 	        		</center>
 	     		 </div>
