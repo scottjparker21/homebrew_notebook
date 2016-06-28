@@ -104,7 +104,7 @@
                                     </div>
 
                                       <div class=" form-row control-group <?php echo !empty($usernameError)?'error':'';?>">
-                                        <label>Username</label>
+                                        <label class="control-label white">Username</label>
                                         <div class="controls">
                                             <input name="username" type="text"  placeholder="" value="<?php echo !empty($username)?$username:'';?>">
                                             <?php if (!empty($usernameError)): ?>
@@ -113,7 +113,7 @@
                                         </div>
                                       </div>
                                       <div class=" form-row control-group <?php echo !empty($passwordError)?'error':'';?>">
-                                        <label class="control-label">Password</label>
+                                        <label class="control-label white">Password</label>
                                         <div class="controls">
                                             <input name="password" type="text" placeholder="" value="<?php echo !empty($password)?$password:'';?>">
                                             <?php if (!empty($passwordError)): ?>
@@ -122,7 +122,7 @@
                                         </div>
                                       </div>
                                       <div class=" form-row control-group <?php echo !empty($nameError)?'error':'';?>">
-                                        <label class="control-label">Full Name</label>
+                                        <label class="control-label white">Full Name</label>
                                         <div class="controls">
                                             <input name="name" type="text" placeholder="" value="<?php echo !empty($name)?$name:'';?>">
                                             <?php if (!empty($nameError)): ?>
@@ -131,7 +131,7 @@
                                         </div>
                                       </div>
                                       <div class=" form-row control-group <?php echo !empty($emailError)?'error':'';?>">
-                                        <label class="control-label">Email</label>
+                                        <label class="control-label white">Email</label>
                                         <div class="controls">
                                             <input name="email" type="text" placeholder="" value="<?php echo !empty($email)?$email:'';?>">
                                             <?php if (!empty($emailError)): ?>
