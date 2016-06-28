@@ -134,12 +134,13 @@ h5 {
 
 }
 .footer {
+  background-color: #64706c;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background: #64706c;
+  
 }
 #process {
   width:65%;
@@ -245,9 +246,6 @@ background:#ede9ce;
 #textbox {
   background:;
   margin: 10px;
-}
-.footer {
- background-color:black;
 }
 .img-responsive {
 
