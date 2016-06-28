@@ -42,7 +42,7 @@
 			<div class="container">
 			<!-- Mash -->
 				<center><div class="row">	
-					<div class="col-lg-8">
+					<div class="">
 						<form class="form-register form-signin" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="form-register-with-email">
 								<div class="form-white-background">
