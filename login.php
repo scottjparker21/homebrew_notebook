@@ -14,13 +14,13 @@
                                     <h3 class='white'>Login</h3>
                                 </div>
 						  		<div class="form-title-row control-group">
-						    		<label class="control-label" for="inputUsername">Username</label>
+						    		<label class="control-label white" for="inputUsername">Username</label>
 						    		<div class="controls">
 						      			<input type="text" id="inputUser" name="username" placeholder="Username">
 						    		</div>
 						  		</div>
 						  		<div class="form-title-row control-group">
-						    		<label class="control-label" for="inputPassword">Password</label>
+						    		<label class="control-label white" for="inputPassword">Password</label>
 						    		<div class="controls">
 						      			<input type="password" name="password" id="inputPass" placeholder="Password">
 						    		</div>
