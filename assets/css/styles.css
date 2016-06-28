@@ -70,6 +70,12 @@ h5 {
 .recipe-form input {
   margin-bottom: 12px;
 }
+#review-background {
+  background: url(../img/review_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #fermentation-background {
   background: url(../img/yeast_background.jpg);
   background-repeat: no-repeat;

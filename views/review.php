@@ -2,6 +2,7 @@
 		require_once '../includes/database.php';
 		session_start();	
 	?>
+<div id="review-background">
 
 	<div class="container">
 		<h1> Review <?php echo $_SESSION['rsi']; ?> </h1>
@@ -329,4 +330,5 @@
 					  	</form>	
 				  	</div>
 				</div>
-			</div>  
+			</div>
+</div>  
