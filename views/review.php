@@ -46,8 +46,8 @@
 						<img class="" ng-src="assets/img/barley_c.svg" style=""/>
 					</div>	
 					<div class="col-lg-8">
-						<form class="" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="">
+						<form class="form-register form-signin" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
 									<div id="message" ng-show="message">{{ message }}</div>

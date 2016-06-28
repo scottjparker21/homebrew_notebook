@@ -14,7 +14,7 @@
 								<div id="message" ng-show="message">{{ message }}</div>
 
 						  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorName }">
-						    		<label class="control-label">Name</label>
+						    		<label class="control-label white">Name</label>
 						    		<div class="controls">
 						      			<input type="text" name="name" ng-model="formData.name">
 						      			<span class="help-block" ng-show="!errorName">{{ errorName }}</span> 
