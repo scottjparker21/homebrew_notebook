@@ -41,7 +41,7 @@
 		?>		
 			<div class="container">
 			<!-- Mash -->
-				<div class="row">	
+				<center><div class="row">	
 					<div class="col-lg-8">
 						<form class="form-register form-signin" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="form-register-with-email">
@@ -95,7 +95,7 @@
 							</div>
 					  	</form>	
 				  	</div>
-				</div>
+				</div></center>
 			<!-- Boil -->
 				<div class="row">
 					<div class="col-lg-4">
