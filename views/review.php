@@ -98,15 +98,15 @@
 				</div></center>
 			<!-- Boil -->
 				<div class="row">
-					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/boil_c.svg" style=""/>
-					</div>	
+					
 				  	<div class="">
 				  		<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
-									<div id="message" ng-show="message">{{ message }}</div>
+									<center><div>
+										<img class="review-icons" ng-src="assets/img/boil_c.svg" style=""/>
+									</div></center>	
 
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorDuration }">
 							    		<label class="control-label">Duration</label>
