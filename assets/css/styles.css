@@ -15,6 +15,10 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+.yellow-background {
+  height: 100%;
+  background-color: #ede9ce;
+}
 .input-size{
   font-size: 14px;
   height: 140px;

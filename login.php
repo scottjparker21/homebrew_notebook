@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 		<html lang="en">
 		<?php require_once 'includes/header.php'; ?>
-			<body>
+			<body class="yellow-background">
 				<?php require_once 'includes/login-navbar.php';?>
 				<br><br><br><br><br>
 				<center>
