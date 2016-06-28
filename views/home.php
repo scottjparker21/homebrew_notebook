@@ -56,7 +56,7 @@
 		</div>
 	</div>
 
-	<div class="row" style="background-color:#935347;">
+	<div class="row" style="background-color:#ede9ce;">
 		<div class="row">
 			<center><h1 id="pacifico-home"> Recent User Recipes </h1></center>
 		</div>
@@ -80,10 +80,10 @@
 						// echo '<p>' . $ur['style'] . '</p>';
 						// echo '<p>' . $ur['malt_type'] . '</p>';	
 						echo 	'<div class="user-recipe-box">';
-						echo 		'<center><img ng-src="assets/img/white_bot_icon.svg"/></center>';
-						echo     	'<h2>' . $ur['name'] . '</h2>';
-						echo     	'<h2>' . $ur['style'] . '</h2>';
-						echo     	'<h2>' . $ur['malt_type'] . '</h2>';			
+						echo 		'<center><img ng-src="assets/img/blue_bot_icon.svg"/></center>';
+						echo     	'<h2 class="blue">' . $ur['name'] . '</h2>';
+						echo     	'<h2 class="blue">' . $ur['style'] . '</h2>';
+						echo     	'<h2 class="blue">' . $ur['malt_type'] . '</h2>';			
 						echo	'</div>';
 					}
 				}
