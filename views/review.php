@@ -41,17 +41,15 @@
 		?>		
 			<div class="container">
 			<!-- Mash -->
-				<div class="row">
-					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/barley_c.svg" style=""/>
-					</div>	
+				<div class="row">	
 					<div class="col-lg-8">
 						<form class="form-register form-signin" name="mashForm" ng-submit="processForm()" enctype="multipart/form-data">
 							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
-									<div id="message" ng-show="message">{{ message }}</div>
-
+									<center><div>
+										<img class="" ng-src="assets/img/barley_c.svg" style=""/>
+									</div></center>
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
 							    		<label class="control-label">Malt Ammount</label>
 							    		<div class="controls">
