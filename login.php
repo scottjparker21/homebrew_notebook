@@ -3,7 +3,7 @@
 		<html lang="en">
 		<?php require_once 'includes/header.php'; ?>
 			<body>
-				<?php require_once 'includes/navbar.php';?>
+				<?php require_once 'includes/login-navbar.php';?>
 				<br><br><br><br><br>
 				<center>
 				<div class="container">
