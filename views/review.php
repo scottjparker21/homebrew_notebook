@@ -163,15 +163,15 @@
 				</div>
 			<!-- Hops -->
 				<div class="row">
-					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/hops_c.svg" style=""/>
-					</div>	  	
-				  	<div class="col-lg-8">
-				  		<form class="" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="">
+						  	
+				  	<div class="">
+				  		<form class="form-register form-signin" name="hopsForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
-									<div id="message" ng-show="message">{{ message }}</div>
+									<center><div class="review-icons">
+										<img class="" ng-src="assets/img/hops_c.svg" style=""/>
+									</div></center>
 
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorname }">
 							    		<label class="control-label">Hops Type</label>
@@ -221,15 +221,15 @@
 				 </div>
 		<!-- Fermentation -->
 				<div class="row">
-					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/carboy_c.svg" style=""/>
-					</div>		  			
-				  	<div class="col-lg-8">
-				  		<form class="" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="">
+							  			
+				  	<div class="">
+				  		<form class="form-register form-signin" name="fermentationForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
-									<div id="message" ng-show="message">{{ message }}</div>
+									<center><div class="">
+										<img class="review-icons" ng-src="assets/img/carboy_c.svg" style=""/>
+									</div></center>
 
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : erroryeast_type }">
 							    		<label class="control-label">Yeast Type</label>
@@ -279,15 +279,14 @@
 				</div>
 			 <!-- Bottling -->
 			 	<div class="row">
-					<div class="col-lg-4">
-						<img class="" ng-src="assets/img/bot_c.svg" style=""/>
-					</div>				
-				  	<div class="col-lg-8">
-				  		<form class="" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="">
+									
+				  	<div class="">
+				  		<form class="form-register form-signin" name="bottlingForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="form-register-with-email">
 								<div class="form-white-background">
-									<!-- success message -->
-									<div id="message" ng-show="message">{{ message }}</div>
+									<center><div class="">
+										<img class="review-icons" ng-src="assets/img/bot_c.svg" style=""/>
+									</div></center>
 
 							  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errorbtl_con }">
 							    		<label class="control-label">Bottle Conditioning</label>
