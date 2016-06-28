@@ -26,6 +26,9 @@ h5 {
   padding-right: 0.4em;
   text-align: left;
 }
+.home-padding {
+  padding-bottom: 20px;
+}
 .user-recipe-outer{
   text-align: center;
   position: relative;
