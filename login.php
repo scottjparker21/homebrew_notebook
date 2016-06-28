@@ -10,6 +10,9 @@
 					<form class="form-register form-signin" method="post" action="auth.php" enctype="multipart/form-data">
 						<div class="form-register-with-email">
 							<div class="form-white-background">
+								<div class="form-title-row">
+                                    <h3 class='white'>Login</h3>
+                                </div>
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label" for="inputUsername">Username</label>
 						    		<div class="controls">
@@ -24,9 +27,6 @@
 						  		</div>
 						  		<div class="form-row form-actions control-group">
 						    		<div class="controls">
-						      			<label class="checkbox">
-						        			<input type="checkbox"> Remember me
-						      			</label>
 						      			<button id="send" type="submit" class="btn btn-success">Sign in</button>
 						    		</div>
 						  		</div>
