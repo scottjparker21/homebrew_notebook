@@ -35,5 +35,6 @@
 				  	</form>	
 				</div>
 			</center>
+			<?php require_once 'includes/footer.php';?>
 			</body>
 		</html>
