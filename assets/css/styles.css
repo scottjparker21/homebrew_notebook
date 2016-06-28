@@ -73,6 +73,12 @@ h5 {
 .recipe-form input {
   margin-bottom: 12px;
 }
+#newbrew-background {
+  background: url(../img/newbrew_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #review-background {
   background: url(../img/review_background.jpg);
   background-repeat: no-repeat;

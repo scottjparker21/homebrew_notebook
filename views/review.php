@@ -101,9 +101,9 @@
 					<div class="col-lg-4">
 						<img class="" ng-src="assets/img/boil_c.svg" style=""/>
 					</div>	
-				  	<div class="col-lg-8">
-				  		<center><form class="" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
-							<div class="">
+				  	<div class="">
+				  		<center><form class="form-register form-signin" name="boilForm" ng-submit="processForm()" enctype="multipart/form-data">
+							<div class="form-register-with-email">
 								<div class="form-white-background">
 									<!-- success message -->
 									<div id="message" ng-show="message">{{ message }}</div>
