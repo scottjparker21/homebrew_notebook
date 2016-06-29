@@ -263,14 +263,13 @@ h5 {
   font-size: 110px;
   color: white;
   margin:15px;
-  margin-top: 25px;
+  padding-top: 25px;
   margin-bottom: 50px;
   text-shadow: 5px 5px 4px #000;
 }
 
 
 #textbox {
-  background:;
   margin: 10px;
 }
 .img-responsive {
