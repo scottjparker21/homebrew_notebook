@@ -36,7 +36,7 @@
 					<div class="home-box col-lg-5">
 						<center><div><i class="fa fa-paper-plane-o fa-3x "></i></div>
 						<center><h2> Share </h2></center>
-						<center><p class="white">Homebrew Notebook allows users to share recipes with friends and other users. Effortless collaborate of recipes and share your favorite recipes with others. Social media integration is under construction.</p></center>
+						<center><p class="white">Homebrew Notebook allows users to share recipes with friends and other users. Effortless collaborate of recipes and share your favorite recipes with others. Social media integration with Facebook, Instagram, and Twitter is under construction.</p></center>
 					</div>
 				</div></center>
 				<center><div class="col-lg-10 col-lg-offset-2">
