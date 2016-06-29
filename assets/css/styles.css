@@ -11,6 +11,10 @@ body {
 h2 {
   color: white;
 }
+h4{
+  color: white;
+  font-size: 25px;
+}
 h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
