@@ -7,7 +7,6 @@
               		<span class="icon-bar"></span>
               		<span class="icon-bar"></span>
           		</button>
-        			<!-- <a class="navbar-brand" href="#"><h5> Milwaukee Glassware </h5><img src="MKE Glass" alt="" id="navlogo"></a> -->
       		</div>
       		<div class="collapse navbar-collapse" id="myNavbar">
         			<ul class="nav navbar-nav">
@@ -17,17 +16,15 @@
                       <ul class="dropdown-menu">
                         <li ng-class="{ active: isActive('/myRecipes')}"><a href="#/recipes">My Recipes</a></li>
                         <li ng-class="{ active: isActive('/newRecipe')}"><a href="#/newRecipe">New Recipe</a></li>
-                        <li ng-class="{ active: isActive('/boil')}"><a href="#/boil">Boil</a></li>
+<!--                         <li ng-class="{ active: isActive('/boil')}"><a href="#/boil">Boil</a></li>
                         <li ng-class="{ active: isActive('/bottling')}"><a href="#/bottling">Bottling</a></li>
                         <li ng-class="{ active: isActive('/fermentation')}"><a href="#/fermentation">Fermentation</a></li>
                         <li ng-class="{ active: isActive('/hops')}"><a href="#/hops">Hops</a></li>
-                        <li ng-class="{ active: isActive('/mash')}"><a href="#/mash">Mash</a></li>
-                        <li ng-class="{ active: isActive('/results')}"><a href="#/results">Results</a></li>
+                        <li ng-class="{ active: isActive('/mash')}"><a href="#/mash">Mash</a></li> -->
                       </ul> 
                   <li><a href=""></a></li>                
         			</ul>
-        			<ul class="nav navbar-nav navbar-right">
-                        
+        			<ul class="nav navbar-nav navbar-right">         
                     <?php if( isset($_SESSION['permission'])){ ?>
                       <li><a class="" href=""><i class="fa fa-user fa-fw"></i>&nbsp;<?php echo $_SESSION['name']; ?></a></li>
                     <?php } ?>
