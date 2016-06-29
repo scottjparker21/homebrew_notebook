@@ -2,8 +2,8 @@
 		    <footer class="footer">
 	      		<div class="container">
 	        		<center>
-	        			<p class="text-muted white">Homebrew Notebook - Copyright 2016</p>
-	        			<a href="sitemap.php"> Site Map </a>
+	        			<p class="text-muted white">Homebrew Notebook - Copyright 2016 - <a href="sitemap.php"> Site Map </a></p>
+	        			
 	        		</center>
 	     		 </div>
 	        </footer>
