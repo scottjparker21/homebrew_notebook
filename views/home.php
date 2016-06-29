@@ -30,7 +30,7 @@
 					<div class="home-box col-lg-5">
 						<center><div><i class="fa fa-pencil fa-3x "></i></div>
 						<h2> Create </h2></center>
-						<center><p class="white"> Homebrew Notebook allows for quick, concise recipe data entry. It is fun and interactive to use. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
+						<center><p class="white"> Homebrew Notebook allows for quick, concise recipe data entry. It makes documenting a recipe fun, easy, and interactive. Share recipes with the Homebrew Notebook community or keep them in your own private repository.</p></center>
 					</div>
 					
 					<div class="home-box col-lg-5">
@@ -43,12 +43,12 @@
 					<div class="home-box col-lg-5">
 						<center><div><i class="fa fa-university fa-3x "></i></div>
 						<center><h2> Learn </h2></center>
-						<center><p class="white">Homebrew Notebook is a learning tool as well as a recipe archive. Learn from other users mistakes and successes. Refer to onsite interactive graphics to learn more about the brewing process.</p></center>
+						<center><p class="white">Homebrew Notebook is a learning tool as well as a recipe archive. Learn from other users mistakes and successes by looking over their notes. Refer to onsite interactive graphics to learn more about the brewing process.</p></center>
 					</div>
 					<div class=" home-box col-lg-5">
 						<center><div><i class="fa fa-server fa-3x "></i></div>
 						<center><h2> Save </h2></center>
-						<center><p class="white"> Homebrew Notebook allows for recipe archiving. Have access to your recipes anytime, anywhere. Never scribble out a changed recipe again, Homebrew Notebook allows you to update recipes effortlessly.</p></center>
+						<center><p class="white"> Homebrew Notebook allows for recipe archiving. Have access to your recipes anytime, anywhere. Never scribble out a changed recipe again, Homebrew Notebook allows you to update recipes quickly and effortlessly.</p></center>
 					</div>,
 				</div></center>
 <!-- 				</div></center>
