@@ -70,7 +70,7 @@
 						
 
 				  		<div class="form-title-row control-group" ng-class="{ 'has-error' : errormalt_amt }">
-				    		<label class="control-label">Malt Ammount</label>
+				    		<label class="control-label">Malt Amount</label>
 				    		<div class="controls">
 				      			<?php echo '<input ng-init="formData.malt_amt=' . "'" . $mash['malt_amt'] . "'" . '" type="text"  ng-model="formData.malt_amt">'; ?>
 				      			<span class="help-block" ng-show="!errormalt_amt">{{ errormalt_amt }}</span> 
