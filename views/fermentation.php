@@ -33,31 +33,31 @@
 					<center>
 					<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2">
 						<div class="img-responsive" ng-init="imgsrc1='assets/img/barley_b.svg'" ng-mouseover="imgsrc1='assets/img/barley_c.svg'" ng-mouseout="imgsrc1='assets/img/barley_b.svg'">
-					        <a href="#/mash"><img class="animated pulse" ng-src="{{imgsrc1}}" /></a>
+					        <a href="#/mash"><img class="animated pulse nav-icon" ng-src="{{imgsrc1}}" /></a>
 					      <center><div><h4>Mash</h4></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div  ng-init="imgsrc2='assets/img/boil_b.svg'" ng-mouseover="imgsrc2='assets/img/boil_c.svg'" ng-mouseout="imgsrc2='assets/img/boil_b.svg'">
-					        <a href="#/boil"><img class="animated pulse" ng-src="{{imgsrc2}}" style=""/></a>
+					        <a href="#/boil"><img class="animated pulse nav-icon" ng-src="{{imgsrc2}}" style=""/></a>
 					      <center><div><h4>Boil</h4></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div class="img-responsive" ng-init="imgsrc3='assets/img/hops_b.svg'" ng-mouseover="imgsrc3='assets/img/hops_c.svg'" ng-mouseout="imgsrc3='assets/img/hops_b.svg'">
-					        <a href="#/hops"><img class="animated pulse" ng-src="{{imgsrc3}}" style=""/></a>
+					        <a href="#/hops"><img class="animated pulse nav-icon" ng-src="{{imgsrc3}}" style=""/></a>
 					      <center><div><h4>Hops</h4></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div class="img-responsive" >
-					        <a href="#/fermentation"><img class="animated pulse" ng-src="assets/img/carboy_c.svg" style=""/></a>
+					        <a href="#/fermentation"><img class="animated pulse nav-icon" ng-src="assets/img/carboy_c.svg" style=""/></a>
 					      <center><div><h4>Fermentation</h4></div></center>
 					    </div>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<div class="img-responsive" ng-init="imgsrc5='assets/img/bot_b.svg'" ng-mouseover="imgsrc5='assets/img/bot_c.svg'" ng-mouseout="imgsrc5='assets/img/bot_b.svg'">
-					        <a href="#/bottling"><img class="animated pulse" ng-src="{{imgsrc5}}" style=""/></a>
+					        <a href="#/bottling"><img class="animated pulse nav-icon" ng-src="{{imgsrc5}}" style=""/></a>
 					      <center><div><h4>Bottling</h4></div></center>
 					    </div>
 					</div>

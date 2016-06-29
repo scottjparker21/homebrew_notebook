@@ -378,7 +378,15 @@ h5 {
     
 
     }
+/*tablet size*/
+@media (max-width: 600px) {
 
+    .nav-icon{
+      height: 60%;
+      width: 60%;
+    }
+
+}
 
 
 
