@@ -15,6 +15,10 @@ h5 {
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
+.control-label{
+  color: white;
+  font-size: 30px;
+}
 .review-icons{
   margin: 20px;
 }
