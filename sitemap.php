@@ -1,10 +1,9 @@
 
 <div class="container">
-	<a href="index.php"> Index </a>
-	<a href="index.php#/recipes"> User Recipes </a>
-	<a href="index.php"> Index </a>
-	<a href="index.php"> Index </a>
-
-
+	<p><a href="index.php"> Index </a></p>
+	<p><a href="index.php#/recipes"> User Recipes </a></p>
+	<p><a href="index.php#/recipes"> User Recipes </a></p>
+	<p><a href="index.php#/recipes"> User Recipes </a></p>
+	<p><a href="index.php#/recipes"> User Recipes </a></p>
 </div>
 
