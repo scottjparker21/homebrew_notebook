@@ -11,7 +11,7 @@
 						<div class="form-register-with-email">
 							<div class="form-white-background">
 								<div class="form-title-row">
-                                    <h3 class='white'>Login</h3>
+                                    <h3 class='white pacifico-home'>Login</h3>
                                 </div>
 						  		<div class="form-title-row control-group">
 						    		<label class="control-label white" for="inputUsername">Username</label>
